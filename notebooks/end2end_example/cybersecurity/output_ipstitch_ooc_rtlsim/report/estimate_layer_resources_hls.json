@@ -1,0 +1,34 @@
+{
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": "0",
+    "FF": "3185",
+    "LUT": "17886",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_1": {
+    "BRAM_18K": "0",
+    "FF": "540",
+    "LUT": "1460",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_2": {
+    "BRAM_18K": "0",
+    "FF": "537",
+    "LUT": "1459",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_3": {
+    "BRAM_18K": "0",
+    "FF": "58",
+    "LUT": "284",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  }
+}
