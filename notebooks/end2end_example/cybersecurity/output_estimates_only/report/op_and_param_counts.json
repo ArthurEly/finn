@@ -17,13 +17,13 @@
   "MatrixVectorActivation_3": {
     "op_mac_2bx2b": 64,
     "param_weight_2b": 64,
-    "param_threshold_9b": 1
+    "param_threshold_8b": 1
   },
   "total": {
     "op_mac_1bx2b": 38400.0,
     "param_weight_2b": 46656.0,
-    "param_threshold_9b": 65.0,
+    "param_threshold_9b": 64.0,
     "op_mac_2bx2b": 8256.0,
-    "param_threshold_8b": 128.0
+    "param_threshold_8b": 129.0
   }
 }
