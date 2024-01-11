@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jan  9 19:58:45 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 11 18:31:28 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="finn_design" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -110,7 +110,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="2113376276" FULLNAME="/MatrixVectorActivation_0/MatrixVectorActivation_0" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_0" VLNV="xilinx.com:hls:MatrixVectorActivation_0:1.0">
+    <MODULE COREREVISION="2113379069" FULLNAME="/MatrixVectorActivation_0/MatrixVectorActivation_0" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_0" VLNV="xilinx.com:hls:MatrixVectorActivation_0:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_0_0"/>
@@ -246,7 +246,7 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="14"/>
         <PARAMETER NAME="DEPTH" VALUE="60"/>
-        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_aouaxam1/memblock.dat"/>
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_4w2w0vvu/memblock.dat"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="1280"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_0_wstrm_0"/>
@@ -375,7 +375,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2113376276" FULLNAME="/MatrixVectorActivation_1/MatrixVectorActivation_1" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_1" VLNV="xilinx.com:hls:MatrixVectorActivation_1:1.0">
+    <MODULE COREREVISION="2113379069" FULLNAME="/MatrixVectorActivation_1/MatrixVectorActivation_1" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_1" VLNV="xilinx.com:hls:MatrixVectorActivation_1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_1_0"/>
@@ -511,7 +511,7 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="10"/>
         <PARAMETER NAME="DEPTH" VALUE="64"/>
-        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_4183k3o9/memblock.dat"/>
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_htc6wh6v/memblock.dat"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="128"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_1_wstrm_0"/>
@@ -640,7 +640,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2113376276" FULLNAME="/MatrixVectorActivation_2/MatrixVectorActivation_2" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_2_MatrixVectorActivation_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_2" VLNV="xilinx.com:hls:MatrixVectorActivation_2:1.0">
+    <MODULE COREREVISION="2113379069" FULLNAME="/MatrixVectorActivation_2/MatrixVectorActivation_2" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_2_MatrixVectorActivation_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_2" VLNV="xilinx.com:hls:MatrixVectorActivation_2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_2_0"/>
@@ -776,7 +776,7 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="10"/>
         <PARAMETER NAME="DEPTH" VALUE="64"/>
-        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_91m27s32/memblock.dat"/>
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_ago07qk6/memblock.dat"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="128"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_2_wstrm_0"/>
@@ -905,7 +905,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2113376276" FULLNAME="/MatrixVectorActivation_3/MatrixVectorActivation_3" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_3" VLNV="xilinx.com:hls:MatrixVectorActivation_3:1.0">
+    <MODULE COREREVISION="2113379069" FULLNAME="/MatrixVectorActivation_3/MatrixVectorActivation_3" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_3" VLNV="xilinx.com:hls:MatrixVectorActivation_3:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_3_0"/>
@@ -1041,7 +1041,7 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="8"/>
         <PARAMETER NAME="DEPTH" VALUE="64"/>
-        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_j19xpsew/memblock.dat"/>
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_of1o2tm2/memblock.dat"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="8"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_3_wstrm_0"/>

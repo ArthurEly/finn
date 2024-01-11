@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:MatrixVectorActivation_2:1.0
-// IP Revision: 2113376276
+// IP Revision: 2113379069
 
 (* X_CORE_INFO = "MatrixVectorActivation_2,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "finn_design_MatrixVectorActivation_2_0,MatrixVectorActivation_2,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_MatrixVectorActivation_2_0,MatrixVectorActivation_2,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=MatrixVectorActivation_2,x_ipVersion=1.0,x_ipCoreRevision=2113376276,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "finn_design_MatrixVectorActivation_2_0,MatrixVectorActivation_2,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=MatrixVectorActivation_2,x_ipVersion=1.0,x_ipCoreRevision=2113379069,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module finn_design_MatrixVectorActivation_2_0 (

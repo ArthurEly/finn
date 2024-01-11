@@ -1,0 +1,374 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jan 11 15:45:48 2024
+# Process ID: 58833
+# Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_wstrm_0_synth_1
+# Command line: vivado -log finn_design_MatrixVectorActivation_0_wstrm_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_MatrixVectorActivation_0_wstrm_0.tcl
+# Log file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_wstrm_0_synth_1/finn_design_MatrixVectorActivation_0_wstrm_0.vds
+# Journal file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_wstrm_0_synth_1/vivado.jou
+# Running On: pclab211, OS: Linux, CPU Frequency: 3322.753 MHz, CPU Physical cores: 4, Host memory: 16626 MB
+#-----------------------------------------------------------
+source finn_design_MatrixVectorActivation_0_wstrm_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1305.578 ; gain = 33.840 ; free physical = 3079 ; free virtual = 14162
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/afely/Desktop/finn-notebook/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_mgok8q5w/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_4w2w0vvu/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_pbooruz_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_htc6wh6v/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_ago07qk6/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_of1o2tm2/project_MatrixVectorActivation_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_MatrixVectorActivation_0_wstrm_0
+Command: synth_design -top finn_design_MatrixVectorActivation_0_wstrm_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 58868
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1737.074 ; gain = 410.684 ; free physical = 2382 ; free virtual = 13465
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:35]
+WARNING: [Synth 8-10636] default field of an assignment pattern cannot contain another assignment pattern [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:73]
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:35]
+WARNING: [Synth 8-10592] closing label :memstream_axi_wrapper is only allowed in SystemVerilog mode [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:123]
+WARNING: [Synth 8-10592] closing label :memstream_axi_wrapper is only allowed in SystemVerilog mode [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:123]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_0_wstrm_0' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/synth/finn_design_MatrixVectorActivation_0_wstrm_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'memstream_axi_wrapper' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:33]
+INFO: [Synth 8-6157] synthesizing module 'memstream_axi' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'axi4lite_if' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'axi4lite_if' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:31]
+WARNING: [Synth 8-689] width (32) of port connection 'ip_addr' does not match port width (14) of module 'axi4lite_if' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:105]
+INFO: [Synth 8-6157] synthesizing module 'memstream' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:33]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_4w2w0vvu/memblock.dat' is read successfully [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'memstream' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_axi' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_axi_wrapper' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_wstrm_0' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/synth/finn_design_MatrixVectorActivation_0_wstrm_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element wready_reg was removed.  [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:135]
+WARNING: [Synth 8-6014] Unused sequential element internal_wack_reg was removed.  [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:154]
+WARNING: [Synth 8-7129] Port config_address[31] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[30] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[29] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[28] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[27] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[26] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[25] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[24] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[23] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[22] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[21] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[20] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[19] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[18] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[17] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[16] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[15] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[14] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[13] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[12] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[11] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[10] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[9] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[8] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[7] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[6] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module axi4lite_if is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1817.043 ; gain = 490.652 ; free physical = 2279 ; free virtual = 13363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1834.855 ; gain = 508.465 ; free physical = 2279 ; free virtual = 13362
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1842.859 ; gain = 516.469 ; free physical = 2279 ; free virtual = 13362
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4lite_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_WRITE |                               01 |                               10
+              STATE_READ |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4lite_if'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1851.766 ; gain = 525.375 ; free physical = 2266 ; free virtual = 13350
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	             1280 Bit    Registers := 1     
+	               32 Bit    Registers := 41    
+	               14 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---RAMs : 
+	              75K Bit	(60 X 1280 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 50    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port awaddr[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module axi4lite_if is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2003.133 ; gain = 676.742 ; free physical = 2108 ; free virtual = 13194
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                  | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|finn_design_MatrixVectorActivation_0_wstrm_0 | inst/core/mem/blkStage2.Mem_reg | 60 x 1280(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 18     | 
++---------------------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2003.133 ; gain = 676.742 ; free physical = 2102 ; free virtual = 13193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                  | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|finn_design_MatrixVectorActivation_0_wstrm_0 | inst/core/mem/blkStage2.Mem_reg | 60 x 1280(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 18     | 
++---------------------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_16 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_17 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2091 ; free virtual = 13188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |    20|
+|3     |LUT3     |     8|
+|4     |LUT4     |   133|
+|5     |LUT5     |   266|
+|6     |LUT6     |   252|
+|7     |MUXF7    |   192|
+|8     |RAMB36E1 |    18|
+|9     |FDCE     |    36|
+|10    |FDRE     |  2626|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+----------------------+------+
+|      |Instance        |Module                |Cells |
++------+----------------+----------------------+------+
+|1     |top             |                      |  3552|
+|2     |  inst          |memstream_axi_wrapper |  3552|
+|3     |    core        |memstream_axi         |  3552|
+|4     |      config_if |axi4lite_if           |  1413|
+|5     |      mem       |memstream             |  2137|
++------+----------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.141 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2011.148 ; gain = 684.750 ; free physical = 2071 ; free virtual = 13167
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2011.148 ; gain = 0.000 ; free physical = 2352 ; free virtual = 13448
+INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2109.871 ; gain = 0.000 ; free physical = 2299 ; free virtual = 13389
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 314244b4
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2109.906 ; gain = 790.453 ; free physical = 2299 ; free virtual = 13389
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1600.319; main = 1407.883; forked = 370.309
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2994.828; main = 2109.875; forked = 1015.715
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2429.828 ; gain = 0.000 ; free physical = 2112 ; free virtual = 13202
+INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_wstrm_0_synth_1/finn_design_MatrixVectorActivation_0_wstrm_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2429.828 ; gain = 319.922 ; free physical = 2094 ; free virtual = 13186
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_MatrixVectorActivation_0_wstrm_0, cache-ID = 59150cd2eb2e92c9
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.797 ; gain = 0.000 ; free physical = 2098 ; free virtual = 13192
+INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_wstrm_0_synth_1/finn_design_MatrixVectorActivation_0_wstrm_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_MatrixVectorActivation_0_wstrm_0_utilization_synth.rpt -pb finn_design_MatrixVectorActivation_0_wstrm_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 15:46:27 2024...
