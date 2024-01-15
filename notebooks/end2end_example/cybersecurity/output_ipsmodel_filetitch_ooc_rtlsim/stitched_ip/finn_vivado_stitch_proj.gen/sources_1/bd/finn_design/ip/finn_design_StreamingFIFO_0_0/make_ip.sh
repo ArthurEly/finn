@@ -1,0 +1,4 @@
+#!/bin/bash 
+cd /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_yjq7ioh0/project_StreamingFIFO_0/sol1/impl/verilog
+vivado -mode batch -source package_ip.tcl
+cd /home/afely/Desktop/finn-n

@@ -1,17 +1,17 @@
 {
   "MatrixVectorActivation_0": [
     {
-      "BRAM_18K": 36,
-      "BRAM_efficiency": 0.11574074074074074,
-      "LUT": 4629,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 5909,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 640
     },
     {
-      "BRAM_18K": 36,
-      "BRAM_efficiency": 0.11574074074074074,
-      "LUT": 6741,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 8021,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 0
@@ -19,17 +19,17 @@
   ],
   "MatrixVectorActivation_1": [
     {
-      "BRAM_18K": 4,
-      "BRAM_efficiency": 0.1111111111111111,
-      "LUT": 867,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 995,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 64
     },
     {
-      "BRAM_18K": 4,
-      "BRAM_efficiency": 0.1111111111111111,
-      "LUT": 1149,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 1277,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 0
@@ -37,17 +37,17 @@
   ],
   "MatrixVectorActivation_2": [
     {
-      "BRAM_18K": 4,
-      "BRAM_efficiency": 0.1111111111111111,
-      "LUT": 867,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 995,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 64
     },
     {
-      "BRAM_18K": 4,
-      "BRAM_efficiency": 0.1111111111111111,
-      "LUT": 1149,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 1277,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 0
@@ -55,17 +55,17 @@
   ],
   "MatrixVectorActivation_3": [
     {
-      "BRAM_18K": 1,
-      "BRAM_efficiency": 0.006944444444444444,
-      "LUT": 313,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 315,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 1
     },
     {
-      "BRAM_18K": 1,
-      "BRAM_efficiency": 0.006944444444444444,
-      "LUT": 317,
+      "BRAM_18K": 0,
+      "BRAM_efficiency": 1,
+      "LUT": 319,
       "URAM": 0,
       "URAM_efficiency": 1,
       "DSP": 0
