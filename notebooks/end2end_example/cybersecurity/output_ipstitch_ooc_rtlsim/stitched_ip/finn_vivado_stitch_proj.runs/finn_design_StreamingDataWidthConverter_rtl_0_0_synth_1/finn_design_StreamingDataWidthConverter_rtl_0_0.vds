@@ -3,25 +3,25 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jan 11 15:51:21 2024
-# Process ID: 62501
+# Start of session at: Tue Jan 16 17:48:11 2024
+# Process ID: 21628
 # Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_0_0_synth_1
 # Command line: vivado -log finn_design_StreamingDataWidthConverter_rtl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_StreamingDataWidthConverter_rtl_0_0.tcl
 # Log file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_0_0_synth_1/finn_design_StreamingDataWidthConverter_rtl_0_0.vds
 # Journal file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_0_0_synth_1/vivado.jou
-# Running On: pclab211, OS: Linux, CPU Frequency: 3285.947 MHz, CPU Physical cores: 4, Host memory: 16626 MB
+# Running On: pclab211, OS: Linux, CPU Frequency: 3306.037 MHz, CPU Physical cores: 4, Host memory: 16626 MB
 #-----------------------------------------------------------
 source finn_design_StreamingDataWidthConverter_rtl_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1305.582 ; gain = 32.840 ; free physical = 2735 ; free virtual = 13872
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1305.582 ; gain = 32.840 ; free physical = 3982 ; free virtual = 14666
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/afely/Desktop/finn-notebook/finn-rtllib/memstream'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_mgok8q5w/project_StreamingFIFO_0/sol1/impl/verilog'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_4w2w0vvu/project_MatrixVectorActivation_0/sol1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_pbooruz_'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_htc6wh6v/project_MatrixVectorActivation_1/sol1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_ago07qk6/project_MatrixVectorActivation_2/sol1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_of1o2tm2/project_MatrixVectorActivation_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_ghub96xw/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_8rucunmd/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_yu_3wk35/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_maa29kdw/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_x_cs68yd/project_MatrixVectorActivation_3/sol1/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_StreamingDataWidthConverter_rtl_0_0
 Command: synth_design -top finn_design_StreamingDataWidthConverter_rtl_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -31,35 +31,35 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 62533
+INFO: [Synth 8-7075] Helper process launched with PID 21658
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1737.078 ; gain = 409.715 ; free physical = 2028 ; free virtual = 13164
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1737.047 ; gain = 409.684 ; free physical = 3279 ; free virtual = 13964
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-9661] initial value of parameter 'IBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc.sv:35]
-WARNING: [Synth 8-9661] initial value of parameter 'OBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc.sv:36]
-WARNING: [Synth 8-9661] initial value of parameter 'IBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc_axi.sv:35]
-WARNING: [Synth 8-9661] initial value of parameter 'OBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc_axi.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'IBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'OBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc.sv:36]
+WARNING: [Synth 8-9661] initial value of parameter 'IBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc_axi.sv:35]
+WARNING: [Synth 8-9661] initial value of parameter 'OBITS' is omitted [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc_axi.sv:36]
 INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_0_0' [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/synth/finn_design_StreamingDataWidthConverter_rtl_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'StreamingDataWidthConverter_rtl_0' [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_pbooruz_/StreamingDataWidthConverter_rtl_0.v:32]
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataWidthConverter_rtl_0' [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf/StreamingDataWidthConverter_rtl_0.v:32]
 	Parameter IBITS bound to: 32 - type: integer 
 	Parameter OBITS bound to: 128 - type: integer 
 	Parameter AXI_IBITS bound to: 32 - type: integer 
 	Parameter AXI_OBITS bound to: 128 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'dwc_axi' [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc_axi.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'dwc_axi' [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc_axi.sv:34]
 	Parameter IBITS bound to: 32 - type: integer 
 	Parameter OBITS bound to: 128 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'dwc' [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'dwc' [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc.sv:34]
 	Parameter IBITS bound to: 32 - type: integer 
 	Parameter OBITS bound to: 128 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'dwc' (0#1) [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc.sv:34]
-INFO: [Synth 8-6155] done synthesizing module 'dwc_axi' (0#1) [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc_axi.sv:34]
-INFO: [Synth 8-6155] done synthesizing module 'StreamingDataWidthConverter_rtl_0' (0#1) [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_pbooruz_/StreamingDataWidthConverter_rtl_0.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'dwc' (0#1) [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'dwc_axi' (0#1) [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc_axi.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingDataWidthConverter_rtl_0' (0#1) [/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf/StreamingDataWidthConverter_rtl_0.v:32]
 INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_0_0' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/synth/finn_design_StreamingDataWidthConverter_rtl_0_0.v:53]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1811.047 ; gain = 483.684 ; free physical = 1933 ; free virtual = 13070
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1811.016 ; gain = 483.652 ; free physical = 3184 ; free virtual = 13870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1828.859 ; gain = 501.496 ; free physical = 1927 ; free virtual = 13061
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1828.828 ; gain = 501.465 ; free physical = 3184 ; free virtual = 13870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -67,10 +67,10 @@ Start Loading Part and Timing Information
 Loading part: xc7a100tcsg324-1
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1836.863 ; gain = 509.500 ; free physical = 1926 ; free virtual = 13060
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1836.832 ; gain = 509.469 ; free physical = 3184 ; free virtual = 13870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1845.770 ; gain = 518.406 ; free physical = 1916 ; free virtual = 13051
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1845.738 ; gain = 518.375 ; free physical = 3177 ; free virtual = 13863
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -104,20 +104,20 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1973.082 ; gain = 645.719 ; free physical = 1775 ; free virtual = 12913
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1973.051 ; gain = 645.688 ; free physical = 3040 ; free virtual = 13727
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1973.082 ; gain = 645.719 ; free physical = 1772 ; free virtual = 12910
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1973.051 ; gain = 645.688 ; free physical = 3037 ; free virtual = 13724
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1973.082 ; gain = 645.719 ; free physical = 1765 ; free virtual = 12903
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1973.051 ; gain = 645.688 ; free physical = 3030 ; free virtual = 13717
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -135,37 +135,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -200,16 +200,16 @@ Report Instance Areas:
 |4     |      core |dwc                               |   202|
 +------+-----------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.051 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1976.059 ; gain = 648.688 ; free physical = 1763 ; free virtual = 12893
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.020 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1976.027 ; gain = 648.656 ; free physical = 3030 ; free virtual = 13716
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.895 ; gain = 0.000 ; free physical = 2061 ; free virtual = 13186
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.863 ; gain = 0.000 ; free physical = 3309 ; free virtual = 13995
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2102.500 ; gain = 0.000 ; free physical = 1975 ; free virtual = 13093
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2101.469 ; gain = 0.000 ; free physical = 3229 ; free virtual = 13916
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -217,16 +217,16 @@ Synth Design complete | Checksum: f376068c
 INFO: [Common 17-83] Releasing license: Synthesis
 30 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2102.535 ; gain = 781.109 ; free physical = 1975 ; free virtual = 13093
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1601.225; main = 1396.986; forked = 379.144
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2988.801; main = 2102.504; forked = 1015.715
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2101.504 ; gain = 780.078 ; free physical = 3229 ; free virtual = 13915
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1609.524; main = 1396.645; forked = 369.688
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2988.773; main = 2101.473; forked = 1015.719
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.457 ; gain = 0.000 ; free physical = 1810 ; free virtual = 12926
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.426 ; gain = 0.000 ; free physical = 3033 ; free virtual = 13719
 INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_0_0_synth_1/finn_design_StreamingDataWidthConverter_rtl_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2432.457 ; gain = 329.922 ; free physical = 1797 ; free virtual = 12913
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2432.426 ; gain = 330.922 ; free physical = 3029 ; free virtual = 13715
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_StreamingDataWidthConverter_rtl_0_0, cache-ID = c33ef6776fa6663a
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.457 ; gain = 0.000 ; free physical = 1795 ; free virtual = 12911
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.426 ; gain = 0.000 ; free physical = 3022 ; free virtual = 13709
 INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_0_0_synth_1/finn_design_StreamingDataWidthConverter_rtl_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file finn_design_StreamingDataWidthConverter_rtl_0_0_utilization_synth.rpt -pb finn_design_StreamingDataWidthConverter_rtl_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 15:51:56 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 16 17:48:46 2024...

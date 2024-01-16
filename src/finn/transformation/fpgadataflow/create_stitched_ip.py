@@ -197,6 +197,13 @@ class CreateStitchedIP(Transformation):
         inst_name = node.name
         node_inst = getCustomOp(node)
         input_intf_names = node_inst.get_verilog_top_module_intf_names()["s_axis"]
+        print("--------")
+        print("node_inst")
+        print(node_inst)
+        print("--------")
+        print("input_intf_names")
+        print(input_intf_names)        
+        print("--------")
         # make input axis external
         for i in range(len(input_intf_names)):
             if idx is not None and idx != i:
@@ -419,6 +426,7 @@ class CreateStitchedIP(Transformation):
         block_vlnv = "%s:%s:%s:1.0" % (block_vendor, block_library, block_name)
         model.set_metadata_prop("vivado_stitch_vlnv", block_vlnv)
         model.set_metadata_prop("vivado_stitch_ifnames", json.dumps(self.intf_names))
+        print(json.dumps(self.intf_names))
         tcl.append(
             (
                 "ipx::package_project -root_dir %s/ip -vendor %s "

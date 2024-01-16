@@ -1,4 +1,4 @@
 #!/bin/bash 
-cd /tmp/finn_dev_afely/vivado_stitch_proj_uzoo6rpy
+cd /tmp/finn_dev_afely/vivado_stitch_proj_g7wuaduj
 vivado -mode batch -source make_project.tcl
 cd /home/afely/Desktop/finn-notebook

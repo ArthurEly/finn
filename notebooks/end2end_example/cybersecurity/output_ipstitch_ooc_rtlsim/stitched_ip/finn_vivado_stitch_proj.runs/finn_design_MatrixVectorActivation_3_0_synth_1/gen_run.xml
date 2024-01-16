@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="finn_design_MatrixVectorActivation_3_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1704998987">
+<GenRun Id="finn_design_MatrixVectorActivation_3_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1705438042">
   <File Type="VDS-TIMINGSUMMARY" Name="finn_design_MatrixVectorActivation_3_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="finn_design_MatrixVectorActivation_3_0.dcp"/>
   <File Type="RDS-UTIL-PB" Name="finn_design_MatrixVectorActivation_3_0_utilization_synth.pb"/>

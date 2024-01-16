@@ -86,13 +86,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /home/afely/Desktop/finn-notebook/finn-rtllib/memstream
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_mgok8q5w/project_StreamingFIFO_0/sol1/impl/verilog
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_4w2w0vvu/project_MatrixVectorActivation_0/sol1/impl/ip
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_pbooruz_
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_htc6wh6v/project_MatrixVectorActivation_1/sol1/impl/ip
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_ago07qk6/project_MatrixVectorActivation_2/sol1/impl/ip
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_of1o2tm2/project_MatrixVectorActivation_3/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_ghub96xw/project_StreamingFIFO_0/sol1/impl/verilog
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_8rucunmd/project_MatrixVectorActivation_0/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_yu_3wk35/project_MatrixVectorActivation_1/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_maa29kdw/project_MatrixVectorActivation_2/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_x_cs68yd/project_MatrixVectorActivation_3/sol1/impl/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.cache/ip [current_project]
@@ -100,10 +100,10 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc.sv
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_l_qvwpzn/dwc_axi.sv
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc.sv
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc_axi.sv
 }
-read_verilog -library xil_defaultlib /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_pbooruz_/StreamingDataWidthConverter_rtl_0.v
+read_verilog -library xil_defaultlib /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf/StreamingDataWidthConverter_rtl_0.v
 read_ip -quiet /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0.xci
 
 OPTRACE "Adding files" END { }

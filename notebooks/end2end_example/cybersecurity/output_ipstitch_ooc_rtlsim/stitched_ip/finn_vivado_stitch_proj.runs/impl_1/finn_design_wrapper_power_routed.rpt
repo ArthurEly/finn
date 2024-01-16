@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date             : Thu Jan 11 17:21:05 2024
+| Date             : Tue Jan 16 17:53:27 2024
 | Host             : pclab211 running 64-bit Ubuntu 23.10
 | Command          : report_power -file finn_design_wrapper_power_routed.rpt -pb finn_design_wrapper_power_summary_routed.pb -rpx finn_design_wrapper_power_routed.rpx
 | Design           : finn_design_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+-----------------------------------+
-| Total On-Chip Power (W)  | 225.754 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 103.658 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                      |
 | Power Budget Margin (W)  | NA                                |
-| Dynamic (W)              | 224.950                           |
-| Device Static (W)        | 0.804                             |
+| Dynamic (W)              | 102.867                           |
+| Device Static (W)        | 0.791                             |
 | Effective TJA (C/W)      | 4.6                               |
 | Max Ambient (C)          | 0.0                               |
 | Junction Temperature (C) | 125.0                             |
@@ -49,24 +49,22 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+--------------------------+-----------+----------+-----------+-----------------+
-| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
-+--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |   113.775 |    16628 |       --- |             --- |
-|   LUT as Logic           |   109.679 |     6780 |     63400 |           10.69 |
-|   Register               |     2.621 |     7316 |    126800 |            5.77 |
-|   CARRY4                 |     1.258 |      302 |     15850 |            1.91 |
-|   F7/F8 Muxes            |     0.194 |      106 |     63400 |            0.17 |
-|   LUT as Shift Register  |     0.017 |       40 |     19000 |            0.21 |
-|   BUFG                   |     0.006 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       67 |       --- |             --- |
-|   LUT as Distributed RAM |     0.000 |        2 |     19000 |            0.01 |
-| Signals                  |   107.809 |    15500 |       --- |             --- |
-| Block RAM                |     2.951 |       22 |       135 |           16.30 |
-| I/O                      |     0.414 |       54 |       210 |           25.71 |
-| Static Power             |     0.804 |          |           |                 |
-| Total                    |   225.754 |          |           |                 |
-+--------------------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic             |    55.521 |    12291 |       --- |             --- |
+|   LUT as Logic          |    52.312 |     5527 |     63400 |            8.72 |
+|   Register              |     1.837 |     4968 |    126800 |            3.92 |
+|   CARRY4                |     1.201 |      310 |     15850 |            1.96 |
+|   F7/F8 Muxes           |     0.152 |       94 |     63400 |            0.15 |
+|   LUT as Shift Register |     0.013 |       40 |     19000 |            0.21 |
+|   BUFG                  |     0.006 |        1 |        32 |            3.13 |
+|   Others                |     0.000 |       66 |       --- |             --- |
+| Signals                 |    46.932 |     8995 |       --- |             --- |
+| I/O                     |     0.414 |       54 |       210 |           25.71 |
+| Static Power            |     0.791 |          |           |                 |
+| Total                   |   103.658 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -75,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |   225.053 |     224.484 |      0.569 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |   103.187 |     102.625 |      0.563 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.113 |       0.020 |      0.093 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -84,7 +82,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.249 |       0.224 |      0.025 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -142,26 +140,22 @@ Table of Contents
 +---------------------------------------+-----------+
 | Name                                  | Power (W) |
 +---------------------------------------+-----------+
-| finn_design_wrapper                   |   224.950 |
-|   finn_design_i                       |   223.908 |
-|     MatrixVectorActivation_0          |   194.069 |
-|       MatrixVectorActivation_0        |   182.538 |
-|       MatrixVectorActivation_0_wstrm  |    11.531 |
-|     MatrixVectorActivation_1          |    14.897 |
-|       MatrixVectorActivation_1        |    13.705 |
-|       MatrixVectorActivation_1_wstrm  |     1.191 |
-|     MatrixVectorActivation_2          |    11.791 |
-|       MatrixVectorActivation_2        |    10.813 |
-|       MatrixVectorActivation_2_wstrm  |     0.978 |
-|     MatrixVectorActivation_3          |     1.025 |
-|       MatrixVectorActivation_3        |     0.902 |
-|       MatrixVectorActivation_3_wstrm  |     0.123 |
-|     StreamingDataWidthConverter_rtl_0 |     0.165 |
-|       inst                            |     0.165 |
-|     StreamingDataWidthConverter_rtl_1 |     1.605 |
-|       inst                            |     1.605 |
-|     StreamingFIFO_0                   |     0.356 |
-|       inst                            |     0.356 |
+| finn_design_wrapper                   |   102.867 |
+|   finn_design_i                       |   101.985 |
+|     MatrixVectorActivation_0          |    91.227 |
+|       inst                            |    91.227 |
+|     MatrixVectorActivation_1          |     6.246 |
+|       inst                            |     6.246 |
+|     MatrixVectorActivation_2          |     2.990 |
+|       inst                            |     2.990 |
+|     MatrixVectorActivation_3          |     0.569 |
+|       inst                            |     0.569 |
+|     StreamingDataWidthConverter_rtl_0 |     0.155 |
+|       inst                            |     0.155 |
+|     StreamingDataWidthConverter_rtl_1 |     0.429 |
+|       inst                            |     0.429 |
+|     StreamingFIFO_0                   |     0.370 |
+|       inst                            |     0.370 |
 +---------------------------------------+-----------+
 
 

@@ -10,17 +10,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design
 # IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_0_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_0_0} -quiet] -quiet
 
-# IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_0_wstrm_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_0_wstrm_0} -quiet] -quiet
-
 # IP: bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_StreamingDataWidthConverter_rtl_0_0 || ORIG_REF_NAME==finn_design_StreamingDataWidthConverter_rtl_0_0} -quiet] -quiet
 
 # IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_1_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_1_0} -quiet] -quiet
-
-# IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_1_wstrm_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_1_wstrm_0} -quiet] -quiet
 
 # IP: bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_StreamingDataWidthConverter_rtl_1_0 || ORIG_REF_NAME==finn_design_StreamingDataWidthConverter_rtl_1_0} -quiet] -quiet
@@ -28,13 +22,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design
 # IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_2_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_2_0} -quiet] -quiet
 
-# IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_2_wstrm_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_2_wstrm_0} -quiet] -quiet
-
 # IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_3_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_3_0} -quiet] -quiet
-
-# IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_3_wstrm_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_3_wstrm_0} -quiet] -quiet
 
 # XDC: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc

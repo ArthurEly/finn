@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_finn_design_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_finn_design_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="49 ps"></ZoomEndTime>
+      <Cursor1Time time="30 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/tb_finn_design_wrapper/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_finn_design_wrapper/ap_rst_n">
+      <obj_property name="ElementShortName">ap_rst_n</obj_property>
+      <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_finn_design_wrapper/s_axis_0_tdata">
+      <obj_property name="ElementShortName">s_axis_0_tdata[39:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_0_tdata[39:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_finn_design_wrapper/s_axis_0_tvalid">
+      <obj_property name="ElementShortName">s_axis_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group53">
+      <obj_property name="label">StreamingFIFO_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/count">
+         <obj_property name="ElementShortName">count[4:0]</obj_property>
+         <obj_property name="ObjectShortName">count[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/maxcount">
+         <obj_property name="ElementShortName">maxcount[4:0]</obj_property>
+         <obj_property name="ObjectShortName">maxcount[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/in0_V_TDATA">
+         <obj_property name="ElementShortName">in0_V_TDATA[39:0]</obj_property>
+         <obj_property name="ObjectShortName">in0_V_TDATA[39:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/in0_V_TVALID">
+         <obj_property name="ElementShortName">in0_V_TVALID</obj_property>
+         <obj_property name="ObjectShortName">in0_V_TVALID</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/in0_V_TREADY">
+         <obj_property name="ElementShortName">in0_V_TREADY</obj_property>
+         <obj_property name="ObjectShortName">in0_V_TREADY</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/out_V_TDATA">
+         <obj_property name="ElementShortName">out_V_TDATA[39:0]</obj_property>
+         <obj_property name="ObjectShortName">out_V_TDATA[39:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/out_V_TVALID">
+         <obj_property name="ElementShortName">out_V_TVALID</obj_property>
+         <obj_property name="ObjectShortName">out_V_TVALID</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/out_V_TREADY">
+         <obj_property name="ElementShortName">out_V_TREADY</obj_property>
+         <obj_property name="ObjectShortName">out_V_TREADY</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/in0_V">
+         <obj_property name="ElementShortName">in0_V</obj_property>
+         <obj_property name="ObjectShortName">in0_V</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/tb_finn_design_wrapper/uut/finn_design_i/StreamingFIFO_0/out_V">
+         <obj_property name="ElementShortName">out_V</obj_property>
+         <obj_property name="ObjectShortName">out_V</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_finn_design_wrapper/s_axis_0_tready">
+      <obj_property name="ElementShortName">s_axis_0_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_0_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_finn_design_wrapper/m_axis_0_tdata">
+      <obj_property name="ElementShortName">m_axis_0_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_finn_design_wrapper/m_axis_0_tvalid">
+      <obj_property name="ElementShortName">m_axis_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_finn_design_wrapper/m_axis_0_tready">
+      <obj_property name="ElementShortName">m_axis_0_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tready</obj_property>
+   </wvobject>
+</wave_config>

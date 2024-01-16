@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jan 11 15:49:50 2024
-# Process ID: 61538
+# Start of session at: Tue Jan 16 17:47:25 2024
+# Process ID: 21152
 # Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_0_synth_1
 # Command line: vivado -log finn_design_MatrixVectorActivation_3_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_MatrixVectorActivation_3_0.tcl
 # Log file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_0_synth_1/finn_design_MatrixVectorActivation_3_0.vds
 # Journal file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_0_synth_1/vivado.jou
-# Running On: pclab211, OS: Linux, CPU Frequency: 3252.636 MHz, CPU Physical cores: 4, Host memory: 16626 MB
+# Running On: pclab211, OS: Linux, CPU Frequency: 3325.736 MHz, CPU Physical cores: 4, Host memory: 16626 MB
 #-----------------------------------------------------------
 source finn_design_MatrixVectorActivation_3_0.tcl -notrace

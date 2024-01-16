@@ -12,24 +12,12 @@
     },
     "design_tree": {
       "StreamingFIFO_0": "",
-      "MatrixVectorActivation_0": {
-        "MatrixVectorActivation_0": "",
-        "MatrixVectorActivation_0_wstrm": ""
-      },
+      "MatrixVectorActivation_0": "",
       "StreamingDataWidthConverter_rtl_0": "",
-      "MatrixVectorActivation_1": {
-        "MatrixVectorActivation_1": "",
-        "MatrixVectorActivation_1_wstrm": ""
-      },
+      "MatrixVectorActivation_1": "",
       "StreamingDataWidthConverter_rtl_1": "",
-      "MatrixVectorActivation_2": {
-        "MatrixVectorActivation_2": "",
-        "MatrixVectorActivation_2_wstrm": ""
-      },
-      "MatrixVectorActivation_3": {
-        "MatrixVectorActivation_3": "",
-        "MatrixVectorActivation_3_wstrm": ""
-      }
+      "MatrixVectorActivation_2": "",
+      "MatrixVectorActivation_3": ""
     },
     "interface_ports": {
       "s_axis_0": {
@@ -232,101 +220,11 @@
         "inst_hier_path": "StreamingFIFO_0"
       },
       "MatrixVectorActivation_0": {
-        "interface_ports": {
-          "out_V": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "in0_V": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "ports": {
-          "ap_clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "ap_rst_n": {
-            "type": "rst",
-            "direction": "I"
-          }
-        },
-        "components": {
-          "MatrixVectorActivation_0": {
-            "vlnv": "xilinx.com:hls:MatrixVectorActivation_0:1.0",
-            "ip_revision": "2113379069",
-            "xci_name": "finn_design_MatrixVectorActivation_0_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_0/MatrixVectorActivation_0"
-          },
-          "MatrixVectorActivation_0_wstrm": {
-            "vlnv": "amd.com:finn:memstream:1.0",
-            "ip_revision": "5",
-            "xci_name": "finn_design_MatrixVectorActivation_0_wstrm_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm",
-            "parameters": {
-              "DEPTH": {
-                "value": "60"
-              },
-              "INIT_FILE": {
-                "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_4w2w0vvu/memblock.dat"
-              },
-              "RAM_STYLE": {
-                "value": "auto"
-              },
-              "WIDTH": {
-                "value": "1280"
-              }
-            },
-            "interface_ports": {
-              "s_axilite": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Slave",
-                "memory_map_ref": "interface_aximm"
-              }
-            }
-          }
-        },
-        "interface_nets": {
-          "MatrixVectorActivation_0_out_V": {
-            "interface_ports": [
-              "out_V",
-              "MatrixVectorActivation_0/out_V"
-            ]
-          },
-          "MatrixVectorActivation_0_wstrm_m_axis_0": {
-            "interface_ports": [
-              "MatrixVectorActivation_0_wstrm/m_axis_0",
-              "MatrixVectorActivation_0/weights_V"
-            ]
-          },
-          "in0_V_1": {
-            "interface_ports": [
-              "in0_V",
-              "MatrixVectorActivation_0/in0_V"
-            ]
-          }
-        },
-        "nets": {
-          "ap_clk_1": {
-            "ports": [
-              "ap_clk",
-              "MatrixVectorActivation_0_wstrm/ap_clk",
-              "MatrixVectorActivation_0/ap_clk"
-            ]
-          },
-          "ap_rst_n_1": {
-            "ports": [
-              "ap_rst_n",
-              "MatrixVectorActivation_0_wstrm/ap_rst_n",
-              "MatrixVectorActivation_0/ap_rst_n"
-            ]
-          }
-        }
+        "vlnv": "xilinx.com:hls:MatrixVectorActivation_0:1.0",
+        "ip_revision": "2113386372",
+        "xci_name": "finn_design_MatrixVectorActivation_0_0",
+        "xci_path": "ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0.xci",
+        "inst_hier_path": "MatrixVectorActivation_0"
       },
       "StreamingDataWidthConverter_rtl_0": {
         "vlnv": "xilinx.com:module_ref:StreamingDataWidthConverter_rtl_0:1.0",
@@ -503,101 +401,11 @@
         }
       },
       "MatrixVectorActivation_1": {
-        "interface_ports": {
-          "out_V": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "in0_V": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "ports": {
-          "ap_clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "ap_rst_n": {
-            "type": "rst",
-            "direction": "I"
-          }
-        },
-        "components": {
-          "MatrixVectorActivation_1": {
-            "vlnv": "xilinx.com:hls:MatrixVectorActivation_1:1.0",
-            "ip_revision": "2113379069",
-            "xci_name": "finn_design_MatrixVectorActivation_1_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_1/MatrixVectorActivation_1"
-          },
-          "MatrixVectorActivation_1_wstrm": {
-            "vlnv": "amd.com:finn:memstream:1.0",
-            "ip_revision": "5",
-            "xci_name": "finn_design_MatrixVectorActivation_1_wstrm_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm",
-            "parameters": {
-              "DEPTH": {
-                "value": "64"
-              },
-              "INIT_FILE": {
-                "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_htc6wh6v/memblock.dat"
-              },
-              "RAM_STYLE": {
-                "value": "auto"
-              },
-              "WIDTH": {
-                "value": "128"
-              }
-            },
-            "interface_ports": {
-              "s_axilite": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Slave",
-                "memory_map_ref": "interface_aximm"
-              }
-            }
-          }
-        },
-        "interface_nets": {
-          "MatrixVectorActivation_1_out_V": {
-            "interface_ports": [
-              "out_V",
-              "MatrixVectorActivation_1/out_V"
-            ]
-          },
-          "MatrixVectorActivation_1_wstrm_m_axis_0": {
-            "interface_ports": [
-              "MatrixVectorActivation_1_wstrm/m_axis_0",
-              "MatrixVectorActivation_1/weights_V"
-            ]
-          },
-          "in0_V_1": {
-            "interface_ports": [
-              "in0_V",
-              "MatrixVectorActivation_1/in0_V"
-            ]
-          }
-        },
-        "nets": {
-          "ap_clk_1": {
-            "ports": [
-              "ap_clk",
-              "MatrixVectorActivation_1_wstrm/ap_clk",
-              "MatrixVectorActivation_1/ap_clk"
-            ]
-          },
-          "ap_rst_n_1": {
-            "ports": [
-              "ap_rst_n",
-              "MatrixVectorActivation_1_wstrm/ap_rst_n",
-              "MatrixVectorActivation_1/ap_rst_n"
-            ]
-          }
-        }
+        "vlnv": "xilinx.com:hls:MatrixVectorActivation_1:1.0",
+        "ip_revision": "2113386371",
+        "xci_name": "finn_design_MatrixVectorActivation_1_0",
+        "xci_path": "ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0.xci",
+        "inst_hier_path": "MatrixVectorActivation_1"
       },
       "StreamingDataWidthConverter_rtl_1": {
         "vlnv": "xilinx.com:module_ref:StreamingDataWidthConverter_rtl_1:1.0",
@@ -774,198 +582,18 @@
         }
       },
       "MatrixVectorActivation_2": {
-        "interface_ports": {
-          "out_V": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "in0_V": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "ports": {
-          "ap_clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "ap_rst_n": {
-            "type": "rst",
-            "direction": "I"
-          }
-        },
-        "components": {
-          "MatrixVectorActivation_2": {
-            "vlnv": "xilinx.com:hls:MatrixVectorActivation_2:1.0",
-            "ip_revision": "2113379069",
-            "xci_name": "finn_design_MatrixVectorActivation_2_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_2/MatrixVectorActivation_2"
-          },
-          "MatrixVectorActivation_2_wstrm": {
-            "vlnv": "amd.com:finn:memstream:1.0",
-            "ip_revision": "5",
-            "xci_name": "finn_design_MatrixVectorActivation_2_wstrm_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm",
-            "parameters": {
-              "DEPTH": {
-                "value": "64"
-              },
-              "INIT_FILE": {
-                "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_ago07qk6/memblock.dat"
-              },
-              "RAM_STYLE": {
-                "value": "auto"
-              },
-              "WIDTH": {
-                "value": "128"
-              }
-            },
-            "interface_ports": {
-              "s_axilite": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Slave",
-                "memory_map_ref": "interface_aximm"
-              }
-            }
-          }
-        },
-        "interface_nets": {
-          "MatrixVectorActivation_2_out_V": {
-            "interface_ports": [
-              "out_V",
-              "MatrixVectorActivation_2/out_V"
-            ]
-          },
-          "MatrixVectorActivation_2_wstrm_m_axis_0": {
-            "interface_ports": [
-              "MatrixVectorActivation_2_wstrm/m_axis_0",
-              "MatrixVectorActivation_2/weights_V"
-            ]
-          },
-          "in0_V_1": {
-            "interface_ports": [
-              "in0_V",
-              "MatrixVectorActivation_2/in0_V"
-            ]
-          }
-        },
-        "nets": {
-          "ap_clk_1": {
-            "ports": [
-              "ap_clk",
-              "MatrixVectorActivation_2_wstrm/ap_clk",
-              "MatrixVectorActivation_2/ap_clk"
-            ]
-          },
-          "ap_rst_n_1": {
-            "ports": [
-              "ap_rst_n",
-              "MatrixVectorActivation_2_wstrm/ap_rst_n",
-              "MatrixVectorActivation_2/ap_rst_n"
-            ]
-          }
-        }
+        "vlnv": "xilinx.com:hls:MatrixVectorActivation_2:1.0",
+        "ip_revision": "2113386371",
+        "xci_name": "finn_design_MatrixVectorActivation_2_0",
+        "xci_path": "ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0.xci",
+        "inst_hier_path": "MatrixVectorActivation_2"
       },
       "MatrixVectorActivation_3": {
-        "interface_ports": {
-          "out_V": {
-            "mode": "Master",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          },
-          "in0_V": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-          }
-        },
-        "ports": {
-          "ap_clk": {
-            "type": "clk",
-            "direction": "I"
-          },
-          "ap_rst_n": {
-            "type": "rst",
-            "direction": "I"
-          }
-        },
-        "components": {
-          "MatrixVectorActivation_3": {
-            "vlnv": "xilinx.com:hls:MatrixVectorActivation_3:1.0",
-            "ip_revision": "2113379069",
-            "xci_name": "finn_design_MatrixVectorActivation_3_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_3/MatrixVectorActivation_3"
-          },
-          "MatrixVectorActivation_3_wstrm": {
-            "vlnv": "amd.com:finn:memstream:1.0",
-            "ip_revision": "5",
-            "xci_name": "finn_design_MatrixVectorActivation_3_wstrm_0",
-            "xci_path": "ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0.xci",
-            "inst_hier_path": "MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm",
-            "parameters": {
-              "DEPTH": {
-                "value": "64"
-              },
-              "INIT_FILE": {
-                "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_of1o2tm2/memblock.dat"
-              },
-              "RAM_STYLE": {
-                "value": "auto"
-              },
-              "WIDTH": {
-                "value": "8"
-              }
-            },
-            "interface_ports": {
-              "s_axilite": {
-                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                "mode": "Slave",
-                "memory_map_ref": "interface_aximm"
-              }
-            }
-          }
-        },
-        "interface_nets": {
-          "MatrixVectorActivation_3_out_V": {
-            "interface_ports": [
-              "out_V",
-              "MatrixVectorActivation_3/out_V"
-            ]
-          },
-          "MatrixVectorActivation_3_wstrm_m_axis_0": {
-            "interface_ports": [
-              "MatrixVectorActivation_3_wstrm/m_axis_0",
-              "MatrixVectorActivation_3/weights_V"
-            ]
-          },
-          "in0_V_1": {
-            "interface_ports": [
-              "in0_V",
-              "MatrixVectorActivation_3/in0_V"
-            ]
-          }
-        },
-        "nets": {
-          "ap_clk_1": {
-            "ports": [
-              "ap_clk",
-              "MatrixVectorActivation_3_wstrm/ap_clk",
-              "MatrixVectorActivation_3/ap_clk"
-            ]
-          },
-          "ap_rst_n_1": {
-            "ports": [
-              "ap_rst_n",
-              "MatrixVectorActivation_3_wstrm/ap_rst_n",
-              "MatrixVectorActivation_3/ap_rst_n"
-            ]
-          }
-        }
+        "vlnv": "xilinx.com:hls:MatrixVectorActivation_3:1.0",
+        "ip_revision": "2113386371",
+        "xci_name": "finn_design_MatrixVectorActivation_3_0",
+        "xci_path": "ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0.xci",
+        "inst_hier_path": "MatrixVectorActivation_3"
       }
     },
     "interface_nets": {

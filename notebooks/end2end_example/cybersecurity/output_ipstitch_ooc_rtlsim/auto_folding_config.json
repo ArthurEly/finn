@@ -5,7 +5,7 @@
     "SIMD": 40,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "decoupled",
+    "mem_mode": "const",
     "runtime_writeable_weights": 0
   },
   "MatrixVectorActivation_1": {
@@ -13,7 +13,7 @@
     "SIMD": 64,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "decoupled",
+    "mem_mode": "const",
     "runtime_writeable_weights": 0
   },
   "MatrixVectorActivation_2": {
@@ -21,7 +21,7 @@
     "SIMD": 64,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "decoupled",
+    "mem_mode": "const",
     "runtime_writeable_weights": 0
   },
   "MatrixVectorActivation_3": {
@@ -29,7 +29,7 @@
     "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "decoupled",
+    "mem_mode": "const",
     "runtime_writeable_weights": 0
   }
 }

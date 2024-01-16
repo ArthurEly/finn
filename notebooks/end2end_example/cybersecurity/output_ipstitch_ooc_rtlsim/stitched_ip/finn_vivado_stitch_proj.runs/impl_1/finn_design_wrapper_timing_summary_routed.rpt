@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Thu Jan 11 17:21:06 2024
+| Date         : Tue Jan 16 17:53:28 2024
 | Host         : pclab211 running 64-bit Ubuntu 23.10
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file finn_design_wrapper_timing_summary_routed.rpt -pb finn_design_wrapper_timing_summary_routed.pb -rpx finn_design_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : finn_design_wrapper
@@ -53,10 +53,10 @@ check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock (7402)
+1. checking no_clock (5008)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (15211)
+4. checking unconstrained_internal_endpoints (10334)
 5. checking no_input_delay (43)
 6. checking no_output_delay (3)
 7. checking multiple_clock (0)
@@ -66,9 +66,9 @@ Table of Contents
 11. checking partial_output_delay (0)
 12. checking latch_loops (0)
 
-1. checking no_clock (7402)
+1. checking no_clock (5008)
 ---------------------------
- There are 7402 register/latch pins with no clock driven by root clock pin: ap_clk (HIGH)
+ There are 5008 register/latch pins with no clock driven by root clock pin: ap_clk (HIGH)
 
 
 2. checking constant_clock (0)
@@ -81,9 +81,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (15211)
+4. checking unconstrained_internal_endpoints (10334)
 ----------------------------------------------------
- There are 15211 pins that are not constrained for maximum delay. (HIGH)
+ There are 10334 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -142,7 +142,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-        inf        0.000                      0                15214          inf        0.000                      0                15214           NA           NA                      NA                    NA  
+        inf        0.000                      0                10337          inf        0.000                      0                10337           NA           NA                      NA                    NA  
 
 
 There are no user specified timing constraints.
@@ -211,301 +211,221 @@ Path Group:  (none)
 From Clock:  
   To Clock:  
 
-Max Delay         15214 Endpoints
-Min Delay         15214 Endpoints
+Max Delay         10337 Endpoints
+Min Delay         10337 Endpoints
 --------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[17]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[12]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.494ns  (logic 1.228ns (5.014%)  route 23.266ns (94.986%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.966ns  (logic 0.940ns (4.708%)  route 19.026ns (95.292%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.539    24.494    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y75          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[17]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.642    19.966    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X54Y52         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[12]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[18]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[16]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.494ns  (logic 1.228ns (5.014%)  route 23.266ns (94.986%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.966ns  (logic 0.940ns (4.708%)  route 19.026ns (95.292%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.539    24.494    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y75          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[18]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.642    19.966    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X54Y52         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[16]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[19]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[17]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.494ns  (logic 1.228ns (5.014%)  route 23.266ns (94.986%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.966ns  (logic 0.940ns (4.708%)  route 19.026ns (95.292%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.539    24.494    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y75          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[19]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.642    19.966    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X54Y52         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[17]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[20]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[4]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.494ns  (logic 1.228ns (5.014%)  route 23.266ns (94.986%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.966ns  (logic 0.940ns (4.708%)  route 19.026ns (95.292%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.539    24.494    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y75          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[20]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.642    19.966    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X54Y52         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[4]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[13]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[2]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.328ns  (logic 1.228ns (5.048%)  route 23.100ns (94.952%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.916ns  (logic 0.940ns (4.720%)  route 18.976ns (95.280%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.373    24.328    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y74          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[13]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.593    19.916    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X55Y51         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[2]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[14]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[3]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.328ns  (logic 1.228ns (5.048%)  route 23.100ns (94.952%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.916ns  (logic 0.940ns (4.720%)  route 18.976ns (95.280%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.373    24.328    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y74          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[14]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.593    19.916    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X55Y51         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[3]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[15]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[6]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.328ns  (logic 1.228ns (5.048%)  route 23.100ns (94.952%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.916ns  (logic 0.940ns (4.720%)  route 18.976ns (95.280%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.373    24.328    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y74          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[15]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.593    19.916    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X55Y51         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[6]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[16]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[13]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.328ns  (logic 1.228ns (5.048%)  route 23.100ns (94.952%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.777ns  (logic 0.940ns (4.753%)  route 18.837ns (95.247%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.373    24.328    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y74          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[16]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.453    19.777    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X55Y52         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[13]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[10]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[5]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.180ns  (logic 1.228ns (5.079%)  route 22.952ns (94.921%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.777ns  (logic 0.940ns (4.753%)  route 18.837ns (95.247%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.225    24.180    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y73          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[10]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.453    19.777    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X55Y52         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[5]/CE
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
+  Source:                 finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[11]/R
+  Destination:            finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[10]/CE
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
-  Data Path Delay:        24.180ns  (logic 1.228ns (5.079%)  route 22.952ns (94.921%))
-  Logic Levels:           7  (FDRE=1 LUT2=2 LUT6=4)
+  Data Path Delay:        19.756ns  (logic 0.940ns (4.758%)  route 18.816ns (95.242%))
+  Logic Levels:           3  (FDRE=1 LUT2=1 LUT5=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y79         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/C
-    SLICE_X28Y79         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg/Q
-                         net (fo=92, routed)          3.041     3.497    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int
-    SLICE_X12Y70         LUT6 (Prop_lut6_I3_O)        0.124     3.621 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11/O
-                         net (fo=1, routed)           0.819     4.439    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_11_n_3
-    SLICE_X12Y72         LUT6 (Prop_lut6_I5_O)        0.124     4.563 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9/O
-                         net (fo=5, routed)           1.183     5.746    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_9_n_3
-    SLICE_X15Y71         LUT6 (Prop_lut6_I4_O)        0.124     5.870 f  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3/O
-                         net (fo=3, routed)           0.926     6.797    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_3_n_3
-    SLICE_X10Y75         LUT6 (Prop_lut6_I2_O)        0.124     6.921 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/icmp_ln249_reg_31555[0]_i_1/O
-                         net (fo=1039, routed)       13.025    19.946    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/ap_condition_92
-    SLICE_X28Y79         LUT2 (Prop_lut2_I0_O)        0.124    20.070 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/i_fu_2812[5]_i_1/O
-                         net (fo=38, routed)          1.733    21.803    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/B_V_data_1_state_reg[0]
-    SLICE_X11Y77         LUT2 (Prop_lut2_I0_O)        0.152    21.955 r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U/sf_fu_2808[31]_i_1/O
-                         net (fo=64, routed)          2.225    24.180    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/flow_control_loop_pipe_sequential_init_U_n_534
-    SLICE_X9Y73          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_30/sf_fu_2808_reg[11]/R
+    SLICE_X13Y86         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/C
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/B_V_data_1_state_reg[1]/Q
+                         net (fo=8, routed)           0.831     1.287    finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/out_V_TREADY_int_regslice
+    SLICE_X12Y86         LUT2 (Prop_lut2_I0_O)        0.153     1.440 r  finn_design_i/MatrixVectorActivation_0/inst/regslice_both_out_V_U/ap_CS_iter3_fsm[1]_i_2/O
+                         net (fo=24, routed)          1.553     2.992    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/grp_Matrix_Vector_Activate_Batch_fu_60_out_V_TREADY
+    SLICE_X10Y82         LUT5 (Prop_lut5_I4_O)        0.331     3.323 r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_0_U/q0[74]_i_1__2/O
+                         net (fo=1110, routed)       16.432    19.756    finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/E[0]
+    SLICE_X53Y53         FDRE                                         r  finn_design_i/MatrixVectorActivation_0/inst/grp_Matrix_Vector_Activate_Batch_fu_60/weights_1_U/q0_reg[10]/CE
   -------------------------------------------------------------------    -------------------
 
 
@@ -515,145 +435,145 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_0_U/q0_reg[2]/C
+  Source:                 finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg_reg[4]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_0_load_reg_4072_reg[2]/D
+  Destination:            finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter4_reg_reg[4]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.192ns  (logic 0.141ns (73.465%)  route 0.051ns (26.535%))
+  Data Path Delay:        0.187ns  (logic 0.128ns (68.397%)  route 0.059ns (31.603%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X32Y98         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_0_U/q0_reg[2]/C
-    SLICE_X32Y98         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_0_U/q0_reg[2]/Q
-                         net (fo=1, routed)           0.051     0.192    finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_0_q0[2]
-    SLICE_X33Y98         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_0_load_reg_4072_reg[2]/D
+    SLICE_X41Y103        FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg_reg[4]/C
+    SLICE_X41Y103        FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg_reg[4]/Q
+                         net (fo=1, routed)           0.059     0.187    finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg[4]
+    SLICE_X40Y103        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter4_reg_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][14]/C
+  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[2][21]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[0][14]/D
+  Destination:            finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][21]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.198ns  (logic 0.128ns (64.569%)  route 0.070ns (35.431%))
+  Data Path Delay:        0.193ns  (logic 0.128ns (66.266%)  route 0.065ns (33.734%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X39Y101        FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][14]/C
-    SLICE_X39Y101        FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][14]/Q
-                         net (fo=3, routed)           0.070     0.198    finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/out_V_TDATA[46]
-    SLICE_X39Y101        FDRE                                         r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[0][14]/D
+    SLICE_X44Y84         FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[2][21]/C
+    SLICE_X44Y84         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[2][21]/Q
+                         net (fo=1, routed)           0.065     0.193    finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/out_V_TDATA[85]
+    SLICE_X44Y84         FDRE                                         r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][21]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[2][31]/C
+  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[0][18]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][31]/D
+  Destination:            finn_design_i/MatrixVectorActivation_1/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[18]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.199ns  (logic 0.128ns (64.409%)  route 0.071ns (35.591%))
+  Data Path Delay:        0.207ns  (logic 0.141ns (68.017%)  route 0.066ns (31.983%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X39Y91         FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[2][31]/C
-    SLICE_X39Y91         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[2][31]/Q
-                         net (fo=3, routed)           0.071     0.199    finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/out_V_TDATA[95]
-    SLICE_X39Y91         FDRE                                         r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[1][31]/D
+    SLICE_X51Y91         FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[0][18]/C
+    SLICE_X51Y91         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[0][18]/Q
+                         net (fo=2, routed)           0.066     0.207    finn_design_i/MatrixVectorActivation_1/inst/regslice_both_in0_V_U/in0_V_TDATA[12]
+    SLICE_X50Y91         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[18]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[22][0]/C
+  Source:                 finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_464_reg[51]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[44]/D
+  Destination:            finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_25_reg_3809_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.223ns  (logic 0.148ns (66.495%)  route 0.075ns (33.505%))
+  Data Path Delay:        0.233ns  (logic 0.128ns (55.026%)  route 0.105ns (44.974%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y105        FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[22][0]/C
-    SLICE_X54Y105        FDRE (Prop_fdre_C_Q)         0.148     0.148 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[22][0]/Q
-                         net (fo=3, routed)           0.075     0.223    finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/in0_V_TDATA[44]
-    SLICE_X55Y105        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[44]/D
+    SLICE_X45Y107        FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_464_reg[51]/C
+    SLICE_X45Y107        FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_464_reg[51]/Q
+                         net (fo=1, routed)           0.105     0.233    finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_464_reg_n_3_[51]
+    SLICE_X42Y107        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_25_reg_3809_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[21][0]/C
+  Source:                 finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[103]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[42]/D
+  Destination:            finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_51_reg_3930_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.223ns  (logic 0.148ns (66.471%)  route 0.075ns (33.529%))
+  Data Path Delay:        0.233ns  (logic 0.128ns (54.965%)  route 0.105ns (45.035%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y105        FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[21][0]/C
-    SLICE_X54Y105        FDRE (Prop_fdre_C_Q)         0.148     0.148 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[21][0]/Q
-                         net (fo=3, routed)           0.075     0.223    finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/in0_V_TDATA[42]
-    SLICE_X55Y105        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[42]/D
+    SLICE_X45Y83         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[103]/C
+    SLICE_X45Y83         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[103]/Q
+                         net (fo=1, routed)           0.105     0.233    finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg_n_3_[103]
+    SLICE_X43Y84         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_51_reg_3930_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[3][9]/C
+  Source:                 finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg_reg[3]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[105]/D
+  Destination:            finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter4_reg_reg[3]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.223ns  (logic 0.148ns (66.369%)  route 0.075ns (33.631%))
+  Data Path Delay:        0.233ns  (logic 0.128ns (54.965%)  route 0.105ns (45.035%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X42Y88         FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[3][9]/C
-    SLICE_X42Y88         FDRE (Prop_fdre_C_Q)         0.148     0.148 r  finn_design_i/StreamingDataWidthConverter_rtl_0/inst/impl/core/genUp.ADat_reg[3][9]/Q
-                         net (fo=3, routed)           0.075     0.223    finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/regslice_both_in0_V_U/in0_V_TDATA[105]
-    SLICE_X43Y88         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[105]/D
+    SLICE_X41Y102        FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg_reg[3]/C
+    SLICE_X41Y102        FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg_reg[3]/Q
+                         net (fo=1, routed)           0.105     0.233    finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter3_reg[3]
+    SLICE_X39Y103        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_1_load_reg_4189_pp0_iter4_reg_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[21][1]/C
+  Source:                 finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_0_load_reg_4184_reg[0]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[43]/D
+  Destination:            finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_0_load_reg_4184_pp0_iter3_reg_reg[0]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.224ns  (logic 0.148ns (66.156%)  route 0.076ns (33.844%))
+  Data Path Delay:        0.235ns  (logic 0.141ns (59.956%)  route 0.094ns (40.044%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y105        FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[21][1]/C
-    SLICE_X54Y105        FDRE (Prop_fdre_C_Q)         0.148     0.148 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[21][1]/Q
-                         net (fo=3, routed)           0.076     0.224    finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/in0_V_TDATA[43]
-    SLICE_X55Y105        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[43]/D
+    SLICE_X41Y101        FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_0_load_reg_4184_reg[0]/C
+    SLICE_X41Y101        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_0_load_reg_4184_reg[0]/Q
+                         net (fo=1, routed)           0.094     0.235    finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_0_load_reg_4184[0]
+    SLICE_X39Y101        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_0_load_reg_4184_pp0_iter3_reg_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[20][0]/C
+  Source:                 finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_2_load_reg_4180_pp0_iter3_reg_reg[1]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[40]/D
+  Destination:            finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_2_load_reg_4180_pp0_iter4_reg_reg[1]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.227ns  (logic 0.164ns (72.151%)  route 0.063ns (27.849%))
+  Data Path Delay:        0.238ns  (logic 0.128ns (53.674%)  route 0.110ns (46.326%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y105        FDRE                         0.000     0.000 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[20][0]/C
-    SLICE_X54Y105        FDRE (Prop_fdre_C_Q)         0.164     0.164 r  finn_design_i/StreamingDataWidthConverter_rtl_1/inst/impl/core/genUp.ADat_reg[20][0]/Q
-                         net (fo=3, routed)           0.063     0.227    finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/in0_V_TDATA[40]
-    SLICE_X55Y105        FDRE                                         r  finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2/inst/regslice_both_in0_V_U/B_V_data_1_payload_B_reg[40]/D
+    SLICE_X43Y92         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_2_load_reg_4180_pp0_iter3_reg_reg[1]/C
+    SLICE_X43Y92         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_2_load_reg_4180_pp0_iter3_reg_reg[1]/Q
+                         net (fo=1, routed)           0.110     0.238    finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_2_load_reg_4180_pp0_iter3_reg[1]
+    SLICE_X44Y92         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/p_ZL7threshs_2_load_reg_4180_pp0_iter4_reg_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/StreamingFIFO_0/inst/StreamingFIFO_0_StreamingFIFO_0/srlo_reg[34]/C
+  Source:                 finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[102]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/regslice_both_in0_V_U/B_V_data_1_payload_A_reg[34]/D
+  Destination:            finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_51_reg_3930_reg[0]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.240ns  (logic 0.141ns (58.691%)  route 0.099ns (41.309%))
@@ -661,27 +581,27 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X3Y78          FDRE                         0.000     0.000 r  finn_design_i/StreamingFIFO_0/inst/StreamingFIFO_0_StreamingFIFO_0/srlo_reg[34]/C
-    SLICE_X3Y78          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/StreamingFIFO_0/inst/StreamingFIFO_0_StreamingFIFO_0/srlo_reg[34]/Q
-                         net (fo=2, routed)           0.099     0.240    finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/regslice_both_in0_V_U/in0_V_TDATA[34]
-    SLICE_X0Y77          FDRE                                         r  finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0/inst/regslice_both_in0_V_U/B_V_data_1_payload_A_reg[34]/D
+    SLICE_X45Y83         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[102]/C
+    SLICE_X45Y83         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[102]/Q
+                         net (fo=1, routed)           0.099     0.240    finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg_n_3_[102]
+    SLICE_X43Y84         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_51_reg_3930_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_1_load_reg_4077_reg[5]/C
+  Source:                 finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[18]/C
                             (rising edge-triggered cell FDRE)
-  Destination:            finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_1_load_reg_4077_pp0_iter3_reg_reg[5]/D
+  Destination:            finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_9_reg_3720_reg[0]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
-  Data Path Delay:        0.241ns  (logic 0.141ns (58.393%)  route 0.100ns (41.607%))
+  Data Path Delay:        0.240ns  (logic 0.141ns (58.691%)  route 0.099ns (41.309%))
   Logic Levels:           1  (FDRE=1)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y100        FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_1_load_reg_4077_reg[5]/C
-    SLICE_X31Y100        FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_1_load_reg_4077_reg[5]/Q
-                         net (fo=1, routed)           0.100     0.241    finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_1_load_reg_4077[5]
-    SLICE_X33Y99         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Stream_Batch_fu_36/p_ZL7threshs_1_load_reg_4077_pp0_iter3_reg_reg[5]/D
+    SLICE_X49Y91         FDRE                         0.000     0.000 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[18]/C
+    SLICE_X49Y91         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg[18]/Q
+                         net (fo=1, routed)           0.099     0.240    finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/arrayidx3_0_0_0_load22_fu_456_reg_n_3_[18]
+    SLICE_X47Y90         FDRE                                         r  finn_design_i/MatrixVectorActivation_1/inst/grp_Matrix_Vector_Activate_Batch_fu_36/r_9_reg_3720_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 
