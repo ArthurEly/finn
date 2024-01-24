@@ -1,0 +1,85 @@
+`timescale 1 ps / 1 ps
+
+module testbench;
+
+  reg ap_clk;
+  reg ap_rst_n;
+  wire [7:0] m_axis_0_tdata;
+  reg m_axis_0_tready;
+  wire m_axis_0_tvalid;
+  reg [39:0] s_axis_0_tdata;
+  wire s_axis_0_tready;
+  reg s_axis_0_tvalid;
+
+  finn_design_wrapper dut (
+    .ap_clk(ap_clk),
+    .ap_rst_n(ap_rst_n),
+    .m_axis_0_tdata(m_axis_0_tdata),
+    .m_axis_0_tready(m_axis_0_tready),
+    .m_axis_0_tvalid(m_axis_0_tvalid),
+    .s_axis_0_tdata(s_axis_0_tdata),
+    .s_axis_0_tready(s_axis_0_tready),
+    .s_axis_0_tvalid(s_axis_0_tvalid)
+  );
+
+  // Clock generation
+  initial begin
+    ap_clk = 0;
+    forever #5 ap_clk = ~ap_clk;
+  end
+
+  // Initial stimulus
+  initial begin
+    // Apply reset
+    ap_rst_n = 0;
+    s_axis_0_tdata = 40'b1101110110100000000000000000000000000000;
+    s_axis_0_tvalid = 1;
+    m_axis_0_tready = 1;
+    #10 ap_rst_n = 1;
+    
+    #10 s_axis_0_tdata = 40'b0000000000000000001000000000000101000001;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000011111000000000000;
+    #10 s_axis_0_tdata = 40'b1111111101010011010001011010111000000000;
+    #10 s_axis_0_tdata = 40'b1111100000001001011110010000000000000011;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000011000;
+    #10 s_axis_0_tdata = 40'b1000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000110;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000011111000000000000;
+    #10 s_axis_0_tdata = 40'b0001000000100100000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0010000100000000000000000100000100000100;
+    #10 
+    s_axis_0_tdata = 40'b00000000000000000000000000000000000000000;
+    s_axis_0_tvalid = 0;
+    m_axis_0_tready = 0;
+    // Provide clock for some cycles 
+    #3000
+    s_axis_0_tvalid = 1;
+    m_axis_0_tready = 1;
+    s_axis_0_tdata = 40'b1101110000100000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000001000000000000101000001;
+    #10 s_axis_0_tdata = 40'b0000000000000000000010001110110000000000;
+    #10 s_axis_0_tdata = 40'b1111110011101011111111011000010100000000;
+    #10 s_axis_0_tdata = 40'b1010101011000001011000001100000000000011;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000010000;
+    #10 s_axis_0_tdata = 40'b1000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0000000000000000000010001110110000000000;
+    #10 s_axis_0_tdata = 40'b0001000000100100000000000000000000000000;
+    #10 s_axis_0_tdata = 40'b0010000100000000000000000100000100000100;
+    s_axis_0_tdata = 40'b00000000000000000000000000000000000000000;
+    s_axis_0_tvalid = 0;
+    m_axis_0_tready = 0;
+    
+    #2000 
+    $finish;
+  end
+
+endmodule

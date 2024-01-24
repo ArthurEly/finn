@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-18005-pclab211/incrSyn
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-435144-pclab211/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {[BD 41-1753]}  -suppress 
@@ -88,13 +88,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
   /home/afely/Desktop/finn-notebook/finn-rtllib/memstream
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_ghub96xw/project_StreamingFIFO_0/sol1/impl/verilog
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_8rucunmd/project_MatrixVectorActivation_0/sol1/impl/ip
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_yu_3wk35/project_MatrixVectorActivation_1/sol1/impl/ip
-  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_maa29kdw/project_MatrixVectorActivation_2/sol1/impl/ip
-  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_x_cs68yd/project_MatrixVectorActivation_3/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_8t3x334l/project_StreamingFIFO_0/sol1/impl/verilog
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_f0j6xz0m/project_MatrixVectorActivation_0/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_je30yj1r
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_jg5_oz9e/project_MatrixVectorActivation_1/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_9juxsk5g
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/project_MatrixVectorActivation_2/sol1/impl/ip
+  /tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_s3xbtu86/project_MatrixVectorActivation_3/sol1/impl/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.cache/ip [current_project]

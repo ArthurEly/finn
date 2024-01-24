@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1705438269">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1706021885">
   <File Type="VDS-TIMINGSUMMARY" Name="finn_design_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="finn_design_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="finn_design_wrapper_utilization_synth.pb"/>
@@ -11,28 +11,28 @@
   <File Type="PA-TCL" Name="finn_design_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc.sv">
+    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_9juxsk5g/dwc.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/dwc_axi.sv">
+    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_9juxsk5g/dwc_axi.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf/StreamingDataWidthConverter_rtl_0.v">
+    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_je30yj1r/StreamingDataWidthConverter_rtl_0.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_ugsgjqvh/StreamingDataWidthConverter_rtl_1.v">
+    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_9juxsk5g/StreamingDataWidthConverter_rtl_1.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -53,7 +53,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf/dwc_axi.sv">
+    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_je30yj1r/dwc_axi.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -61,7 +61,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_1g0_79nf/dwc.sv">
+    <File Path="$PPRDIR/../../../../../../../../../tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_je30yj1r/dwc.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -90,11 +90,15 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="finn_design_StreamingDataWidthConverter_rtl_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_0_wstrm_0"/>
   <BlockFileSet Type="BlockSrcs" Name="finn_design_StreamingDataWidthConverter_rtl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="finn_design_StreamingFIFO_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_1_wstrm_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_3_wstrm_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_StreamingDataWidthConverter_rtl_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_2_wstrm_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finn_design_MatrixVectorActivation_3_0"/>
 </GenRun>

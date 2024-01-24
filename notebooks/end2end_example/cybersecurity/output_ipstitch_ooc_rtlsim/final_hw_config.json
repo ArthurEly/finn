@@ -16,7 +16,7 @@
     "SIMD": 40,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "const",
+    "mem_mode": "decoupled",
     "runtime_writeable_weights": 0,
     "inFIFODepths": [
       32
@@ -38,7 +38,7 @@
     "SIMD": 64,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "const",
+    "mem_mode": "decoupled",
     "runtime_writeable_weights": 0,
     "inFIFODepths": [
       0
@@ -60,7 +60,7 @@
     "SIMD": 64,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "const",
+    "mem_mode": "decoupled",
     "runtime_writeable_weights": 0,
     "inFIFODepths": [
       0
@@ -74,7 +74,7 @@
     "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
-    "mem_mode": "const",
+    "mem_mode": "decoupled",
     "runtime_writeable_weights": 0,
     "inFIFODepths": [
       0

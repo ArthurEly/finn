@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Tue Jan 16 17:52:51 2024
+| Date         : Tue Jan 23 12:00:26 2024
 | Host         : pclab211 running 64-bit Ubuntu 23.10
 | Command      : report_utilization -file finn_design_wrapper_utilization_placed.rpt -pb finn_design_wrapper_utilization_placed.pb
 | Design       : finn_design_wrapper
@@ -32,16 +32,16 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs                 | 5567 |     0 |          0 |     63400 |  8.78 |
-|   LUT as Logic             | 5527 |     0 |          0 |     63400 |  8.72 |
-|   LUT as Memory            |   40 |     0 |          0 |     19000 |  0.21 |
-|     LUT as Distributed RAM |    0 |     0 |            |           |       |
+| Slice LUTs                 | 6822 |     0 |          0 |     63400 | 10.76 |
+|   LUT as Logic             | 6780 |     0 |          0 |     63400 | 10.69 |
+|   LUT as Memory            |   42 |     0 |          0 |     19000 |  0.22 |
+|     LUT as Distributed RAM |    2 |     0 |            |           |       |
 |     LUT as Shift Register  |   40 |     0 |            |           |       |
-| Slice Registers            | 4968 |     0 |          0 |    126800 |  3.92 |
-|   Register as Flip Flop    | 4968 |     0 |          0 |    126800 |  3.92 |
+| Slice Registers            | 7316 |     0 |          0 |    126800 |  5.77 |
+|   Register as Flip Flop    | 7316 |     0 |          0 |    126800 |  5.77 |
 |   Register as Latch        |    0 |     0 |          0 |    126800 |  0.00 |
-| F7 Muxes                   |   90 |     0 |          0 |     31700 |  0.28 |
-| F8 Muxes                   |    4 |     0 |          0 |     15850 |  0.03 |
+| F7 Muxes                   |   80 |     0 |          0 |     31700 |  0.25 |
+| F8 Muxes                   |   26 |     0 |          0 |     15850 |  0.16 |
 +----------------------------+------+-------+------------+-----------+-------+
 * Warning! LUT value is adjusted to account for LUT combining.
 
@@ -60,8 +60,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 17    |          Yes |         Set |            - |
-| 4951  |          Yes |       Reset |            - |
+| 15    |          Yes |         Set |            - |
+| 7301  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -71,25 +71,28 @@ Table of Contents
 +--------------------------------------------+------+-------+------------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+------+-------+------------+-----------+-------+
-| Slice                                      | 2049 |     0 |          0 |     15850 | 12.93 |
-|   SLICEL                                   | 1411 |     0 |            |           |       |
-|   SLICEM                                   |  638 |     0 |            |           |       |
-| LUT as Logic                               | 5527 |     0 |          0 |     63400 |  8.72 |
+| Slice                                      | 2873 |     0 |          0 |     15850 | 18.13 |
+|   SLICEL                                   | 1900 |     0 |            |           |       |
+|   SLICEM                                   |  973 |     0 |            |           |       |
+| LUT as Logic                               | 6780 |     0 |          0 |     63400 | 10.69 |
 |   using O5 output only                     |    0 |       |            |           |       |
-|   using O6 output only                     | 4242 |       |            |           |       |
-|   using O5 and O6                          | 1285 |       |            |           |       |
-| LUT as Memory                              |   40 |     0 |          0 |     19000 |  0.21 |
-|   LUT as Distributed RAM                   |    0 |     0 |            |           |       |
+|   using O6 output only                     | 4766 |       |            |           |       |
+|   using O5 and O6                          | 2014 |       |            |           |       |
+| LUT as Memory                              |   42 |     0 |          0 |     19000 |  0.22 |
+|   LUT as Distributed RAM                   |    2 |     0 |            |           |       |
+|     using O5 output only                   |    0 |       |            |           |       |
+|     using O6 output only                   |    2 |       |            |           |       |
+|     using O5 and O6                        |    0 |       |            |           |       |
 |   LUT as Shift Register                    |   40 |     0 |            |           |       |
 |     using O5 output only                   |    0 |       |            |           |       |
 |     using O6 output only                   |   40 |       |            |           |       |
 |     using O5 and O6                        |    0 |       |            |           |       |
-| Slice Registers                            | 4968 |     0 |          0 |    126800 |  3.92 |
-|   Register driven from within the Slice    | 3021 |       |            |           |       |
-|   Register driven from outside the Slice   | 1947 |       |            |           |       |
-|     LUT in front of the register is unused | 1287 |       |            |           |       |
-|     LUT in front of the register is used   |  660 |       |            |           |       |
-| Unique Control Sets                        |   85 |       |          0 |     15850 |  0.54 |
+| Slice Registers                            | 7316 |     0 |          0 |    126800 |  5.77 |
+|   Register driven from within the Slice    | 2353 |       |            |           |       |
+|   Register driven from outside the Slice   | 4963 |       |            |           |       |
+|     LUT in front of the register is unused | 2650 |       |            |           |       |
+|     LUT in front of the register is used   | 2313 |       |            |           |       |
+| Unique Control Sets                        |   74 |       |          0 |     15850 |  0.47 |
 +--------------------------------------------+------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
 
@@ -97,13 +100,14 @@ Table of Contents
 3. Memory
 ---------
 
-+----------------+------+-------+------------+-----------+-------+
-|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
-+----------------+------+-------+------------+-----------+-------+
-| Block RAM Tile |    0 |     0 |          0 |       135 |  0.00 |
-|   RAMB36/FIFO* |    0 |     0 |          0 |       135 |  0.00 |
-|   RAMB18       |    0 |     0 |          0 |       270 |  0.00 |
-+----------------+------+-------+------------+-----------+-------+
++-------------------+------+-------+------------+-----------+-------+
+|     Site Type     | Used | Fixed | Prohibited | Available | Util% |
++-------------------+------+-------+------------+-----------+-------+
+| Block RAM Tile    |   22 |     0 |          0 |       135 | 16.30 |
+|   RAMB36/FIFO*    |   22 |     0 |          0 |       135 | 16.30 |
+|     RAMB36E1 only |   22 |       |            |           |       |
+|   RAMB18          |    0 |     0 |          0 |       270 |  0.00 |
++-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
@@ -181,20 +185,22 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 4951 |        Flop & Latch |
-| LUT6     | 2768 |                 LUT |
-| LUT3     | 1652 |                 LUT |
-| LUT4     | 1075 |                 LUT |
-| LUT5     |  916 |                 LUT |
-| LUT2     |  348 |                 LUT |
-| CARRY4   |  310 |          CarryLogic |
-| MUXF7    |   90 |               MuxFx |
-| LUT1     |   53 |                 LUT |
+| FDRE     | 7301 |        Flop & Latch |
+| LUT6     | 2995 |                 LUT |
+| LUT3     | 2769 |                 LUT |
+| LUT5     | 1566 |                 LUT |
+| LUT4     | 1105 |                 LUT |
+| CARRY4   |  302 |          CarryLogic |
+| LUT2     |  291 |                 LUT |
+| MUXF7    |   80 |               MuxFx |
+| LUT1     |   68 |                 LUT |
 | IBUF     |   44 |                  IO |
 | SRLC32E  |   40 |  Distributed Memory |
-| FDSE     |   17 |        Flop & Latch |
+| MUXF8    |   26 |               MuxFx |
+| RAMB36E1 |   22 |        Block Memory |
+| FDSE     |   15 |        Flop & Latch |
 | OBUF     |   10 |                  IO |
-| MUXF8    |    4 |               MuxFx |
+| RAMS64E  |    2 |  Distributed Memory |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
@@ -216,9 +222,13 @@ Table of Contents
 | finn_design_StreamingFIFO_0_0                   |    1 |
 | finn_design_StreamingDataWidthConverter_rtl_1_0 |    1 |
 | finn_design_StreamingDataWidthConverter_rtl_0_0 |    1 |
+| finn_design_MatrixVectorActivation_3_wstrm_0    |    1 |
 | finn_design_MatrixVectorActivation_3_0          |    1 |
+| finn_design_MatrixVectorActivation_2_wstrm_0    |    1 |
 | finn_design_MatrixVectorActivation_2_0          |    1 |
+| finn_design_MatrixVectorActivation_1_wstrm_0    |    1 |
 | finn_design_MatrixVectorActivation_1_0          |    1 |
+| finn_design_MatrixVectorActivation_0_wstrm_0    |    1 |
 | finn_design_MatrixVectorActivation_0_0          |    1 |
 +-------------------------------------------------+------+
 

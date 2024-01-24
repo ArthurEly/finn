@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue Jan 16 17:48:52 2024
-# Process ID: 22096
+# Start of session at: Tue Jan 23 11:55:54 2024
+# Process ID: 444805
 # Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_1_0_synth_1
 # Command line: vivado -log finn_design_StreamingDataWidthConverter_rtl_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_StreamingDataWidthConverter_rtl_1_0.tcl
 # Log file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_1_0_synth_1/finn_design_StreamingDataWidthConverter_rtl_1_0.vds
 # Journal file: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingDataWidthConverter_rtl_1_0_synth_1/vivado.jou
-# Running On: pclab211, OS: Linux, CPU Frequency: 3391.026 MHz, CPU Physical cores: 4, Host memory: 16626 MB
+# Running On: pclab211, OS: Linux, CPU Frequency: 3253.799 MHz, CPU Physical cores: 4, Host memory: 16626 MB
 #-----------------------------------------------------------
 source finn_design_StreamingDataWidthConverter_rtl_1_0.tcl -notrace

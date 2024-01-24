@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:MatrixVectorActivation_0:1.0
-// IP Revision: 2113386372
+// IP Revision: 2113396066
 
 `timescale 1ns/1ps
 
@@ -60,12 +60,15 @@ module finn_design_MatrixVectorActivation_0_0 (
   in0_V_TVALID,
   in0_V_TREADY,
   in0_V_TDATA,
+  weights_V_TVALID,
+  weights_V_TREADY,
+  weights_V_TDATA,
   out_V_TVALID,
   out_V_TREADY,
   out_V_TDATA
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in0_V:out_V, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF in0_V:weights_V:out_V, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -78,6 +81,13 @@ output wire in0_V_TREADY;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in0_V, TDATA_NUM_BYTES 5, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TDATA" *)
 input wire [39 : 0] in0_V_TDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TVALID" *)
+input wire weights_V_TVALID;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TREADY" *)
+output wire weights_V_TREADY;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME weights_V, TDATA_NUM_BYTES 160, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TDATA" *)
+input wire [1279 : 0] weights_V_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TVALID" *)
 output wire out_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TREADY" *)
@@ -95,6 +105,9 @@ output wire [31 : 0] out_V_TDATA;
     .in0_V_TVALID(in0_V_TVALID),
     .in0_V_TREADY(in0_V_TREADY),
     .in0_V_TDATA(in0_V_TDATA),
+    .weights_V_TVALID(weights_V_TVALID),
+    .weights_V_TREADY(weights_V_TREADY),
+    .weights_V_TDATA(weights_V_TDATA),
     .out_V_TVALID(out_V_TVALID),
     .out_V_TREADY(out_V_TREADY),
     .out_V_TDATA(out_V_TDATA)
