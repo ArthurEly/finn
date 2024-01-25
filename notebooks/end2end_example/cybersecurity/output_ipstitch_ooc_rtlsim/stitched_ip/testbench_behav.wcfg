@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0 ps"></ZoomStartTime>
-      <ZoomEndTime time="10 ps"></ZoomEndTime>
+      <ZoomEndTime time="135 ps"></ZoomEndTime>
       <Cursor1Time time="10 ps"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="224"></NameColumnWidth>
-      <ValueColumnWidth column_width="313"></ValueColumnWidth>
+      <ValueColumnWidth column_width="309"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
    <wvobject type="logic" fp_name="/testbench/ap_clk">
@@ -27,6 +27,18 @@
    <wvobject type="logic" fp_name="/testbench/ap_rst_n">
       <obj_property name="ElementShortName">ap_rst_n</obj_property>
       <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m_axis_0_tdata">
+      <obj_property name="ElementShortName">m_axis_0_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/m_axis_0_tready">
+      <obj_property name="ElementShortName">m_axis_0_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/testbench/m_axis_0_tvalid">
+      <obj_property name="ElementShortName">m_axis_0_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_0_tvalid</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/testbench/s_axis_0_tdata">
       <obj_property name="ElementShortName">s_axis_0_tdata[39:0]</obj_property>
@@ -40,17 +52,5 @@
    <wvobject type="logic" fp_name="/testbench/s_axis_0_tvalid">
       <obj_property name="ElementShortName">s_axis_0_tvalid</obj_property>
       <obj_property name="ObjectShortName">s_axis_0_tvalid</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/testbench/m_axis_0_tdata">
-      <obj_property name="ElementShortName">m_axis_0_tdata[7:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_0_tdata[7:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/testbench/m_axis_0_tready">
-      <obj_property name="ElementShortName">m_axis_0_tready</obj_property>
-      <obj_property name="ObjectShortName">m_axis_0_tready</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/testbench/m_axis_0_tvalid">
-      <obj_property name="ElementShortName">m_axis_0_tvalid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_0_tvalid</obj_property>
    </wvobject>
 </wave_config>
