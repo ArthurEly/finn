@@ -1,11 +1,11 @@
 {
-  "N_IN_TXNS": 15000,
-  "N_OUT_TXNS": 1000,
-  "cycles": 72136,
-  "N": 1000,
-  "latency_cycles": 208,
-  "runtime[ms]": 0.72136,
-  "throughput[images/s]": 1386270.3781745592,
+  "N_IN_TXNS": 6000000,
+  "N_OUT_TXNS": 10000,
+  "cycles": 384018083,
+  "N": 10000,
+  "latency_cycles": 46484,
+  "runtime[ms]": 3840.1808300000002,
+  "throughput[images/s]": 2604.0440392490577,
   "fclk[mhz]": 100.0,
-  "stable_throughput[images/s]": 1390279.1680569455
+  "stable_throughput[images/s]": 2604.3592875211584
 }

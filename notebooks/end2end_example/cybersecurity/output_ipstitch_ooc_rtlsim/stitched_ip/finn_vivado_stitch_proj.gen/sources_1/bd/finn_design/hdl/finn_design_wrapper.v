@@ -2,8 +2,8 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Tue Jan 23 13:48:35 2024
-//Host        : finn_dev_afely running 64-bit Ubuntu 22.04.1 LTS
+//Date        : Fri Jan 26 19:08:41 2024
+//Host        : finn_dev_finn running 64-bit Ubuntu 22.04.1 LTS
 //Command     : generate_target finn_design_wrapper.bd
 //Design      : finn_design_wrapper
 //Purpose     : IP block netlist
@@ -24,7 +24,7 @@ module finn_design_wrapper
   output [7:0]m_axis_0_tdata;
   input m_axis_0_tready;
   output m_axis_0_tvalid;
-  input [39:0]s_axis_0_tdata;
+  input [7:0]s_axis_0_tdata;
   output s_axis_0_tready;
   input s_axis_0_tvalid;
 
@@ -33,7 +33,7 @@ module finn_design_wrapper
   wire [7:0]m_axis_0_tdata;
   wire m_axis_0_tready;
   wire m_axis_0_tvalid;
-  wire [39:0]s_axis_0_tdata;
+  wire [7:0]s_axis_0_tdata;
   wire s_axis_0_tready;
   wire s_axis_0_tvalid;
 

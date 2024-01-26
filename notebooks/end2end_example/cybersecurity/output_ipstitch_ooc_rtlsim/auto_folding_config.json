@@ -1,8 +1,8 @@
 {
   "Defaults": {},
   "MatrixVectorActivation_0": {
-    "PE": 16,
-    "SIMD": 40,
+    "PE": 1,
+    "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
     "mem_mode": "decoupled",
@@ -10,7 +10,7 @@
   },
   "MatrixVectorActivation_1": {
     "PE": 1,
-    "SIMD": 64,
+    "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
     "mem_mode": "decoupled",
@@ -18,7 +18,7 @@
   },
   "MatrixVectorActivation_2": {
     "PE": 1,
-    "SIMD": 64,
+    "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
     "mem_mode": "decoupled",

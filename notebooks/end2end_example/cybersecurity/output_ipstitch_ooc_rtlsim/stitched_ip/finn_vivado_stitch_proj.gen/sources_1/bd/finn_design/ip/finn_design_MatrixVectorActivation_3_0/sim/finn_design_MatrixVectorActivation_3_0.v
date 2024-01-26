@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:MatrixVectorActivation_3:1.0
-// IP Revision: 2113396066
+// IP Revision: 2113400702
 
 `timescale 1ns/1ps
 

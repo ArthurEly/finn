@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:MatrixVectorActivation_2:1.0
-// IP Revision: 2113396066
+// IP Revision: 2113400702
 
 `timescale 1ns/1ps
 
@@ -78,16 +78,16 @@ input wire ap_rst_n;
 input wire in0_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TREADY" *)
 output wire in0_V_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in0_V, TDATA_NUM_BYTES 16, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in0_V, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TDATA" *)
-input wire [127 : 0] in0_V_TDATA;
+input wire [7 : 0] in0_V_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TVALID" *)
 input wire weights_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TREADY" *)
 output wire weights_V_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME weights_V, TDATA_NUM_BYTES 16, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME weights_V, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TDATA" *)
-input wire [127 : 0] weights_V_TDATA;
+input wire [7 : 0] weights_V_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TVALID" *)
 output wire out_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TREADY" *)

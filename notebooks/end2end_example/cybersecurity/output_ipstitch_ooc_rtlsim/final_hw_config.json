@@ -2,7 +2,7 @@
   "Defaults": {},
   "StreamingFIFO_0": {
     "ram_style": "auto",
-    "depth": 32,
+    "depth": 600,
     "impl_style": "rtl",
     "inFIFODepths": [
       0
@@ -12,8 +12,33 @@
     ]
   },
   "MatrixVectorActivation_0": {
-    "PE": 16,
-    "SIMD": 40,
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      600
+    ],
+    "outFIFODepths": [
+      32
+    ]
+  },
+  "StreamingFIFO_1": {
+    "ram_style": "auto",
+    "depth": 32,
+    "impl_style": "rtl",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "MatrixVectorActivation_1": {
+    "PE": 1,
+    "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
     "mem_mode": "decoupled",
@@ -25,39 +50,9 @@
       0
     ]
   },
-  "StreamingDataWidthConverter_rtl_0": {
-    "inFIFODepths": [
-      0
-    ],
-    "outFIFODepths": [
-      0
-    ]
-  },
-  "MatrixVectorActivation_1": {
-    "PE": 1,
-    "SIMD": 64,
-    "ram_style": "auto",
-    "resType": "lut",
-    "mem_mode": "decoupled",
-    "runtime_writeable_weights": 0,
-    "inFIFODepths": [
-      0
-    ],
-    "outFIFODepths": [
-      0
-    ]
-  },
-  "StreamingDataWidthConverter_rtl_1": {
-    "inFIFODepths": [
-      0
-    ],
-    "outFIFODepths": [
-      0
-    ]
-  },
   "MatrixVectorActivation_2": {
     "PE": 1,
-    "SIMD": 64,
+    "SIMD": 1,
     "ram_style": "auto",
     "resType": "lut",
     "mem_mode": "decoupled",

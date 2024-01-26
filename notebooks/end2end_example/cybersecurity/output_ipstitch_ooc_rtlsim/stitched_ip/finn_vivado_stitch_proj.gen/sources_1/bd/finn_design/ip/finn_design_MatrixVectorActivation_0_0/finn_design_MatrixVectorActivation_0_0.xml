@@ -150,7 +150,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.IN0_V.TDATA_NUM_BYTES">5</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.IN0_V.TDATA_NUM_BYTES">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
@@ -286,7 +286,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.WEIGHTS_V.TDATA_NUM_BYTES">160</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.WEIGHTS_V.TDATA_NUM_BYTES">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
@@ -422,7 +422,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_V.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.OUT_V.TDATA_NUM_BYTES">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
@@ -528,31 +528,13 @@
   <spirit:model>
     <spirit:views>
       <spirit:view>
-        <spirit:name>xilinx_externalfiles</spirit:name>
-        <spirit:displayName>External Files</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 23 14:49:31 UTC 2024</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:caa68180</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
         <spirit:name>xilinx_synthesisconstraints</spirit:name>
         <spirit:displayName>Synthesis Constraints</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:caa68180</spirit:value>
+            <spirit:value>9:f507f090</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -568,11 +550,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+            <spirit:value>Fri Jan 26 19:08:41 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cac7c2a1</spirit:value>
+            <spirit:value>9:14d22a61</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -588,11 +570,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+            <spirit:value>Fri Jan 26 19:08:41 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:cac7c2a1</spirit:value>
+            <spirit:value>9:14d22a61</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -608,11 +590,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+            <spirit:value>Fri Jan 26 19:08:41 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:caa68180</spirit:value>
+            <spirit:value>9:f507f090</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -628,11 +610,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+            <spirit:value>Fri Jan 26 19:08:41 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:caa68180</spirit:value>
+            <spirit:value>9:f507f090</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -695,7 +677,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">39</spirit:left>
+            <spirit:left spirit:format="long">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -738,7 +720,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">1279</spirit:left>
+            <spirit:left spirit:format="long">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -781,7 +763,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -797,100 +779,51 @@
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
-      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>finn_design_MatrixVectorActivation_0_0.dcp</spirit:name>
-        <spirit:userFileType>dcp</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>finn_design_MatrixVectorActivation_0_0_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>finn_design_MatrixVectorActivation_0_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>finn_design_MatrixVectorActivation_0_0_sim_netlist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>finn_design_MatrixVectorActivation_0_0_sim_netlist.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_no_ap_cont.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v</spirit:name>
+        <spirit:name>hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_0_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_0_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_1_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_1_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_2_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_2_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_sparsemux_1201_10_1_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -911,51 +844,43 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_no_ap_cont.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v</spirit:name>
+        <spirit:name>hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_0_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_0_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_1_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_1_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_2_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_p_ZL7threshs_2_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0_sparsemux_1201_10_1_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
+        <spirit:name>../../ipshared/26ee/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1009,7 +934,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">66</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">38405</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1034,7 +959,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Matrixvectoractivation_0</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113396066</xilinx:coreRevision>
+      <xilinx:coreRevision>2113400705</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1090,10 +1015,10 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="eb358973"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8d000046"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="7544761e"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="b834e4dd"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="73ace6cb"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ffeebf27"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="41c9dd34"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="16e04b54"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

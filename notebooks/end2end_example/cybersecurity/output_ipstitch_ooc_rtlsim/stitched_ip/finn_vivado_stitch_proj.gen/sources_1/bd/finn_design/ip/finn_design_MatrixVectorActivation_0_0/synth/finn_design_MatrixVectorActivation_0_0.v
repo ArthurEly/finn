@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:MatrixVectorActivation_0:1.0
-// IP Revision: 2113396066
+// IP Revision: 2113400705
 
 (* X_CORE_INFO = "MatrixVectorActivation_0,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "finn_design_MatrixVectorActivation_0_0,MatrixVectorActivation_0,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_MatrixVectorActivation_0_0,MatrixVectorActivation_0,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=MatrixVectorActivation_0,x_ipVersion=1.0,x_ipCoreRevision=2113396066,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "finn_design_MatrixVectorActivation_0_0,MatrixVectorActivation_0,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=MatrixVectorActivation_0,x_ipVersion=1.0,x_ipCoreRevision=2113400705,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module finn_design_MatrixVectorActivation_0_0 (
@@ -79,23 +79,23 @@ input wire ap_rst_n;
 input wire in0_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TREADY" *)
 output wire in0_V_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in0_V, TDATA_NUM_BYTES 5, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in0_V, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TDATA" *)
-input wire [39 : 0] in0_V_TDATA;
+input wire [7 : 0] in0_V_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TVALID" *)
 input wire weights_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TREADY" *)
 output wire weights_V_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME weights_V, TDATA_NUM_BYTES 160, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME weights_V, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 weights_V TDATA" *)
-input wire [1279 : 0] weights_V_TDATA;
+input wire [7 : 0] weights_V_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TVALID" *)
 output wire out_V_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TREADY" *)
 input wire out_V_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_V, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_V, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TDATA" *)
-output wire [31 : 0] out_V_TDATA;
+output wire [7 : 0] out_V_TDATA;
 
 (* SDX_KERNEL = "true" *)
 (* SDX_KERNEL_TYPE = "hls" *)
