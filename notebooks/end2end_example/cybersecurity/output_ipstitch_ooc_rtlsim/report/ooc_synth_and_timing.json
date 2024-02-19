@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
   "vivado_proj_folder": "/tmp/finn_dev_afely/synth_out_of_context_pyei8rgw/results_finn_design_wrapper",
+=======
+  "vivado_proj_folder": "/tmp/finn_dev_finn/synth_out_of_context_f2amjbmj/results_finn_design_wrapper",
+>>>>>>> Stashed changes
   "LUT": 7076.0,
   "LUTRAM": 42.0,
   "FF": 7343.0,

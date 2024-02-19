@@ -138,7 +138,11 @@ output wire [127 : 0] m_axis_0_tdata;
   memstream_axi_wrapper #(
     .DEPTH(64),
     .WIDTH(128),
+<<<<<<< Updated upstream
     .INIT_FILE("/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/memblock.dat"),
+=======
+    .INIT_FILE("/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/memblock.dat"),
+>>>>>>> Stashed changes
     .RAM_STYLE("auto"),
     .AXILITE_ADDR_WIDTH(10)
   ) inst (

@@ -1,8 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+<<<<<<< Updated upstream
 | Date         : Tue Jan 23 11:51:59 2024
 | Host         : pclab211 running 64-bit Ubuntu 23.10
+=======
+| Date         : Sun Feb 11 02:06:14 2024
+| Host         : finn running 64-bit Ubuntu 22.04.3 LTS
+>>>>>>> Stashed changes
 | Command      : report_utilization -file finn_design_MatrixVectorActivation_1_wstrm_0_utilization_synth.rpt -pb finn_design_MatrixVectorActivation_1_wstrm_0_utilization_synth.pb
 | Design       : finn_design_MatrixVectorActivation_1_wstrm_0
 | Device       : xc7a100tcsg324-1

@@ -2,8 +2,13 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+<<<<<<< Updated upstream
 //Date        : Tue Jan 23 13:48:35 2024
 //Host        : finn_dev_afely running 64-bit Ubuntu 22.04.1 LTS
+=======
+//Date        : Sun Feb 11 02:33:03 2024
+//Host        : finn running 64-bit Ubuntu 22.04.3 LTS
+>>>>>>> Stashed changes
 //Command     : generate_target finn_design_wrapper.bd
 //Design      : finn_design_wrapper
 //Purpose     : IP block netlist

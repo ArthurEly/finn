@@ -537,11 +537,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 14:49:31 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:caa68180</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 05:04:40 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a0855d64</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -552,7 +560,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>9:caa68180</spirit:value>
+=======
+            <spirit:value>9:a0855d64</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -568,11 +580,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:cac7c2a1</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a0e41e45</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -588,11 +608,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:cac7c2a1</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a0e41e45</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -608,11 +636,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:caa68180</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a0855d64</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -628,11 +664,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:caa68180</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a0855d64</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -835,62 +879,110 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -911,6 +1003,7 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -956,6 +1049,53 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/1627/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6891/hdl/verilog/MatrixVectorActivation_0.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1034,7 +1174,11 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Matrixvectoractivation_0</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
+<<<<<<< Updated upstream
       <xilinx:coreRevision>2113396066</xilinx:coreRevision>
+=======
+      <xilinx:coreRevision>2113422873</xilinx:coreRevision>
+>>>>>>> Stashed changes
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

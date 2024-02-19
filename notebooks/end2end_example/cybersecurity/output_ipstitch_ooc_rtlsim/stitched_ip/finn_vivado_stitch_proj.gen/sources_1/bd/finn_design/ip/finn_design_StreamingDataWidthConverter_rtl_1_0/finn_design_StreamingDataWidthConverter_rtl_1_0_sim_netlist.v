@@ -2,10 +2,17 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+<<<<<<< Updated upstream
 // Date        : Tue Jan 23 11:56:30 2024
 // Host        : pclab211 running 64-bit Ubuntu 23.10
 // Command     : write_verilog -force -mode funcsim
 //               /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0_sim_netlist.v
+=======
+// Date        : Sun Feb 11 02:06:13 2024
+// Host        : finn running 64-bit Ubuntu 22.04.3 LTS
+// Command     : write_verilog -force -mode funcsim -rename_top finn_design_StreamingDataWidthConverter_rtl_1_0 -prefix
+//               finn_design_StreamingDataWidthConverter_rtl_1_0_ finn_design_StreamingDataWidthConverter_rtl_1_0_sim_netlist.v
+>>>>>>> Stashed changes
 // Design      : finn_design_StreamingDataWidthConverter_rtl_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,6 +20,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
+<<<<<<< Updated upstream
 (* CHECK_LICENSE_TYPE = "finn_design_StreamingDataWidthConverter_rtl_1_0,StreamingDataWidthConverter_rtl_1,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
 (* X_CORE_INFO = "StreamingDataWidthConverter_rtl_1,Vivado 2023.2" *) 
 (* NotValidForBitStream *)
@@ -55,6 +63,8 @@ module finn_design_StreamingDataWidthConverter_rtl_1_0
 endmodule
 
 (* ORIG_REF_NAME = "StreamingDataWidthConverter_rtl_1" *) 
+=======
+>>>>>>> Stashed changes
 module finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConverter_rtl_1
    (s_axis_tready,
     out_V_TDATA,
@@ -93,7 +103,10 @@ module finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConvert
         .s_axis_tready(s_axis_tready));
 endmodule
 
+<<<<<<< Updated upstream
 (* ORIG_REF_NAME = "dwc" *) 
+=======
+>>>>>>> Stashed changes
 module finn_design_StreamingDataWidthConverter_rtl_1_0_dwc
    (s_axis_tready,
     out_V_TDATA,
@@ -1105,7 +1118,10 @@ module finn_design_StreamingDataWidthConverter_rtl_1_0_dwc
         .S(clear));
 endmodule
 
+<<<<<<< Updated upstream
 (* ORIG_REF_NAME = "dwc_axi" *) 
+=======
+>>>>>>> Stashed changes
 module finn_design_StreamingDataWidthConverter_rtl_1_0_dwc_axi
    (s_axis_tready,
     out_V_TDATA,
@@ -1143,6 +1159,50 @@ module finn_design_StreamingDataWidthConverter_rtl_1_0_dwc_axi
         .out_V_TVALID(m_axis_tvalid),
         .s_axis_tready(s_axis_tready));
 endmodule
+<<<<<<< Updated upstream
+=======
+
+(* CHECK_LICENSE_TYPE = "finn_design_StreamingDataWidthConverter_rtl_1_0,StreamingDataWidthConverter_rtl_1,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* IP_DEFINITION_SOURCE = "module_ref" *) 
+(* X_CORE_INFO = "StreamingDataWidthConverter_rtl_1,Vivado 2023.2" *) 
+(* NotValidForBitStream *)
+module finn_design_StreamingDataWidthConverter_rtl_1_0
+   (ap_clk,
+    ap_rst_n,
+    in0_V_TREADY,
+    in0_V_TVALID,
+    in0_V_TDATA,
+    out_V_TREADY,
+    out_V_TVALID,
+    out_V_TDATA);
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_RESET ap_rst_n, ASSOCIATED_BUSIF in0_V:out_V, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, INSERT_VIP 0" *) input ap_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ap_rst_n;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TREADY" *) output in0_V_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TVALID" *) input in0_V_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 in0_V TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME in0_V, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [7:0]in0_V_TDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TREADY" *) input out_V_TREADY;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TVALID" *) output out_V_TVALID;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 out_V TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME out_V, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN finn_design_ap_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *) output [127:0]out_V_TDATA;
+
+  wire ap_clk;
+  wire ap_rst_n;
+  wire [7:0]in0_V_TDATA;
+  wire in0_V_TREADY;
+  wire in0_V_TVALID;
+  wire [127:0]out_V_TDATA;
+  wire out_V_TREADY;
+  wire out_V_TVALID;
+
+  finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConverter_rtl_1 inst
+       (.ap_clk(ap_clk),
+        .ap_rst_n(ap_rst_n),
+        .in0_V_TDATA(in0_V_TDATA[1:0]),
+        .in0_V_TVALID(in0_V_TVALID),
+        .out_V_TDATA(out_V_TDATA),
+        .out_V_TREADY(out_V_TREADY),
+        .out_V_TVALID(out_V_TVALID),
+        .s_axis_tready(in0_V_TREADY));
+endmodule
+>>>>>>> Stashed changes
 `ifndef GLBL
 `define GLBL
 `timescale  1 ps / 1 ps

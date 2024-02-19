@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< Updated upstream
 # Start of session at: Tue Jan 23 13:48:15 2024
 # Process ID: 108286
 # Current directory: /tmp/finn_dev_afely/vivado_stitch_proj_dhtzyv07
@@ -10,5 +11,14 @@
 # Log file: /tmp/finn_dev_afely/vivado_stitch_proj_dhtzyv07/vivado.log
 # Journal file: /tmp/finn_dev_afely/vivado_stitch_proj_dhtzyv07/vivado.jou
 # Running On: finn_dev_afely, OS: Linux, CPU Frequency: 3355.191 MHz, CPU Physical cores: 4, Host memory: 16626 MB
+=======
+# Start of session at: Sun Feb 11 04:36:58 2024
+# Process ID: 2960
+# Current directory: /tmp/finn_dev_finn/vivado_stitch_proj_1ksl6d1r
+# Command line: vivado -mode batch -source make_project.tcl
+# Log file: /tmp/finn_dev_finn/vivado_stitch_proj_1ksl6d1r/vivado.log
+# Journal file: /tmp/finn_dev_finn/vivado_stitch_proj_1ksl6d1r/vivado.jou
+# Running On: finn_dev_finn, OS: Linux, CPU Frequency: 2904.002 MHz, CPU Physical cores: 6, Host memory: 11631 MB
+>>>>>>> Stashed changes
 #-----------------------------------------------------------
 source make_project.tcl

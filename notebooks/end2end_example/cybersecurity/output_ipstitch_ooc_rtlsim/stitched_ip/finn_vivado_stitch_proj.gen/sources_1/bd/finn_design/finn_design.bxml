@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="finn_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< Updated upstream
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1706017715"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1706017715"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1706017715"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1706017715"/>
+=======
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1707629583"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1707629583"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1707629583"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1707629583"/>
+>>>>>>> Stashed changes
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/finn_design.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

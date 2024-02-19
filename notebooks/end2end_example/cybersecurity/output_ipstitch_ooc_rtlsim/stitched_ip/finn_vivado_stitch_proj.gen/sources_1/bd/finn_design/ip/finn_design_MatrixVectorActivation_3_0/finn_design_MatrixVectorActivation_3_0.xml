@@ -537,11 +537,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 14:54:23 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:c3e77b21</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 05:08:03 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6cb8d6bb</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -552,7 +560,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>9:c3e77b21</spirit:value>
+=======
+            <spirit:value>9:6cb8d6bb</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -568,11 +580,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:ea532c05</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:450c819f</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -588,11 +608,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:ea532c05</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:450c819f</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -608,11 +636,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:c3e77b21</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6cb8d6bb</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -628,11 +664,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:c3e77b21</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:6cb8d6bb</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -835,22 +879,38 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/5984/hdl/verilog/MatrixVectorActivation_3_flow_control_loop_pipe_no_ap_cont.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3_flow_control_loop_pipe_no_ap_cont.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/5984/hdl/verilog/MatrixVectorActivation_3_mul_2ns_2s_4_1_1.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3_mul_2ns_2s_4_1_1.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/5984/hdl/verilog/MatrixVectorActivation_3_regslice_both.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3_regslice_both.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/5984/hdl/verilog/MatrixVectorActivation_3.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -871,6 +931,7 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>../../ipshared/5984/hdl/verilog/MatrixVectorActivation_3_flow_control_loop_pipe_no_ap_cont.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -884,6 +945,21 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/5984/hdl/verilog/MatrixVectorActivation_3.v</spirit:name>
+=======
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3_flow_control_loop_pipe_no_ap_cont.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3_mul_2ns_2s_4_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3_regslice_both.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/e263/hdl/verilog/MatrixVectorActivation_3.v</spirit:name>
+>>>>>>> Stashed changes
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -962,7 +1038,11 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Matrixvectoractivation_3</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
+<<<<<<< Updated upstream
       <xilinx:coreRevision>2113396066</xilinx:coreRevision>
+=======
+      <xilinx:coreRevision>2113422872</xilinx:coreRevision>
+>>>>>>> Stashed changes
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

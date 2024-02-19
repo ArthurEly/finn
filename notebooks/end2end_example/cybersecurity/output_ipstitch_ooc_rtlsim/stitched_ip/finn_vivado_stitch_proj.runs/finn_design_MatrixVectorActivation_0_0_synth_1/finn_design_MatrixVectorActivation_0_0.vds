@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< Updated upstream
 # Start of session at: Tue Jan 23 11:47:48 2024
 # Process ID: 440210
 # Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1
@@ -22,6 +23,27 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_9juxsk5g'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/project_MatrixVectorActivation_2/sol1/impl/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_s3xbtu86/project_MatrixVectorActivation_3/sol1/impl/ip'.
+=======
+# Start of session at: Sun Feb 11 02:01:32 2024
+# Process ID: 27625
+# Current directory: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1
+# Command line: vivado -log finn_design_MatrixVectorActivation_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_MatrixVectorActivation_0_0.tcl
+# Log file: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/finn_design_MatrixVectorActivation_0_0.vds
+# Journal file: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/vivado.jou
+# Running On: finn, OS: Linux, CPU Frequency: 2904.002 MHz, CPU Physical cores: 6, Host memory: 11631 MB
+#-----------------------------------------------------------
+source finn_design_MatrixVectorActivation_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1275.543 ; gain = 33.836 ; free physical = 271 ; free virtual = 8273
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/finn/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_0_i5bjxrsi/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_y5lismed'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_pzy6oj_f'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/project_MatrixVectorActivation_3/sol1/impl/ip'.
+>>>>>>> Stashed changes
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_MatrixVectorActivation_0_0
 Command: synth_design -top finn_design_MatrixVectorActivation_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -31,6 +53,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+<<<<<<< Updated upstream
 INFO: [Synth 8-7075] Helper process launched with PID 440256
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2068.246 ; gain = 402.660 ; free physical = 158 ; free virtual = 7482
@@ -67,21 +90,69 @@ INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0' (0#1) [
 INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_0' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/synth/finn_design_MatrixVectorActivation_0_0.v:53]
 ---------------------------------------------------------------------------------
 Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2204.215 ; gain = 538.629 ; free physical = 245 ; free virtual = 7253
+=======
+INFO: [Synth 8-7075] Helper process launched with PID 27766
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2039.016 ; gain = 402.715 ; free physical = 225 ; free virtual = 5476
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_0_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/synth/finn_design_MatrixVectorActivation_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v:9]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_sparsemux_31_4_40_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_sparsemux_31_4_40_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_sparsemux_31_4_40_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_5_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_5_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_5_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_8_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_8_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_8_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_6_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_6_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_6_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_4_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_4_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_4_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_3_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_3_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_3_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_7_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_7_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_7_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_mux_4_2_2_1_1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_mux_4_2_2_1_1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_mux_4_2_2_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch.v:9]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_regslice_both' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_regslice_both' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_regslice_both__parameterized0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_regslice_both__parameterized0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_regslice_both__parameterized1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_regslice_both__parameterized1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/6891/hdl/verilog/MatrixVectorActivation_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/synth/finn_design_MatrixVectorActivation_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2175.953 ; gain = 539.652 ; free physical = 229 ; free virtual = 5104
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2222.027 ; gain = 556.441 ; free physical = 242 ; free virtual = 7249
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2222.027 ; gain = 556.441 ; free physical = 242 ; free virtual = 7249
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2222.027 ; gain = 0.000 ; free physical = 240 ; free virtual = 7248
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2193.766 ; gain = 557.465 ; free physical = 201 ; free virtual = 5081
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2193.766 ; gain = 557.465 ; free physical = 201 ; free virtual = 5081
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2193.766 ; gain = 0.000 ; free physical = 187 ; free virtual = 5069
+>>>>>>> Stashed changes
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+<<<<<<< Updated upstream
 Parsing XDC File [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/constraints/MatrixVectorActivation_0_ooc.xdc] for cell 'inst'
 Finished Parsing XDC File [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/constraints/MatrixVectorActivation_0_ooc.xdc] for cell 'inst'
 Parsing XDC File [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/dont_touch.xdc]
@@ -96,20 +167,46 @@ Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2327.797 ; gain = 662.211 ; free physical = 206 ; free virtual = 7222
+=======
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/constraints/MatrixVectorActivation_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/constraints/MatrixVectorActivation_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2313.508 ; gain = 0.000 ; free physical = 168 ; free virtual = 5052
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2313.543 ; gain = 0.000 ; free physical = 167 ; free virtual = 5052
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 345 ; free virtual = 5236
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2327.797 ; gain = 662.211 ; free physical = 206 ; free virtual = 7222
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 345 ; free virtual = 5236
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2327.797 ; gain = 662.211 ; free physical = 206 ; free virtual = 7221
+=======
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 346 ; free virtual = 5236
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter1_fsm_reg' in module 'MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch'
 INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter2_fsm_reg' in module 'MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch'
@@ -131,7 +228,11 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter2_fsm_reg' in module 'MatrixVectorActivation_0_Matrix_Vector_Activate_Stream_Batch'
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2327.797 ; gain = 662.211 ; free physical = 203 ; free virtual = 7215
+=======
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 344 ; free virtual = 5237
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -192,25 +293,41 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2327.797 ; gain = 662.211 ; free physical = 197 ; free virtual = 7141
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 1978 ; free virtual = 6970
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2327.797 ; gain = 662.211 ; free physical = 177 ; free virtual = 7144
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:41 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 1708 ; free virtual = 6716
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2333.762 ; gain = 668.176 ; free physical = 209 ; free virtual = 7086
+=======
+Finished Timing Optimization : Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 2313.543 ; gain = 677.242 ; free physical = 183 ; free virtual = 5213
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 158 ; free virtual = 6944
+=======
+Finished Technology Mapping : Time (s): cpu = 00:02:07 ; elapsed = 00:02:09 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 190 ; free virtual = 4918
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -228,37 +345,61 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 247 ; free virtual = 6926
+=======
+Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:20 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 612 ; free virtual = 5359
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 247 ; free virtual = 6926
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:20 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 607 ; free virtual = 5354
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 246 ; free virtual = 6926
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:20 ; elapsed = 00:02:22 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 588 ; free virtual = 5336
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 246 ; free virtual = 6926
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:20 ; elapsed = 00:02:22 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 588 ; free virtual = 5336
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 245 ; free virtual = 6925
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:21 ; elapsed = 00:02:23 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 588 ; free virtual = 5336
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 245 ; free virtual = 6925
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:21 ; elapsed = 00:02:23 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 588 ; free virtual = 5336
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -287,6 +428,7 @@ Report Cell Usage:
 |11    |FDSE   |     3|
 +------+-------+------+
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2497.762 ; gain = 832.176 ; free physical = 245 ; free virtual = 6925
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
@@ -294,11 +436,24 @@ Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 .
 Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2497.770 ; gain = 832.176 ; free physical = 243 ; free virtual = 6923
 INFO: [Project 1-571] Translating synthesized netlist
 Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2497.770 ; gain = 0.000 ; free physical = 533 ; free virtual = 7214
+=======
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:21 ; elapsed = 00:02:23 . Memory (MB): peak = 2469.500 ; gain = 833.199 ; free physical = 588 ; free virtual = 5336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:15 ; elapsed = 00:02:17 . Memory (MB): peak = 2469.500 ; gain = 713.422 ; free physical = 588 ; free virtual = 5336
+Synthesis Optimization Complete : Time (s): cpu = 00:02:21 ; elapsed = 00:02:23 . Memory (MB): peak = 2469.508 ; gain = 833.199 ; free physical = 588 ; free virtual = 5336
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2469.508 ; gain = 0.000 ; free physical = 874 ; free virtual = 5623
+>>>>>>> Stashed changes
 INFO: [Netlist 29-17] Analyzing 322 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< Updated upstream
 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2497.770 ; gain = 0.000 ; free physical = 532 ; free virtual = 7214
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2485.508 ; gain = 0.000 ; free physical = 864 ; free virtual = 5614
+>>>>>>> Stashed changes
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -306,6 +461,7 @@ Synth Design complete | Checksum: 2a993f76
 INFO: [Common 17-83] Releasing license: Synthesis
 61 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
+<<<<<<< Updated upstream
 synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:25 . Memory (MB): peak = 2497.797 ; gain = 1178.250 ; free physical = 532 ; free virtual = 7214
 INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2143.229; main = 1814.396; forked = 377.765
 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3513.480; main = 2497.766; forked = 1015.715
@@ -317,3 +473,16 @@ Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Me
 INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/finn_design_MatrixVectorActivation_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file finn_design_MatrixVectorActivation_0_0_utilization_synth.rpt -pb finn_design_MatrixVectorActivation_0_0_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Tue Jan 23 11:49:31 2024...
+=======
+synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:02:34 . Memory (MB): peak = 2485.543 ; gain = 1191.188 ; free physical = 857 ; free virtual = 5613
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1988.756; main = 1660.264; forked = 354.017
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3463.617; main = 2485.512; forked = 994.113
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2509.520 ; gain = 0.000 ; free physical = 848 ; free virtual = 5605
+INFO: [Common 17-1381] The checkpoint '/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/finn_design_MatrixVectorActivation_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_MatrixVectorActivation_0_0, cache-ID = 94dd3e11c7b8f7b1
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2509.520 ; gain = 0.000 ; free physical = 605 ; free virtual = 5385
+INFO: [Common 17-1381] The checkpoint '/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_0_0_synth_1/finn_design_MatrixVectorActivation_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_MatrixVectorActivation_0_0_utilization_synth.rpt -pb finn_design_MatrixVectorActivation_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 11 02:04:40 2024...
+>>>>>>> Stashed changes

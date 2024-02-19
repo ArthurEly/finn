@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "N_IN_TXNS": 15000,
   "N_OUT_TXNS": 1000,
   "cycles": 72136,
@@ -8,4 +9,15 @@
   "throughput[images/s]": 1386270.3781745592,
   "fclk[mhz]": 100.0,
   "stable_throughput[images/s]": 1390279.1680569455
+=======
+  "N_IN_TXNS": 150000,
+  "N_OUT_TXNS": 10000,
+  "cycles": 720136,
+  "N": 10000,
+  "latency_cycles": 208,
+  "runtime[ms]": 7.20136,
+  "throughput[images/s]": 1388626.5927547019,
+  "fclk[mhz]": 100.0,
+  "stable_throughput[images/s]": 1389027.7916680556
+>>>>>>> Stashed changes
 }

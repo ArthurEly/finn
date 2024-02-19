@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< Updated upstream
 # Start of session at: Tue Jan 23 13:47:58 2024
 # Process ID: 108230
 # Current directory: /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_8t3x334l/project_StreamingFIFO_0/sol1/impl/verilog
@@ -10,5 +11,14 @@
 # Log file: /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_8t3x334l/project_StreamingFIFO_0/sol1/impl/verilog/vivado.log
 # Journal file: /tmp/finn_dev_afely/code_gen_ipgen_StreamingFIFO_0_8t3x334l/project_StreamingFIFO_0/sol1/impl/verilog/vivado.jou
 # Running On: finn_dev_afely, OS: Linux, CPU Frequency: 3392.221 MHz, CPU Physical cores: 4, Host memory: 16626 MB
+=======
+# Start of session at: Sun Feb 11 04:36:29 2024
+# Process ID: 2896
+# Current directory: /tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog
+# Command line: vivado -mode batch -source package_ip.tcl
+# Log file: /tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog/vivado.log
+# Journal file: /tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog/vivado.jou
+# Running On: finn_dev_finn, OS: Linux, CPU Frequency: 2904.002 MHz, CPU Physical cores: 6, Host memory: 11631 MB
+>>>>>>> Stashed changes
 #-----------------------------------------------------------
 source package_ip.tcl

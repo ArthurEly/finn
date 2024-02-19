@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "step_qonnx_to_finn": 6.771087646484375e-05,
   "step_tidy_up": 0.053337812423706055,
   "step_streamline": 0.9575481414794922,
@@ -8,4 +9,15 @@
   "step_apply_folding_config": 4.76837158203125e-06,
   "step_minimize_bit_width": 0.012107372283935547,
   "step_generate_estimate_reports": 0.017031192779541016
+=======
+  "step_qonnx_to_finn": 0.0001354217529296875,
+  "step_tidy_up": 0.11978769302368164,
+  "step_streamline": 2.611393928527832,
+  "step_convert_to_hls": 0.02413010597229004,
+  "step_create_dataflow_partition": 0.0076372623443603516,
+  "step_target_fps_parallelization": 0.024972200393676758,
+  "step_apply_folding_config": 5.9604644775390625e-06,
+  "step_minimize_bit_width": 0.0281827449798584,
+  "step_generate_estimate_reports": 0.043689727783203125
+>>>>>>> Stashed changes
 }

@@ -21,7 +21,11 @@ else
 fi
 export LD_LIBRARY_PATH
 
+<<<<<<< Updated upstream
 HD_PWD='/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_1_wstrm_0_synth_1'
+=======
+HD_PWD='/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_1_wstrm_0_synth_1'
+>>>>>>> Stashed changes
 cd "$HD_PWD"
 
 HD_LOG=runme.log

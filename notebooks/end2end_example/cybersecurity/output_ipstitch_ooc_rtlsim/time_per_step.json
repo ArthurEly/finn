@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "step_qonnx_to_finn": 7.128715515136719e-05,
   "step_tidy_up": 0.04054737091064453,
   "step_streamline": 0.9628138542175293,
@@ -17,4 +18,24 @@
   "step_synthesize_bitfile": 4.5299530029296875e-06,
   "step_make_pynq_driver": 3.5762786865234375e-06,
   "step_deployment_package": 3.337860107421875e-06
+=======
+  "step_qonnx_to_finn": 9.322166442871094e-05,
+  "step_tidy_up": 0.08695077896118164,
+  "step_streamline": 2.2829337120056152,
+  "step_convert_to_hls": 0.014277935028076172,
+  "step_create_dataflow_partition": 0.0072591304779052734,
+  "step_target_fps_parallelization": 0.017478466033935547,
+  "step_apply_folding_config": 5.0067901611328125e-06,
+  "step_minimize_bit_width": 0.02173900604248047,
+  "step_generate_estimate_reports": 4.76837158203125e-06,
+  "step_hls_codegen": 4.522853374481201,
+  "step_hls_ipgen": 130.73450303077698,
+  "step_set_fifo_depths": 144.79796028137207,
+  "step_create_stitched_ip": 350.92076301574707,
+  "step_measure_rtlsim_performance": 9.537750244140625,
+  "step_out_of_context_synthesis": 579.6151854991913,
+  "step_synthesize_bitfile": 5.0067901611328125e-06,
+  "step_make_pynq_driver": 3.337860107421875e-06,
+  "step_deployment_package": 3.0994415283203125e-06
+>>>>>>> Stashed changes
 }

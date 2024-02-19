@@ -2,8 +2,13 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+<<<<<<< Updated upstream
 // Date        : Tue Jan 23 11:51:14 2024
 // Host        : pclab211 running 64-bit Ubuntu 23.10
+=======
+// Date        : Sun Feb 11 02:06:33 2024
+// Host        : finn running 64-bit Ubuntu 22.04.3 LTS
+>>>>>>> Stashed changes
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ finn_design_MatrixVectorActivation_1_0_sim_netlist.v
 // Design      : finn_design_MatrixVectorActivation_1_0

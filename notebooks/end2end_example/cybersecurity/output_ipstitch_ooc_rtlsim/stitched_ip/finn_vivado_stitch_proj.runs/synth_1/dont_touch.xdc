@@ -37,4 +37,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design
 # IP: bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_MatrixVectorActivation_3_wstrm_0 || ORIG_REF_NAME==finn_design_MatrixVectorActivation_3_wstrm_0} -quiet] -quiet
 
+<<<<<<< Updated upstream
 # XDC: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc
+=======
+# XDC: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc
+>>>>>>> Stashed changes

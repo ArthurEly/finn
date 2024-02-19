@@ -436,7 +436,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 14:57:16 UTC 2024</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 05:02:59 UTC 2024</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -467,7 +471,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -487,7 +495,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -507,7 +519,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -527,7 +543,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>Tue Jan 23 13:48:35 UTC 2024</spirit:value>
+=======
+            <spirit:value>Sun Feb 11 04:37:31 UTC 2024</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -747,8 +767,23 @@
         <spirit:fileType>unknown</spirit:fileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>make_ip.sh</spirit:name>
         <spirit:userFileType>shell-script</spirit:userFileType>
+=======
+        <spirit:name>../../ipshared/7e95/Q_srl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>package_ip.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/7e95/StreamingFIFO_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+>>>>>>> Stashed changes
       </spirit:file>
       <spirit:file>
         <spirit:name>vivado.log</spirit:name>
@@ -783,8 +818,21 @@
         <spirit:fileType>unknown</spirit:fileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< Updated upstream
         <spirit:name>make_ip.sh</spirit:name>
         <spirit:userFileType>shell-script</spirit:userFileType>
+=======
+        <spirit:name>../../ipshared/7e95/Q_srl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>package_ip.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/7e95/StreamingFIFO_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+>>>>>>> Stashed changes
       </spirit:file>
       <spirit:file>
         <spirit:name>vivado.log</spirit:name>
@@ -857,7 +905,11 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="cc1a0ea9"/>
+<<<<<<< Updated upstream
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3559cb1c"/>
+=======
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0b385776"/>
+>>>>>>> Stashed changes
       <xilinx:checksum xilinx:scope="ports" xilinx:value="f695876c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="638d56cb"/>
     </xilinx:packagingInfo>

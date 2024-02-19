@@ -10,7 +10,11 @@
       "component_parameters": {
         "DEPTH": [ { "value": "64", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "WIDTH": [ { "value": "128", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+<<<<<<< Updated upstream
         "INIT_FILE": [ { "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_jg5_oz9e/memblock.dat", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+=======
+        "INIT_FILE": [ { "value": "/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/memblock.dat", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+>>>>>>> Stashed changes
         "RAM_STYLE": [ { "value": "auto", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "AXILITE_ADDR_WIDTH": [ { "value": "10", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "Component_Name": [ { "value": "finn_design_MatrixVectorActivation_1_wstrm_0", "resolve_type": "user", "usage": "all" } ]
@@ -18,7 +22,11 @@
       "model_parameters": {
         "DEPTH": [ { "value": "64", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "WIDTH": [ { "value": "128", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+<<<<<<< Updated upstream
         "INIT_FILE": [ { "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_jg5_oz9e/memblock.dat", "resolve_type": "generated", "usage": "all" } ],
+=======
+        "INIT_FILE": [ { "value": "/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/memblock.dat", "resolve_type": "generated", "usage": "all" } ],
+>>>>>>> Stashed changes
         "RAM_STYLE": [ { "value": "auto", "resolve_type": "generated", "usage": "all" } ],
         "AXILITE_ADDR_WIDTH": [ { "value": "10", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
@@ -109,7 +117,11 @@
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+<<<<<<< Updated upstream
             "ADDR_WIDTH": [ { "value": "10", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+=======
+            "ADDR_WIDTH": [ { "value": "10", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+>>>>>>> Stashed changes
             "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ARUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "WUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],

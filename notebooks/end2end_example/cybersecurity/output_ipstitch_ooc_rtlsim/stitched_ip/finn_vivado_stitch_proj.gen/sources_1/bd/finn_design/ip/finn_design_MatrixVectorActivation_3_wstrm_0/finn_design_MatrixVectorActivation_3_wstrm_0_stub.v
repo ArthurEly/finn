@@ -2,10 +2,17 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+<<<<<<< Updated upstream
 // Date        : Tue Jan 23 11:55:05 2024
 // Host        : pclab211 running 64-bit Ubuntu 23.10
 // Command     : write_verilog -force -mode synth_stub
 //               /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0_stub.v
+=======
+// Date        : Sun Feb 11 02:02:52 2024
+// Host        : finn running 64-bit Ubuntu 22.04.3 LTS
+// Command     : write_verilog -force -mode synth_stub
+//               /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0_stub.v
+>>>>>>> Stashed changes
 // Design      : finn_design_MatrixVectorActivation_3_wstrm_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

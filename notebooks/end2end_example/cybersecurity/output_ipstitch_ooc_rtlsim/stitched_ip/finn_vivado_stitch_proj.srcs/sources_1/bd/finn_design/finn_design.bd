@@ -257,7 +257,11 @@
         "components": {
           "MatrixVectorActivation_0": {
             "vlnv": "xilinx.com:hls:MatrixVectorActivation_0:1.0",
+<<<<<<< Updated upstream
             "ip_revision": "2113396066",
+=======
+            "ip_revision": "2113422873",
+>>>>>>> Stashed changes
             "xci_name": "finn_design_MatrixVectorActivation_0_0",
             "xci_path": "ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0.xci",
             "inst_hier_path": "MatrixVectorActivation_0/MatrixVectorActivation_0"
@@ -273,7 +277,11 @@
                 "value": "60"
               },
               "INIT_FILE": {
+<<<<<<< Updated upstream
                 "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_f0j6xz0m/memblock.dat"
+=======
+                "value": "/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_0_i5bjxrsi/memblock.dat"
+>>>>>>> Stashed changes
               },
               "RAM_STYLE": {
                 "value": "auto"
@@ -528,7 +536,11 @@
         "components": {
           "MatrixVectorActivation_1": {
             "vlnv": "xilinx.com:hls:MatrixVectorActivation_1:1.0",
+<<<<<<< Updated upstream
             "ip_revision": "2113396066",
+=======
+            "ip_revision": "2113422872",
+>>>>>>> Stashed changes
             "xci_name": "finn_design_MatrixVectorActivation_1_0",
             "xci_path": "ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0.xci",
             "inst_hier_path": "MatrixVectorActivation_1/MatrixVectorActivation_1"
@@ -544,7 +556,11 @@
                 "value": "64"
               },
               "INIT_FILE": {
+<<<<<<< Updated upstream
                 "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_jg5_oz9e/memblock.dat"
+=======
+                "value": "/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/memblock.dat"
+>>>>>>> Stashed changes
               },
               "RAM_STYLE": {
                 "value": "auto"
@@ -799,7 +815,11 @@
         "components": {
           "MatrixVectorActivation_2": {
             "vlnv": "xilinx.com:hls:MatrixVectorActivation_2:1.0",
+<<<<<<< Updated upstream
             "ip_revision": "2113396066",
+=======
+            "ip_revision": "2113422872",
+>>>>>>> Stashed changes
             "xci_name": "finn_design_MatrixVectorActivation_2_0",
             "xci_path": "ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0.xci",
             "inst_hier_path": "MatrixVectorActivation_2/MatrixVectorActivation_2"
@@ -815,7 +835,11 @@
                 "value": "64"
               },
               "INIT_FILE": {
+<<<<<<< Updated upstream
                 "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/memblock.dat"
+=======
+                "value": "/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/memblock.dat"
+>>>>>>> Stashed changes
               },
               "RAM_STYLE": {
                 "value": "auto"
@@ -896,7 +920,11 @@
         "components": {
           "MatrixVectorActivation_3": {
             "vlnv": "xilinx.com:hls:MatrixVectorActivation_3:1.0",
+<<<<<<< Updated upstream
             "ip_revision": "2113396066",
+=======
+            "ip_revision": "2113422872",
+>>>>>>> Stashed changes
             "xci_name": "finn_design_MatrixVectorActivation_3_0",
             "xci_path": "ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0.xci",
             "inst_hier_path": "MatrixVectorActivation_3/MatrixVectorActivation_3"
@@ -912,7 +940,11 @@
                 "value": "64"
               },
               "INIT_FILE": {
+<<<<<<< Updated upstream
                 "value": "/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_s3xbtu86/memblock.dat"
+=======
+                "value": "/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/memblock.dat"
+>>>>>>> Stashed changes
               },
               "RAM_STYLE": {
                 "value": "auto"
@@ -1024,11 +1056,16 @@
           "ap_clk",
           "StreamingFIFO_0/ap_clk",
           "MatrixVectorActivation_0/ap_clk",
+<<<<<<< Updated upstream
           "StreamingDataWidthConverter_rtl_0/ap_clk",
+=======
+>>>>>>> Stashed changes
           "MatrixVectorActivation_1/ap_clk",
           "StreamingDataWidthConverter_rtl_1/ap_clk",
           "MatrixVectorActivation_2/ap_clk",
-          "MatrixVectorActivation_3/ap_clk"
+          "MatrixVectorActivation_3/ap_clk",
+          "StreamingDataWidthConverter_rtl_0/ap_clk",
+          "StreamingDataWidthConverter_rtl_1/ap_clk"
         ]
       },
       "ap_rst_n_0_1": {
@@ -1036,11 +1073,16 @@
           "ap_rst_n",
           "StreamingFIFO_0/ap_rst_n",
           "MatrixVectorActivation_0/ap_rst_n",
+<<<<<<< Updated upstream
           "StreamingDataWidthConverter_rtl_0/ap_rst_n",
+=======
+>>>>>>> Stashed changes
           "MatrixVectorActivation_1/ap_rst_n",
           "StreamingDataWidthConverter_rtl_1/ap_rst_n",
           "MatrixVectorActivation_2/ap_rst_n",
-          "MatrixVectorActivation_3/ap_rst_n"
+          "MatrixVectorActivation_3/ap_rst_n",
+          "StreamingDataWidthConverter_rtl_0/ap_rst_n",
+          "StreamingDataWidthConverter_rtl_1/ap_rst_n"
         ]
       }
     }

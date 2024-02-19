@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<<<<<<< Updated upstream
 <EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jan 23 13:48:35 2024" VIVADOVERSION="2023.2">
+=======
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Feb 11 02:33:03 2024" VIVADOVERSION="2023.2">
+>>>>>>> Stashed changes
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="finn_design" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -9,7 +13,10 @@
         <CONNECTION INSTANCE="StreamingFIFO_0" PORT="ap_clk"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0_wstrm" PORT="ap_clk"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0" PORT="ap_clk"/>
+<<<<<<< Updated upstream
         <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_0" PORT="ap_clk"/>
+=======
+>>>>>>> Stashed changes
         <CONNECTION INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1_wstrm" PORT="ap_clk"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1" PORT="ap_clk"/>
         <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_1" PORT="ap_clk"/>
@@ -17,6 +24,8 @@
         <CONNECTION INSTANCE="MatrixVectorActivation_2_MatrixVectorActivation_2" PORT="ap_clk"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3_wstrm" PORT="ap_clk"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3" PORT="ap_clk"/>
+        <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_0" PORT="ap_clk"/>
+        <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_1" PORT="ap_clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="ap_rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_ap_rst_n">
@@ -24,7 +33,10 @@
         <CONNECTION INSTANCE="StreamingFIFO_0" PORT="ap_rst_n"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0_wstrm" PORT="ap_rst_n"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0" PORT="ap_rst_n"/>
+<<<<<<< Updated upstream
         <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_0" PORT="ap_rst_n"/>
+=======
+>>>>>>> Stashed changes
         <CONNECTION INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1_wstrm" PORT="ap_rst_n"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1" PORT="ap_rst_n"/>
         <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_1" PORT="ap_rst_n"/>
@@ -32,6 +44,8 @@
         <CONNECTION INSTANCE="MatrixVectorActivation_2_MatrixVectorActivation_2" PORT="ap_rst_n"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3_wstrm" PORT="ap_rst_n"/>
         <CONNECTION INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3" PORT="ap_rst_n"/>
+        <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_0" PORT="ap_rst_n"/>
+        <CONNECTION INSTANCE="StreamingDataWidthConverter_rtl_1" PORT="ap_rst_n"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="7" NAME="m_axis_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="MatrixVectorActivation_3_MatrixVectorActivation_3_out_V_TDATA">
@@ -110,7 +124,11 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
+<<<<<<< Updated upstream
     <MODULE COREREVISION="2113396066" FULLNAME="/MatrixVectorActivation_0/MatrixVectorActivation_0" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_0" VLNV="xilinx.com:hls:MatrixVectorActivation_0:1.0">
+=======
+    <MODULE COREREVISION="2113422873" FULLNAME="/MatrixVectorActivation_0/MatrixVectorActivation_0" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_0_MatrixVectorActivation_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_0" VLNV="xilinx.com:hls:MatrixVectorActivation_0:1.0">
+>>>>>>> Stashed changes
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_0_0"/>
@@ -246,7 +264,11 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="14"/>
         <PARAMETER NAME="DEPTH" VALUE="60"/>
+<<<<<<< Updated upstream
         <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_0_f0j6xz0m/memblock.dat"/>
+=======
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_0_i5bjxrsi/memblock.dat"/>
+>>>>>>> Stashed changes
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="1280"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_0_wstrm_0"/>
@@ -375,7 +397,11 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+<<<<<<< Updated upstream
     <MODULE COREREVISION="2113396066" FULLNAME="/MatrixVectorActivation_1/MatrixVectorActivation_1" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_1" VLNV="xilinx.com:hls:MatrixVectorActivation_1:1.0">
+=======
+    <MODULE COREREVISION="2113422872" FULLNAME="/MatrixVectorActivation_1/MatrixVectorActivation_1" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_1_MatrixVectorActivation_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_1" VLNV="xilinx.com:hls:MatrixVectorActivation_1:1.0">
+>>>>>>> Stashed changes
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_1_0"/>
@@ -511,7 +537,11 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="10"/>
         <PARAMETER NAME="DEPTH" VALUE="64"/>
+<<<<<<< Updated upstream
         <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_1_jg5_oz9e/memblock.dat"/>
+=======
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/memblock.dat"/>
+>>>>>>> Stashed changes
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="128"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_1_wstrm_0"/>
@@ -640,7 +670,11 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+<<<<<<< Updated upstream
     <MODULE COREREVISION="2113396066" FULLNAME="/MatrixVectorActivation_2/MatrixVectorActivation_2" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_2_MatrixVectorActivation_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_2" VLNV="xilinx.com:hls:MatrixVectorActivation_2:1.0">
+=======
+    <MODULE COREREVISION="2113422872" FULLNAME="/MatrixVectorActivation_2/MatrixVectorActivation_2" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_2_MatrixVectorActivation_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_2" VLNV="xilinx.com:hls:MatrixVectorActivation_2:1.0">
+>>>>>>> Stashed changes
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_2_0"/>
@@ -776,7 +810,11 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="10"/>
         <PARAMETER NAME="DEPTH" VALUE="64"/>
+<<<<<<< Updated upstream
         <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/memblock.dat"/>
+=======
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/memblock.dat"/>
+>>>>>>> Stashed changes
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="128"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_2_wstrm_0"/>
@@ -905,7 +943,11 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+<<<<<<< Updated upstream
     <MODULE COREREVISION="2113396066" FULLNAME="/MatrixVectorActivation_3/MatrixVectorActivation_3" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_3" VLNV="xilinx.com:hls:MatrixVectorActivation_3:1.0">
+=======
+    <MODULE COREREVISION="2113422872" FULLNAME="/MatrixVectorActivation_3/MatrixVectorActivation_3" HWVERSION="1.0" INSTANCE="MatrixVectorActivation_3_MatrixVectorActivation_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MatrixVectorActivation_3" VLNV="xilinx.com:hls:MatrixVectorActivation_3:1.0">
+>>>>>>> Stashed changes
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_3_0"/>
@@ -1041,7 +1083,11 @@
       <PARAMETERS>
         <PARAMETER NAME="AXILITE_ADDR_WIDTH" VALUE="8"/>
         <PARAMETER NAME="DEPTH" VALUE="64"/>
+<<<<<<< Updated upstream
         <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_s3xbtu86/memblock.dat"/>
+=======
+        <PARAMETER NAME="INIT_FILE" VALUE="/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/memblock.dat"/>
+>>>>>>> Stashed changes
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="WIDTH" VALUE="8"/>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_MatrixVectorActivation_3_wstrm_0"/>

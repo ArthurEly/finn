@@ -4,7 +4,11 @@
     "xci_name": "finn_design_MatrixVectorActivation_1_0",
     "cell_name": "MatrixVectorActivation_1/MatrixVectorActivation_1",
     "component_reference": "xilinx.com:hls:MatrixVectorActivation_1:1.0",
+<<<<<<< Updated upstream
     "ip_revision": "2113396066",
+=======
+    "ip_revision": "2113422872",
+>>>>>>> Stashed changes
     "gen_directory": "./",
     "parameters": {
       "component_parameters": {
@@ -30,7 +34,11 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+<<<<<<< Updated upstream
         "IPREVISION": [ { "value": "2113396066" } ],
+=======
+        "IPREVISION": [ { "value": "2113422872" } ],
+>>>>>>> Stashed changes
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "./" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

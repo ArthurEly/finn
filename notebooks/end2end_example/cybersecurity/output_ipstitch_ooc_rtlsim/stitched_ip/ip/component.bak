@@ -262,7 +262,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>335b91ec</spirit:value>
+=======
+            <spirit:value>403b19e8</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -296,7 +300,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>d5f9cf4c</spirit:value>
+=======
+            <spirit:value>b59b84bc</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -326,7 +334,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
+<<<<<<< Updated upstream
             <spirit:value>a4421e15</spirit:value>
+=======
+            <spirit:value>0343b400</spirit:value>
+>>>>>>> Stashed changes
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -571,7 +583,11 @@
       <spirit:file>
         <spirit:name>src/finn_design.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+<<<<<<< Updated upstream
         <spirit:userFileType>CHECKSUM_8d551658</spirit:userFileType>
+=======
+        <spirit:userFileType>CHECKSUM_09d67588</spirit:userFileType>
+>>>>>>> Stashed changes
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -886,7 +902,11 @@
       <xilinx:displayName>finn_design_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
+<<<<<<< Updated upstream
       <xilinx:coreCreationDateTime>2024-01-23T13:48:35Z</xilinx:coreCreationDateTime>
+=======
+      <xilinx:coreCreationDateTime>2024-02-11T04:37:31Z</xilinx:coreCreationDateTime>
+>>>>>>> Stashed changes
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.AP_CLK.FREQ_HZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_0.FREQ_HZ" xilinx:valuePermission="bd"/>
@@ -916,7 +936,11 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="76ca5427"/>
+<<<<<<< Updated upstream
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="21051480"/>
+=======
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b992f1f2"/>
+>>>>>>> Stashed changes
       <xilinx:checksum xilinx:scope="ports" xilinx:value="e01a236f"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="c89a5ebc"/>
       <xilinx:targetDRCs>

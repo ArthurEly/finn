@@ -4,7 +4,11 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
+<<<<<<< Updated upstream
   variable script "/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.tcl"
+=======
+  variable script "/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.tcl"
+>>>>>>> Stashed changes
   variable category "vivado_synth"
 }
 
@@ -70,10 +74,15 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+<<<<<<< Updated upstream
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param synth.incrementalSynthesisCache ./.Xil/Vivado-435144-pclab211/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
+=======
+set_param chipscope.maxJobs 1
+set_msg_config -id {HDL-1065} -limit 10000
+>>>>>>> Stashed changes
 set_msg_config  -id {[BD 41-1753]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -82,6 +91,7 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+<<<<<<< Updated upstream
 set_property webtalk.parent_dir /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.cache/wt [current_project]
 set_property parent.project_path /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
@@ -108,6 +118,34 @@ set_property used_in_implementation false [get_files -all /home/afely/Desktop/fi
 set_property used_in_implementation false [get_files -all /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/constraints/MatrixVectorActivation_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/constraints/MatrixVectorActivation_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc]
+=======
+set_property webtalk.parent_dir /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.cache/wt [current_project]
+set_property parent.project_path /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.xpr [current_project]
+set_property default_lib xil_defaultlib [current_project]
+set_property target_language Verilog [current_project]
+set_property ip_repo_paths {
+  /home/finn/Desktop/finn/finn-rtllib/memstream
+  /tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog
+  /tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_0_i5bjxrsi/project_MatrixVectorActivation_0/sol1/impl/ip
+  /tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_y5lismed
+  /tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/project_MatrixVectorActivation_1/sol1/impl/ip
+  /tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_pzy6oj_f
+  /tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/project_MatrixVectorActivation_2/sol1/impl/ip
+  /tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/project_MatrixVectorActivation_3/sol1/impl/ip
+} [current_project]
+update_ip_catalog
+set_property ip_output_repo /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.cache/ip [current_project]
+set_property ip_cache_permissions {read write} [current_project]
+OPTRACE "Creating in-memory project" END { }
+OPTRACE "Adding files" START { }
+read_verilog /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+add_files /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd
+set_property used_in_implementation false [get_files -all /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/constraints/MatrixVectorActivation_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_0/constraints/MatrixVectorActivation_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/constraints/MatrixVectorActivation_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/constraints/MatrixVectorActivation_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc]
+>>>>>>> Stashed changes
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -121,6 +159,11 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+<<<<<<< Updated upstream
+=======
+
+read_checkpoint -auto_incremental -incremental /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.srcs/utils_1/imports/synth_1/finn_design_wrapper.dcp
+>>>>>>> Stashed changes
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< Updated upstream
 # Start of session at: Tue Jan 23 11:54:30 2024
 # Process ID: 443846
 # Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1
@@ -22,6 +23,27 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_9juxsk5g'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/project_MatrixVectorActivation_2/sol1/impl/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_s3xbtu86/project_MatrixVectorActivation_3/sol1/impl/ip'.
+=======
+# Start of session at: Sun Feb 11 02:01:32 2024
+# Process ID: 27622
+# Current directory: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1
+# Command line: vivado -log finn_design_MatrixVectorActivation_3_wstrm_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_MatrixVectorActivation_3_wstrm_0.tcl
+# Log file: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1/finn_design_MatrixVectorActivation_3_wstrm_0.vds
+# Journal file: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1/vivado.jou
+# Running On: finn, OS: Linux, CPU Frequency: 2904.002 MHz, CPU Physical cores: 6, Host memory: 11631 MB
+#-----------------------------------------------------------
+source finn_design_MatrixVectorActivation_3_wstrm_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1304.758 ; gain = 0.023 ; free physical = 264 ; free virtual = 8265
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/finn/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_0_i5bjxrsi/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_y5lismed'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_pzy6oj_f'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/project_MatrixVectorActivation_3/sol1/impl/ip'.
+>>>>>>> Stashed changes
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_MatrixVectorActivation_3_wstrm_0
 Command: synth_design -top finn_design_MatrixVectorActivation_3_wstrm_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
@@ -31,6 +53,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+<<<<<<< Updated upstream
 INFO: [Synth 8-7075] Helper process launched with PID 443877
 ---------------------------------------------------------------------------------
 Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1736.746 ; gain = 400.777 ; free physical = 991 ; free virtual = 8011
@@ -61,6 +84,38 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'internal_wdata_reg'
 WARNING: [Synth 8-6014] Unused sequential element blkStage1.Ptr_reg[0][lst] was removed.  [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:86]
 WARNING: [Synth 8-6014] Unused sequential element blkStage1.Ptr_reg[1][lst] was removed.  [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:106]
 WARNING: [Synth 8-6014] Unused sequential element blkStage2.Ptr_reg[2][lst] was removed.  [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:141]
+=======
+INFO: [Synth 8-7075] Helper process launched with PID 27696
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1708.473 ; gain = 403.715 ; free physical = 215 ; free virtual = 6061
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:35]
+WARNING: [Synth 8-10636] default field of an assignment pattern cannot contain another assignment pattern [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:73]
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:35]
+WARNING: [Synth 8-10592] closing label :memstream_axi_wrapper is only allowed in SystemVerilog mode [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:123]
+WARNING: [Synth 8-10592] closing label :memstream_axi_wrapper is only allowed in SystemVerilog mode [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:123]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_3_wstrm_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/synth/finn_design_MatrixVectorActivation_3_wstrm_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'memstream_axi_wrapper' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:33]
+INFO: [Synth 8-6157] synthesizing module 'memstream_axi' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'axi4lite_if' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'axi4lite_if' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:31]
+WARNING: [Synth 8-689] width (32) of port connection 'ip_addr' does not match port width (8) of module 'axi4lite_if' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:105]
+INFO: [Synth 8-6157] synthesizing module 'memstream' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:33]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/memblock.dat' is read successfully [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'memstream' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_axi' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_axi_wrapper' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_3_wstrm_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/synth/finn_design_MatrixVectorActivation_3_wstrm_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element wready_reg was removed.  [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:135]
+WARNING: [Synth 8-6014] Unused sequential element internal_wack_reg was removed.  [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:154]
+WARNING: [Synth 8-3936] Found unconnected internal register 'no_fold.ip_wdata_wide_reg' and it is trimmed from '32' to '8' bits. [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:164]
+WARNING: [Synth 8-3936] Found unconnected internal register 'internal_wdata_reg' and it is trimmed from '32' to '8' bits. [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:129]
+WARNING: [Synth 8-6014] Unused sequential element blkStage1.Ptr_reg[0][lst] was removed.  [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:86]
+WARNING: [Synth 8-6014] Unused sequential element blkStage1.Ptr_reg[1][lst] was removed.  [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element blkStage2.Ptr_reg[2][lst] was removed.  [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:141]
+>>>>>>> Stashed changes
 WARNING: [Synth 8-7129] Port config_address[31] in module memstream is either unconnected or has no load
 WARNING: [Synth 8-7129] Port config_address[30] in module memstream is either unconnected or has no load
 WARNING: [Synth 8-7129] Port config_address[29] in module memstream is either unconnected or has no load
@@ -122,10 +177,17 @@ WARNING: [Synth 8-7129] Port arprot[2] in module axi4lite_if is either unconnect
 WARNING: [Synth 8-7129] Port arprot[1] in module axi4lite_if is either unconnected or has no load
 WARNING: [Synth 8-7129] Port arprot[0] in module axi4lite_if is either unconnected or has no load
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1811.715 ; gain = 475.746 ; free physical = 893 ; free virtual = 7913
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1829.527 ; gain = 493.559 ; free physical = 892 ; free virtual = 7913
+=======
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1784.441 ; gain = 479.684 ; free physical = 195 ; free virtual = 5541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1802.254 ; gain = 497.496 ; free physical = 145 ; free virtual = 5491
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -133,7 +195,11 @@ Start Loading Part and Timing Information
 Loading part: xc7a100tcsg324-1
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1837.531 ; gain = 501.562 ; free physical = 892 ; free virtual = 7912
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1810.258 ; gain = 505.500 ; free physical = 142 ; free virtual = 5488
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4lite_if'
 ---------------------------------------------------------------------------------------------------
@@ -145,7 +211,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4l
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4lite_if'
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1846.438 ; gain = 510.469 ; free physical = 883 ; free virtual = 7904
+=======
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1818.266 ; gain = 513.508 ; free physical = 227 ; free virtual = 5477
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -186,7 +256,11 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+<<<<<<< Updated upstream
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/core/config_if/ip_addr_reg' and it is trimmed from '8' to '6' bits. [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:153]
+=======
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/core/config_if/ip_addr_reg' and it is trimmed from '8' to '6' bits. [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:153]
+>>>>>>> Stashed changes
 WARNING: [Synth 8-7129] Port awprot[2] in module finn_design_MatrixVectorActivation_3_wstrm_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port awprot[1] in module finn_design_MatrixVectorActivation_3_wstrm_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port awprot[0] in module finn_design_MatrixVectorActivation_3_wstrm_0 is either unconnected or has no load
@@ -226,7 +300,11 @@ WARNING: [Synth 8-7129] Port arprot[0] in module finn_design_MatrixVectorActivat
 WARNING: [Synth 8-7129] Port araddr[1] in module finn_design_MatrixVectorActivation_3_wstrm_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port araddr[0] in module finn_design_MatrixVectorActivation_3_wstrm_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1990.766 ; gain = 654.797 ; free physical = 727 ; free virtual = 7748
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 190 ; free virtual = 5071
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -248,7 +326,11 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1990.766 ; gain = 654.797 ; free physical = 727 ; free virtual = 7748
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 189 ; free virtual = 5070
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -268,7 +350,11 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 718 ; free virtual = 7739
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 187 ; free virtual = 5068
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -286,37 +372,61 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -354,6 +464,7 @@ Report Instance Areas:
 |5     |      mem       |memstream             |    80|
 +------+----------------+----------------------+------+
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.773 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 114 warnings.
@@ -361,11 +472,24 @@ Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 .
 Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1998.781 ; gain = 662.805 ; free physical = 717 ; free virtual = 7739
 INFO: [Project 1-571] Translating synthesized netlist
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1998.781 ; gain = 0.000 ; free physical = 1001 ; free virtual = 8023
+=======
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 166 ; free virtual = 5054
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 114 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.562 ; gain = 658.805 ; free physical = 165 ; free virtual = 5053
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1963.570 ; gain = 658.805 ; free physical = 165 ; free virtual = 5053
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1963.570 ; gain = 0.000 ; free physical = 435 ; free virtual = 5325
+>>>>>>> Stashed changes
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< Updated upstream
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2094.473 ; gain = 0.000 ; free physical = 940 ; free virtual = 7961
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2082.270 ; gain = 0.000 ; free physical = 355 ; free virtual = 5246
+>>>>>>> Stashed changes
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   RAM64X1S => RAM64X1S (RAMS64E): 8 instances
@@ -374,6 +498,7 @@ Synth Design complete | Checksum: 2661cf85
 INFO: [Common 17-83] Releasing license: Synthesis
 38 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
+<<<<<<< Updated upstream
 synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2094.508 ; gain = 758.539 ; free physical = 939 ; free virtual = 7961
 INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1598.423; main = 1389.539; forked = 377.715
 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2990.473; main = 2094.477; forked = 1015.719
@@ -387,3 +512,18 @@ Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memor
 INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1/finn_design_MatrixVectorActivation_3_wstrm_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file finn_design_MatrixVectorActivation_3_wstrm_0_utilization_synth.rpt -pb finn_design_MatrixVectorActivation_3_wstrm_0_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Tue Jan 23 11:55:05 2024...
+=======
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2082.305 ; gain = 777.547 ; free physical = 354 ; free virtual = 5245
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1459.206; main = 1221.266; forked = 316.655
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2953.715; main = 2082.273; forked = 990.148
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2429.234 ; gain = 0.000 ; free physical = 160 ; free virtual = 5054
+INFO: [Common 17-1381] The checkpoint '/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1/finn_design_MatrixVectorActivation_3_wstrm_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2429.234 ; gain = 346.930 ; free physical = 150 ; free virtual = 5046
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_MatrixVectorActivation_3_wstrm_0, cache-ID = 1bbccb01b188da20
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2429.234 ; gain = 0.000 ; free physical = 142 ; free virtual = 5039
+INFO: [Common 17-1381] The checkpoint '/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MatrixVectorActivation_3_wstrm_0_synth_1/finn_design_MatrixVectorActivation_3_wstrm_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_MatrixVectorActivation_3_wstrm_0_utilization_synth.rpt -pb finn_design_MatrixVectorActivation_3_wstrm_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 11 02:02:53 2024...
+>>>>>>> Stashed changes

@@ -48,7 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:MatrixVectorActivation_0:1.0
+<<<<<<< Updated upstream
 // IP Revision: 2113396066
+=======
+// IP Revision: 2113422873
+>>>>>>> Stashed changes
 
 `timescale 1ns/1ps
 

@@ -2,10 +2,18 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+<<<<<<< Updated upstream
 -- Date        : Tue Jan 23 11:56:30 2024
 -- Host        : pclab211 running 64-bit Ubuntu 23.10
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0_sim_netlist.vhdl
+=======
+-- Date        : Sun Feb 11 02:06:13 2024
+-- Host        : finn running 64-bit Ubuntu 22.04.3 LTS
+-- Command     : write_vhdl -force -mode funcsim -rename_top finn_design_StreamingDataWidthConverter_rtl_1_0 -prefix
+--               finn_design_StreamingDataWidthConverter_rtl_1_0_
+--               finn_design_StreamingDataWidthConverter_rtl_1_0_sim_netlist.vhdl
+>>>>>>> Stashed changes
 -- Design      : finn_design_StreamingDataWidthConverter_rtl_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -26,8 +34,11 @@ entity finn_design_StreamingDataWidthConverter_rtl_1_0_dwc is
     in0_V_TVALID : in STD_LOGIC;
     in0_V_TDATA : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+<<<<<<< Updated upstream
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of finn_design_StreamingDataWidthConverter_rtl_1_0_dwc : entity is "dwc";
+=======
+>>>>>>> Stashed changes
 end finn_design_StreamingDataWidthConverter_rtl_1_0_dwc;
 
 architecture STRUCTURE of finn_design_StreamingDataWidthConverter_rtl_1_0_dwc is
@@ -1363,8 +1374,11 @@ entity finn_design_StreamingDataWidthConverter_rtl_1_0_dwc_axi is
     in0_V_TVALID : in STD_LOGIC;
     in0_V_TDATA : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+<<<<<<< Updated upstream
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of finn_design_StreamingDataWidthConverter_rtl_1_0_dwc_axi : entity is "dwc_axi";
+=======
+>>>>>>> Stashed changes
 end finn_design_StreamingDataWidthConverter_rtl_1_0_dwc_axi;
 
 architecture STRUCTURE of finn_design_StreamingDataWidthConverter_rtl_1_0_dwc_axi is
@@ -1396,8 +1410,11 @@ entity finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConvert
     in0_V_TVALID : in STD_LOGIC;
     in0_V_TDATA : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+<<<<<<< Updated upstream
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConverter_rtl_1 : entity is "StreamingDataWidthConverter_rtl_1";
+=======
+>>>>>>> Stashed changes
 end finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConverter_rtl_1;
 
 architecture STRUCTURE of finn_design_StreamingDataWidthConverter_rtl_1_0_StreamingDataWidthConverter_rtl_1 is

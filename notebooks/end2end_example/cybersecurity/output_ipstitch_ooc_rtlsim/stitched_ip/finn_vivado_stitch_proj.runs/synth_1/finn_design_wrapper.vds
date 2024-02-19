@@ -3,6 +3,7 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+<<<<<<< Updated upstream
 # Start of session at: Tue Jan 23 11:58:08 2024
 # Process ID: 445964
 # Current directory: /home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1
@@ -23,11 +24,37 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_2_uc9yndjr/project_MatrixVectorActivation_2/sol1/impl/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_afely/code_gen_ipgen_MatrixVectorActivation_3_s3xbtu86/project_MatrixVectorActivation_3/sol1/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+=======
+# Start of session at: Sun Feb 11 02:33:07 2024
+# Process ID: 36093
+# Current directory: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1
+# Command line: vivado -log finn_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_wrapper.tcl
+# Log file: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.vds
+# Journal file: /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/vivado.jou
+# Running On: finn, OS: Linux, CPU Frequency: 2904.002 MHz, CPU Physical cores: 6, Host memory: 11631 MB
+#-----------------------------------------------------------
+source finn_design_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1304.754 ; gain = 0.023 ; free physical = 3067 ; free virtual = 8267
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/finn/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingFIFO_0_b8nd8hxw/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_0_i5bjxrsi/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_y5lismed'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_1_6836m_5s/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_pzy6oj_f'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_2_s1fh6ggp/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_finn/code_gen_ipgen_MatrixVectorActivation_3_p9c_s79m/project_MatrixVectorActivation_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.srcs/utils_1/imports/synth_1/finn_design_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.srcs/utils_1/imports/synth_1/finn_design_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+>>>>>>> Stashed changes
 Command: synth_design -top finn_design_wrapper -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+<<<<<<< Updated upstream
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
 INFO: [Synth 8-7075] Helper process launched with PID 445994
@@ -109,21 +136,116 @@ INFO: [Synth 8-6155] done synthesizing module 'finn_design' (0#1) [/home/afely/D
 INFO: [Synth 8-6155] done synthesizing module 'finn_design_wrapper' (0#1) [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:13]
 ---------------------------------------------------------------------------------
 Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2144.727 ; gain = 479.652 ; free physical = 210 ; free virtual = 7058
+=======
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 36178
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2042.477 ; gain = 403.715 ; free physical = 2056 ; free virtual = 7257
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_wrapper' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'finn_design' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:289]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_imp_MT0NP' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:13]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_0_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_0_wstrm_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_0_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_wstrm_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_0_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_0_wstrm' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' has 24 connections declared, but only 16 given [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_imp_MT0NP' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_1_imp_16PJ27U' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:82]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_1_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_1_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_1_wstrm_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_1_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_1_wstrm_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_1_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_1_wstrm' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' has 24 connections declared, but only 16 given [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_1_imp_16PJ27U' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:82]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_2_imp_1U5U4NE' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:151]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_2_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_2_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_2_wstrm_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_2_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_2_wstrm_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_2_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_2_wstrm' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' has 24 connections declared, but only 16 given [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_2_imp_1U5U4NE' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:151]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_3_imp_WP21D1' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:220]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_3_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_3_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_3_wstrm_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_3_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_3_wstrm_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_MatrixVectorActivation_3_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_3_wstrm' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' has 24 connections declared, but only 16 given [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_3_imp_WP21D1' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:220]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_0_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_StreamingDataWidthConverter_rtl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_0_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_StreamingDataWidthConverter_rtl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_1_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_StreamingDataWidthConverter_rtl_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingDataWidthConverter_rtl_1_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_StreamingDataWidthConverter_rtl_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_0_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_StreamingFIFO_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_0_0' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-36093-finn/realtime/finn_design_StreamingFIFO_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_0_0' is unconnected for instance 'StreamingFIFO_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:397]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_0_0' is unconnected for instance 'StreamingFIFO_0' [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:397]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_0' of module 'finn_design_StreamingFIFO_0_0' has 10 connections declared, but only 8 given [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:397]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:289]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_wrapper' (0#1) [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2119.445 ; gain = 480.684 ; free physical = 1952 ; free virtual = 7154
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2162.539 ; gain = 497.465 ; free physical = 207 ; free virtual = 7056
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2162.539 ; gain = 497.465 ; free physical = 207 ; free virtual = 7056
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2162.539 ; gain = 0.000 ; free physical = 207 ; free virtual = 7056
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2137.258 ; gain = 498.496 ; free physical = 1950 ; free virtual = 7152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2137.258 ; gain = 498.496 ; free physical = 1950 ; free virtual = 7152
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2137.258 ; gain = 0.000 ; free physical = 1950 ; free virtual = 7152
+>>>>>>> Stashed changes
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+<<<<<<< Updated upstream
 Parsing XDC File [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_0'
 Finished Parsing XDC File [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_0'
 Parsing XDC File [/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0'
@@ -157,13 +279,54 @@ No Unisim elements were transformed.
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2203.496 ; gain = 0.000 ; free physical = 192 ; free virtual = 7045
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 176 ; free virtual = 7020
+=======
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_0'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_0'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0_in_context.xdc] for cell 'finn_design_i/StreamingDataWidthConverter_rtl_0'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0/finn_design_StreamingDataWidthConverter_rtl_0_0_in_context.xdc] for cell 'finn_design_i/StreamingDataWidthConverter_rtl_0'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0_in_context.xdc] for cell 'finn_design_i/StreamingDataWidthConverter_rtl_1'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0/finn_design_StreamingDataWidthConverter_rtl_1_0_in_context.xdc] for cell 'finn_design_i/StreamingDataWidthConverter_rtl_1'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm'
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm'
+Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.188 ; gain = 0.000 ; free physical = 1940 ; free virtual = 7143
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.223 ; gain = 0.000 ; free physical = 1940 ; free virtual = 7142
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1942 ; free virtual = 7145
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 176 ; free virtual = 7020
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1942 ; free virtual = 7145
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -181,10 +344,17 @@ Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivat
 Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 176 ; free virtual = 7019
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 174 ; free virtual = 7018
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1942 ; free virtual = 7145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1940 ; free virtual = 7144
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -207,25 +377,41 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 169 ; free virtual = 7014
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1934 ; free virtual = 7142
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 162 ; free virtual = 7001
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 162 ; free virtual = 7001
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 162 ; free virtual = 7001
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -243,37 +429,61 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+>>>>>>> Stashed changes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -315,6 +525,7 @@ Report Cell Usage:
 |13    |OBUF                                          |    10|
 +------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2203.496 ; gain = 538.422 ; free physical = 148 ; free virtual = 6996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
@@ -325,11 +536,24 @@ Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . 
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2203.496 ; gain = 0.000 ; free physical = 460 ; free virtual = 7308
+=======
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1931 ; free virtual = 7139
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 2194.223 ; gain = 498.496 ; free physical = 1930 ; free virtual = 7139
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 2194.223 ; gain = 555.461 ; free physical = 1930 ; free virtual = 7139
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2194.223 ; gain = 0.000 ; free physical = 2245 ; free virtual = 7453
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.223 ; gain = 0.000 ; free physical = 2244 ; free virtual = 7452
+>>>>>>> Stashed changes
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: ad64a39a
 INFO: [Common 17-83] Releasing license: Synthesis
+<<<<<<< Updated upstream
 56 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 2203.496 ; gain = 880.461 ; free physical = 460 ; free virtual = 7308
@@ -339,3 +563,14 @@ Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (
 INFO: [Common 17-1381] The checkpoint '/home/afely/Desktop/finn-notebook/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file finn_design_wrapper_utilization_synth.rpt -pb finn_design_wrapper_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Tue Jan 23 11:58:47 2024...
+=======
+62 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:57 . Memory (MB): peak = 2194.223 ; gain = 889.469 ; free physical = 2244 ; free virtual = 7452
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1838.757; main = 1481.853; forked = 404.303
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3217.656; main = 2178.184; forked = 1039.473
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2194.223 ; gain = 0.000 ; free physical = 2244 ; free virtual = 7452
+INFO: [Common 17-1381] The checkpoint '/home/finn/Desktop/finn/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_wrapper_utilization_synth.rpt -pb finn_design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 11 02:34:29 2024...
+>>>>>>> Stashed changes
