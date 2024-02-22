@@ -1,6 +1,0 @@
-{
-  "Defaults": {},
-  "StreamingMaxPool_Batch_0": {
-    "PE": 1
-  }
-}
