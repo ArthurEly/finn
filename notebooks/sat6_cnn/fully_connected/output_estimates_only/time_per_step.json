@@ -1,0 +1,11 @@
+{
+  "step_qonnx_to_finn": 8.678436279296875e-05,
+  "step_tidy_up": 0.11643624305725098,
+  "step_streamline": 2.5728936195373535,
+  "step_convert_to_hls": 0.06802058219909668,
+  "step_create_dataflow_partition": 0.01141500473022461,
+  "step_target_fps_parallelization": 0.03358340263366699,
+  "step_apply_folding_config": 4.0531158447265625e-06,
+  "step_minimize_bit_width": 0.11363935470581055,
+  "step_generate_estimate_reports": 0.029802322387695312
+}
