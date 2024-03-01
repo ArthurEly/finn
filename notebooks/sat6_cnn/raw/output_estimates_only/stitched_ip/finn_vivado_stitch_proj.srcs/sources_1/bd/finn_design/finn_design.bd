@@ -1,0 +1,1599 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2B0000A0246A5DB2",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../finn_vivado_stitch_proj.gen/sources_1/bd/finn_design",
+      "name": "finn_design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "StreamingFIFO_0": "",
+      "Thresholding_Batch_0": "",
+      "StreamingFIFO_1": {
+        "fifo": ""
+      },
+      "FMPadding_Batch_0": "",
+      "StreamingFIFO_2": {
+        "fifo": ""
+      },
+      "ConvolutionInputGenerator_0": "",
+      "StreamingFIFO_3": {
+        "fifo": ""
+      },
+      "MatrixVectorActivation_0": {
+        "MatrixVectorActivation_0": "",
+        "MatrixVectorActivation_0_wstrm": ""
+      },
+      "Thresholding_Batch_1": "",
+      "Thresholding_Batch_2": "",
+      "StreamingFIFO_6": "",
+      "FMPadding_Batch_1": "",
+      "StreamingFIFO_7": {
+        "fifo": ""
+      },
+      "ConvolutionInputGenerator_1": "",
+      "StreamingFIFO_8": {
+        "fifo": ""
+      },
+      "MatrixVectorActivation_1": {
+        "MatrixVectorActivation_1": "",
+        "MatrixVectorActivation_1_wstrm": ""
+      },
+      "Thresholding_Batch_3": "",
+      "Thresholding_Batch_4": "",
+      "FMPadding_Batch_2": "",
+      "StreamingFIFO_12": "",
+      "ConvolutionInputGenerator_2": "",
+      "StreamingFIFO_13": {
+        "fifo": ""
+      },
+      "MatrixVectorActivation_2": {
+        "MatrixVectorActivation_2": "",
+        "MatrixVectorActivation_2_wstrm": ""
+      },
+      "Thresholding_Batch_5": "",
+      "Thresholding_Batch_6": "",
+      "FMPadding_Batch_3": "",
+      "StreamingFIFO_17": "",
+      "ConvolutionInputGenerator_3": "",
+      "StreamingFIFO_18": {
+        "fifo": ""
+      },
+      "MatrixVectorActivation_3": {
+        "MatrixVectorActivation_3": "",
+        "MatrixVectorActivation_3_wstrm": ""
+      },
+      "Thresholding_Batch_7": "",
+      "ConvolutionInputGenerator_4": "",
+      "Pool_Batch_0": ""
+    },
+    "interface_ports": {
+      "s_axis_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "finn_design_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "1"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "port_maps": {
+          "TDATA": {
+            "physical_name": "s_axis_0_tdata",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "TVALID": {
+            "physical_name": "s_axis_0_tvalid",
+            "direction": "I"
+          },
+          "TREADY": {
+            "physical_name": "s_axis_0_tready",
+            "direction": "O"
+          }
+        }
+      },
+      "m_axis_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "finn_design_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TLAST": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          }
+        },
+        "port_maps": {
+          "TVALID": {
+            "physical_name": "m_axis_0_tvalid",
+            "direction": "O"
+          },
+          "TREADY": {
+            "physical_name": "m_axis_0_tready",
+            "direction": "I"
+          },
+          "TDATA": {
+            "physical_name": "m_axis_0_tdata",
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "s_axis_0:m_axis_0",
+            "value_src": "default"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_n",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "finn_design_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "StreamingFIFO_0": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_0:1.0",
+        "ip_revision": "2",
+        "xci_name": "finn_design_StreamingFIFO_0_0",
+        "xci_path": "ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0.xci",
+        "inst_hier_path": "StreamingFIFO_0"
+      },
+      "Thresholding_Batch_0": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_0:1.0",
+        "ip_revision": "2113450292",
+        "xci_name": "finn_design_Thresholding_Batch_0_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_0_0/finn_design_Thresholding_Batch_0_0.xci",
+        "inst_hier_path": "Thresholding_Batch_0"
+      },
+      "StreamingFIFO_1": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_0",
+            "xci_path": "ip/finn_design_fifo_0/finn_design_fifo_0.xci",
+            "inst_hier_path": "StreamingFIFO_1/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "1024"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "FMPadding_Batch_0": {
+        "vlnv": "xilinx.com:hls:FMPadding_Batch_0:1.0",
+        "ip_revision": "2113450292",
+        "xci_name": "finn_design_FMPadding_Batch_0_0",
+        "xci_path": "ip/finn_design_FMPadding_Batch_0_0/finn_design_FMPadding_Batch_0_0.xci",
+        "inst_hier_path": "FMPadding_Batch_0"
+      },
+      "StreamingFIFO_2": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_1",
+            "xci_path": "ip/finn_design_fifo_1/finn_design_fifo_1.xci",
+            "inst_hier_path": "StreamingFIFO_2/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "8192"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "ConvolutionInputGenerator_0": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator_0:1.0",
+        "ip_revision": "2113450291",
+        "xci_name": "finn_design_ConvolutionInputGenerator_0_0",
+        "xci_path": "ip/finn_design_ConvolutionInputGenerator_0_0/finn_design_ConvolutionInputGenerator_0_0.xci",
+        "inst_hier_path": "ConvolutionInputGenerator_0"
+      },
+      "StreamingFIFO_3": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_2",
+            "xci_path": "ip/finn_design_fifo_2/finn_design_fifo_2.xci",
+            "inst_hier_path": "StreamingFIFO_3/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "1024"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "MatrixVectorActivation_0": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "MatrixVectorActivation_0": {
+            "vlnv": "xilinx.com:hls:MatrixVectorActivation_0:1.0",
+            "ip_revision": "2113450292",
+            "xci_name": "finn_design_MatrixVectorActivation_0_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_0/MatrixVectorActivation_0"
+          },
+          "MatrixVectorActivation_0_wstrm": {
+            "vlnv": "amd.com:finn:memstream:1.0",
+            "ip_revision": "5",
+            "xci_name": "finn_design_MatrixVectorActivation_0_wstrm_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm",
+            "parameters": {
+              "DEPTH": {
+                "value": "576"
+              },
+              "INIT_FILE": {
+                "value": "/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_0_0vm64gti/memblock.dat"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "WIDTH": {
+                "value": "8"
+              }
+            },
+            "interface_ports": {
+              "s_axilite": {
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                "mode": "Slave",
+                "memory_map_ref": "interface_aximm"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "MatrixVectorActivation_0_out_V": {
+            "interface_ports": [
+              "out_V",
+              "MatrixVectorActivation_0/out_V"
+            ]
+          },
+          "MatrixVectorActivation_0_wstrm_m_axis_0": {
+            "interface_ports": [
+              "MatrixVectorActivation_0_wstrm/m_axis_0",
+              "MatrixVectorActivation_0/weights_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "in0_V",
+              "MatrixVectorActivation_0/in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "MatrixVectorActivation_0_wstrm/ap_clk",
+              "MatrixVectorActivation_0/ap_clk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "MatrixVectorActivation_0_wstrm/ap_rst_n",
+              "MatrixVectorActivation_0/ap_rst_n"
+            ]
+          }
+        }
+      },
+      "Thresholding_Batch_1": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_1:1.0",
+        "ip_revision": "2113450291",
+        "xci_name": "finn_design_Thresholding_Batch_1_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_1_0/finn_design_Thresholding_Batch_1_0.xci",
+        "inst_hier_path": "Thresholding_Batch_1"
+      },
+      "Thresholding_Batch_2": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_2:1.0",
+        "ip_revision": "2113450291",
+        "xci_name": "finn_design_Thresholding_Batch_2_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_2_0/finn_design_Thresholding_Batch_2_0.xci",
+        "inst_hier_path": "Thresholding_Batch_2"
+      },
+      "StreamingFIFO_6": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_6:1.0",
+        "ip_revision": "2",
+        "xci_name": "finn_design_StreamingFIFO_6_0",
+        "xci_path": "ip/finn_design_StreamingFIFO_6_0/finn_design_StreamingFIFO_6_0.xci",
+        "inst_hier_path": "StreamingFIFO_6"
+      },
+      "FMPadding_Batch_1": {
+        "vlnv": "xilinx.com:hls:FMPadding_Batch_1:1.0",
+        "ip_revision": "2113450291",
+        "xci_name": "finn_design_FMPadding_Batch_1_0",
+        "xci_path": "ip/finn_design_FMPadding_Batch_1_0/finn_design_FMPadding_Batch_1_0.xci",
+        "inst_hier_path": "FMPadding_Batch_1"
+      },
+      "StreamingFIFO_7": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_3",
+            "xci_path": "ip/finn_design_fifo_3/finn_design_fifo_3.xci",
+            "inst_hier_path": "StreamingFIFO_7/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "1024"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "ConvolutionInputGenerator_1": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator_1:1.0",
+        "ip_revision": "2113450291",
+        "xci_name": "finn_design_ConvolutionInputGenerator_1_0",
+        "xci_path": "ip/finn_design_ConvolutionInputGenerator_1_0/finn_design_ConvolutionInputGenerator_1_0.xci",
+        "inst_hier_path": "ConvolutionInputGenerator_1"
+      },
+      "StreamingFIFO_8": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_4",
+            "xci_path": "ip/finn_design_fifo_4/finn_design_fifo_4.xci",
+            "inst_hier_path": "StreamingFIFO_8/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "2048"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "MatrixVectorActivation_1": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "MatrixVectorActivation_1": {
+            "vlnv": "xilinx.com:hls:MatrixVectorActivation_1:1.0",
+            "ip_revision": "2113450291",
+            "xci_name": "finn_design_MatrixVectorActivation_1_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_1/MatrixVectorActivation_1"
+          },
+          "MatrixVectorActivation_1_wstrm": {
+            "vlnv": "amd.com:finn:memstream:1.0",
+            "ip_revision": "5",
+            "xci_name": "finn_design_MatrixVectorActivation_1_wstrm_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm",
+            "parameters": {
+              "DEPTH": {
+                "value": "1152"
+              },
+              "INIT_FILE": {
+                "value": "/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_1_w0mv_wzk/memblock.dat"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "WIDTH": {
+                "value": "8"
+              }
+            },
+            "interface_ports": {
+              "s_axilite": {
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                "mode": "Slave",
+                "memory_map_ref": "interface_aximm"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "MatrixVectorActivation_1_out_V": {
+            "interface_ports": [
+              "out_V",
+              "MatrixVectorActivation_1/out_V"
+            ]
+          },
+          "MatrixVectorActivation_1_wstrm_m_axis_0": {
+            "interface_ports": [
+              "MatrixVectorActivation_1_wstrm/m_axis_0",
+              "MatrixVectorActivation_1/weights_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "in0_V",
+              "MatrixVectorActivation_1/in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "MatrixVectorActivation_1_wstrm/ap_clk",
+              "MatrixVectorActivation_1/ap_clk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "MatrixVectorActivation_1_wstrm/ap_rst_n",
+              "MatrixVectorActivation_1/ap_rst_n"
+            ]
+          }
+        }
+      },
+      "Thresholding_Batch_3": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_3:1.0",
+        "ip_revision": "2113450291",
+        "xci_name": "finn_design_Thresholding_Batch_3_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_3_0/finn_design_Thresholding_Batch_3_0.xci",
+        "inst_hier_path": "Thresholding_Batch_3"
+      },
+      "Thresholding_Batch_4": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_4:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_Thresholding_Batch_4_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_4_0/finn_design_Thresholding_Batch_4_0.xci",
+        "inst_hier_path": "Thresholding_Batch_4"
+      },
+      "FMPadding_Batch_2": {
+        "vlnv": "xilinx.com:hls:FMPadding_Batch_2:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_FMPadding_Batch_2_0",
+        "xci_path": "ip/finn_design_FMPadding_Batch_2_0/finn_design_FMPadding_Batch_2_0.xci",
+        "inst_hier_path": "FMPadding_Batch_2"
+      },
+      "StreamingFIFO_12": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_12:1.0",
+        "ip_revision": "2",
+        "xci_name": "finn_design_StreamingFIFO_12_0",
+        "xci_path": "ip/finn_design_StreamingFIFO_12_0/finn_design_StreamingFIFO_12_0.xci",
+        "inst_hier_path": "StreamingFIFO_12"
+      },
+      "ConvolutionInputGenerator_2": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator_2:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_ConvolutionInputGenerator_2_0",
+        "xci_path": "ip/finn_design_ConvolutionInputGenerator_2_0/finn_design_ConvolutionInputGenerator_2_0.xci",
+        "inst_hier_path": "ConvolutionInputGenerator_2"
+      },
+      "StreamingFIFO_13": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_5",
+            "xci_path": "ip/finn_design_fifo_5/finn_design_fifo_5.xci",
+            "inst_hier_path": "StreamingFIFO_13/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "512"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "MatrixVectorActivation_2": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "MatrixVectorActivation_2": {
+            "vlnv": "xilinx.com:hls:MatrixVectorActivation_2:1.0",
+            "ip_revision": "2113450290",
+            "xci_name": "finn_design_MatrixVectorActivation_2_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_2/MatrixVectorActivation_2"
+          },
+          "MatrixVectorActivation_2_wstrm": {
+            "vlnv": "amd.com:finn:memstream:1.0",
+            "ip_revision": "5",
+            "xci_name": "finn_design_MatrixVectorActivation_2_wstrm_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm",
+            "parameters": {
+              "DEPTH": {
+                "value": "1152"
+              },
+              "INIT_FILE": {
+                "value": "/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_2_bqkc6j7o/memblock.dat"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "WIDTH": {
+                "value": "8"
+              }
+            },
+            "interface_ports": {
+              "s_axilite": {
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                "mode": "Slave",
+                "memory_map_ref": "interface_aximm"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "MatrixVectorActivation_2_out_V": {
+            "interface_ports": [
+              "out_V",
+              "MatrixVectorActivation_2/out_V"
+            ]
+          },
+          "MatrixVectorActivation_2_wstrm_m_axis_0": {
+            "interface_ports": [
+              "MatrixVectorActivation_2_wstrm/m_axis_0",
+              "MatrixVectorActivation_2/weights_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "in0_V",
+              "MatrixVectorActivation_2/in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "MatrixVectorActivation_2_wstrm/ap_clk",
+              "MatrixVectorActivation_2/ap_clk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "MatrixVectorActivation_2_wstrm/ap_rst_n",
+              "MatrixVectorActivation_2/ap_rst_n"
+            ]
+          }
+        }
+      },
+      "Thresholding_Batch_5": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_5:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_Thresholding_Batch_5_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_5_0/finn_design_Thresholding_Batch_5_0.xci",
+        "inst_hier_path": "Thresholding_Batch_5"
+      },
+      "Thresholding_Batch_6": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_6:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_Thresholding_Batch_6_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_6_0/finn_design_Thresholding_Batch_6_0.xci",
+        "inst_hier_path": "Thresholding_Batch_6"
+      },
+      "FMPadding_Batch_3": {
+        "vlnv": "xilinx.com:hls:FMPadding_Batch_3:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_FMPadding_Batch_3_0",
+        "xci_path": "ip/finn_design_FMPadding_Batch_3_0/finn_design_FMPadding_Batch_3_0.xci",
+        "inst_hier_path": "FMPadding_Batch_3"
+      },
+      "StreamingFIFO_17": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_17:1.0",
+        "ip_revision": "2",
+        "xci_name": "finn_design_StreamingFIFO_17_0",
+        "xci_path": "ip/finn_design_StreamingFIFO_17_0/finn_design_StreamingFIFO_17_0.xci",
+        "inst_hier_path": "StreamingFIFO_17"
+      },
+      "ConvolutionInputGenerator_3": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator_3:1.0",
+        "ip_revision": "2113450290",
+        "xci_name": "finn_design_ConvolutionInputGenerator_3_0",
+        "xci_path": "ip/finn_design_ConvolutionInputGenerator_3_0/finn_design_ConvolutionInputGenerator_3_0.xci",
+        "inst_hier_path": "ConvolutionInputGenerator_3"
+      },
+      "StreamingFIFO_18": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "ip_revision": "11",
+            "xci_name": "finn_design_fifo_6",
+            "xci_path": "ip/finn_design_fifo_6/finn_design_fifo_6.xci",
+            "inst_hier_path": "StreamingFIFO_18/fifo",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "512"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "fifo/M_AXIS",
+              "out_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "fifo/S_AXIS",
+              "in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          }
+        }
+      },
+      "MatrixVectorActivation_3": {
+        "interface_ports": {
+          "out_V": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "MatrixVectorActivation_3": {
+            "vlnv": "xilinx.com:hls:MatrixVectorActivation_3:1.0",
+            "ip_revision": "2113450289",
+            "xci_name": "finn_design_MatrixVectorActivation_3_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_3/MatrixVectorActivation_3"
+          },
+          "MatrixVectorActivation_3_wstrm": {
+            "vlnv": "amd.com:finn:memstream:1.0",
+            "ip_revision": "5",
+            "xci_name": "finn_design_MatrixVectorActivation_3_wstrm_0",
+            "xci_path": "ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0.xci",
+            "inst_hier_path": "MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm",
+            "parameters": {
+              "DEPTH": {
+                "value": "1152"
+              },
+              "INIT_FILE": {
+                "value": "/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_3_ijcbbx8h/memblock.dat"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "WIDTH": {
+                "value": "8"
+              }
+            },
+            "interface_ports": {
+              "s_axilite": {
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                "mode": "Slave",
+                "memory_map_ref": "interface_aximm"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "MatrixVectorActivation_3_out_V": {
+            "interface_ports": [
+              "out_V",
+              "MatrixVectorActivation_3/out_V"
+            ]
+          },
+          "MatrixVectorActivation_3_wstrm_m_axis_0": {
+            "interface_ports": [
+              "MatrixVectorActivation_3_wstrm/m_axis_0",
+              "MatrixVectorActivation_3/weights_V"
+            ]
+          },
+          "in0_V_1": {
+            "interface_ports": [
+              "in0_V",
+              "MatrixVectorActivation_3/in0_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "MatrixVectorActivation_3_wstrm/ap_clk",
+              "MatrixVectorActivation_3/ap_clk"
+            ]
+          },
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "MatrixVectorActivation_3_wstrm/ap_rst_n",
+              "MatrixVectorActivation_3/ap_rst_n"
+            ]
+          }
+        }
+      },
+      "Thresholding_Batch_7": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_7:1.0",
+        "ip_revision": "2113450289",
+        "xci_name": "finn_design_Thresholding_Batch_7_0",
+        "xci_path": "ip/finn_design_Thresholding_Batch_7_0/finn_design_Thresholding_Batch_7_0.xci",
+        "inst_hier_path": "Thresholding_Batch_7"
+      },
+      "ConvolutionInputGenerator_4": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator_4:1.0",
+        "ip_revision": "2113450289",
+        "xci_name": "finn_design_ConvolutionInputGenerator_4_0",
+        "xci_path": "ip/finn_design_ConvolutionInputGenerator_4_0/finn_design_ConvolutionInputGenerator_4_0.xci",
+        "inst_hier_path": "ConvolutionInputGenerator_4"
+      },
+      "Pool_Batch_0": {
+        "vlnv": "xilinx.com:hls:Pool_Batch_0:1.0",
+        "ip_revision": "2113450289",
+        "xci_name": "finn_design_Pool_Batch_0_0",
+        "xci_path": "ip/finn_design_Pool_Batch_0_0/finn_design_Pool_Batch_0_0.xci",
+        "inst_hier_path": "Pool_Batch_0"
+      }
+    },
+    "interface_nets": {
+      "ConvolutionInputGenerator_0_out_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator_0/out_V",
+          "StreamingFIFO_3/in0_V"
+        ]
+      },
+      "ConvolutionInputGenerator_1_out_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator_1/out_V",
+          "StreamingFIFO_8/in0_V"
+        ]
+      },
+      "ConvolutionInputGenerator_2_out_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator_2/out_V",
+          "StreamingFIFO_13/in0_V"
+        ]
+      },
+      "ConvolutionInputGenerator_3_out_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator_3/out_V",
+          "StreamingFIFO_18/in0_V"
+        ]
+      },
+      "ConvolutionInputGenerator_4_out_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator_4/out_V",
+          "Pool_Batch_0/in0_V"
+        ]
+      },
+      "FMPadding_Batch_0_out_V": {
+        "interface_ports": [
+          "FMPadding_Batch_0/out_V",
+          "StreamingFIFO_2/in0_V"
+        ]
+      },
+      "FMPadding_Batch_1_out_V": {
+        "interface_ports": [
+          "FMPadding_Batch_1/out_V",
+          "StreamingFIFO_7/in0_V"
+        ]
+      },
+      "FMPadding_Batch_2_out_V": {
+        "interface_ports": [
+          "FMPadding_Batch_2/out_V",
+          "StreamingFIFO_12/in0_V"
+        ]
+      },
+      "FMPadding_Batch_3_out_V": {
+        "interface_ports": [
+          "FMPadding_Batch_3/out_V",
+          "StreamingFIFO_17/in0_V"
+        ]
+      },
+      "MatrixVectorActivation_0_out_V": {
+        "interface_ports": [
+          "MatrixVectorActivation_0/out_V",
+          "Thresholding_Batch_1/in0_V"
+        ]
+      },
+      "MatrixVectorActivation_1_out_V": {
+        "interface_ports": [
+          "MatrixVectorActivation_1/out_V",
+          "Thresholding_Batch_3/in0_V"
+        ]
+      },
+      "MatrixVectorActivation_2_out_V": {
+        "interface_ports": [
+          "MatrixVectorActivation_2/out_V",
+          "Thresholding_Batch_5/in0_V"
+        ]
+      },
+      "MatrixVectorActivation_3_out_V": {
+        "interface_ports": [
+          "MatrixVectorActivation_3/out_V",
+          "Thresholding_Batch_7/in0_V"
+        ]
+      },
+      "Pool_Batch_0_out_V": {
+        "interface_ports": [
+          "m_axis_0",
+          "Pool_Batch_0/out_V"
+        ]
+      },
+      "StreamingFIFO_0_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_0/out_V",
+          "Thresholding_Batch_0/in0_V"
+        ]
+      },
+      "StreamingFIFO_12_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_12/out_V",
+          "ConvolutionInputGenerator_2/in0_V"
+        ]
+      },
+      "StreamingFIFO_13_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_13/out_V",
+          "MatrixVectorActivation_2/in0_V"
+        ]
+      },
+      "StreamingFIFO_17_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_17/out_V",
+          "ConvolutionInputGenerator_3/in0_V"
+        ]
+      },
+      "StreamingFIFO_18_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_18/out_V",
+          "MatrixVectorActivation_3/in0_V"
+        ]
+      },
+      "StreamingFIFO_1_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_1/out_V",
+          "FMPadding_Batch_0/in0_V"
+        ]
+      },
+      "StreamingFIFO_2_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_2/out_V",
+          "ConvolutionInputGenerator_0/in0_V"
+        ]
+      },
+      "StreamingFIFO_3_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_3/out_V",
+          "MatrixVectorActivation_0/in0_V"
+        ]
+      },
+      "StreamingFIFO_6_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_6/out_V",
+          "FMPadding_Batch_1/in0_V"
+        ]
+      },
+      "StreamingFIFO_7_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_7/out_V",
+          "ConvolutionInputGenerator_1/in0_V"
+        ]
+      },
+      "StreamingFIFO_8_out_V": {
+        "interface_ports": [
+          "StreamingFIFO_8/out_V",
+          "MatrixVectorActivation_1/in0_V"
+        ]
+      },
+      "Thresholding_Batch_0_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_0/out_V",
+          "StreamingFIFO_1/in0_V"
+        ]
+      },
+      "Thresholding_Batch_1_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_1/out_V",
+          "Thresholding_Batch_2/in0_V"
+        ]
+      },
+      "Thresholding_Batch_2_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_2/out_V",
+          "StreamingFIFO_6/in0_V"
+        ]
+      },
+      "Thresholding_Batch_3_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_3/out_V",
+          "Thresholding_Batch_4/in0_V"
+        ]
+      },
+      "Thresholding_Batch_4_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_4/out_V",
+          "FMPadding_Batch_2/in0_V"
+        ]
+      },
+      "Thresholding_Batch_5_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_5/out_V",
+          "Thresholding_Batch_6/in0_V"
+        ]
+      },
+      "Thresholding_Batch_6_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_6/out_V",
+          "FMPadding_Batch_3/in0_V"
+        ]
+      },
+      "Thresholding_Batch_7_out_V": {
+        "interface_ports": [
+          "Thresholding_Batch_7/out_V",
+          "ConvolutionInputGenerator_4/in0_V"
+        ]
+      },
+      "in0_V_0_1": {
+        "interface_ports": [
+          "s_axis_0",
+          "StreamingFIFO_0/in0_V"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "StreamingFIFO_0/ap_clk",
+          "Thresholding_Batch_0/ap_clk",
+          "StreamingFIFO_1/ap_clk",
+          "FMPadding_Batch_0/ap_clk",
+          "StreamingFIFO_2/ap_clk",
+          "ConvolutionInputGenerator_0/ap_clk",
+          "StreamingFIFO_3/ap_clk",
+          "MatrixVectorActivation_0/ap_clk",
+          "Thresholding_Batch_1/ap_clk",
+          "Thresholding_Batch_2/ap_clk",
+          "StreamingFIFO_6/ap_clk",
+          "FMPadding_Batch_1/ap_clk",
+          "StreamingFIFO_7/ap_clk",
+          "ConvolutionInputGenerator_1/ap_clk",
+          "StreamingFIFO_8/ap_clk",
+          "MatrixVectorActivation_1/ap_clk",
+          "Thresholding_Batch_3/ap_clk",
+          "Thresholding_Batch_4/ap_clk",
+          "FMPadding_Batch_2/ap_clk",
+          "StreamingFIFO_12/ap_clk",
+          "ConvolutionInputGenerator_2/ap_clk",
+          "StreamingFIFO_13/ap_clk",
+          "MatrixVectorActivation_2/ap_clk",
+          "Thresholding_Batch_5/ap_clk",
+          "Thresholding_Batch_6/ap_clk",
+          "FMPadding_Batch_3/ap_clk",
+          "StreamingFIFO_17/ap_clk",
+          "ConvolutionInputGenerator_3/ap_clk",
+          "StreamingFIFO_18/ap_clk",
+          "MatrixVectorActivation_3/ap_clk",
+          "Thresholding_Batch_7/ap_clk",
+          "ConvolutionInputGenerator_4/ap_clk",
+          "Pool_Batch_0/ap_clk"
+        ]
+      },
+      "ap_rst_n_0_1": {
+        "ports": [
+          "ap_rst_n",
+          "StreamingFIFO_0/ap_rst_n",
+          "Thresholding_Batch_0/ap_rst_n",
+          "StreamingFIFO_1/ap_rst_n",
+          "FMPadding_Batch_0/ap_rst_n",
+          "StreamingFIFO_2/ap_rst_n",
+          "ConvolutionInputGenerator_0/ap_rst_n",
+          "StreamingFIFO_3/ap_rst_n",
+          "MatrixVectorActivation_0/ap_rst_n",
+          "Thresholding_Batch_1/ap_rst_n",
+          "Thresholding_Batch_2/ap_rst_n",
+          "StreamingFIFO_6/ap_rst_n",
+          "FMPadding_Batch_1/ap_rst_n",
+          "StreamingFIFO_7/ap_rst_n",
+          "ConvolutionInputGenerator_1/ap_rst_n",
+          "StreamingFIFO_8/ap_rst_n",
+          "MatrixVectorActivation_1/ap_rst_n",
+          "Thresholding_Batch_3/ap_rst_n",
+          "Thresholding_Batch_4/ap_rst_n",
+          "FMPadding_Batch_2/ap_rst_n",
+          "StreamingFIFO_12/ap_rst_n",
+          "ConvolutionInputGenerator_2/ap_rst_n",
+          "StreamingFIFO_13/ap_rst_n",
+          "MatrixVectorActivation_2/ap_rst_n",
+          "Thresholding_Batch_5/ap_rst_n",
+          "Thresholding_Batch_6/ap_rst_n",
+          "FMPadding_Batch_3/ap_rst_n",
+          "StreamingFIFO_17/ap_rst_n",
+          "ConvolutionInputGenerator_3/ap_rst_n",
+          "StreamingFIFO_18/ap_rst_n",
+          "MatrixVectorActivation_3/ap_rst_n",
+          "Thresholding_Batch_7/ap_rst_n",
+          "ConvolutionInputGenerator_4/ap_rst_n",
+          "Pool_Batch_0/ap_rst_n"
+        ]
+      }
+    }
+  }
+}

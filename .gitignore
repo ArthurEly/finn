@@ -97,3 +97,6 @@ MANIFEST
 # downloaded dep repos
 /deps/
 *.mat
+*.trashinfo
+.Trash-1000/files/end2end_cnv_w1a1_export.onnx
+.Trash-1000/files/resnet18_4w4a-a172f334.pth

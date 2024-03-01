@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  1 03:34:28 2024
+# Process ID: 43192
+# Current directory: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1
+# Command line: vivado -log finn_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_wrapper.tcl
+# Log file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.vds
+# Journal file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/vivado.jou
+# Running On: artti-desktop, OS: Linux, CPU Frequency: 3994.696 MHz, CPU Physical cores: 6, Host memory: 16689 MB
+#-----------------------------------------------------------
+source finn_design_wrapper.tcl -notrace
