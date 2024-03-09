@@ -1,0 +1,791 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  1 03:08:59 2024
+# Process ID: 35236
+# Current directory: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1
+# Command line: vivado -log finn_design_Thresholding_Batch_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_Thresholding_Batch_1_0.tcl
+# Log file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/finn_design_Thresholding_Batch_1_0.vds
+# Journal file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/vivado.jou
+# Running On: artti-desktop, OS: Linux, CPU Frequency: 3899.360 MHz, CPU Physical cores: 6, Host memory: 16689 MB
+#-----------------------------------------------------------
+source finn_design_Thresholding_Batch_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.766 ; gain = 0.023 ; free physical = 1946 ; free virtual = 9300
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/artti/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_0__4zh_l2k/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_0_67kvum50/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_1__5kud3bo/project_StreamingFIFO_1/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_0_y8e9p8bj/project_FMPadding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_2__utui9ov/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_0_7jlsbrs7/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_3_7ld679uy/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_0_0vm64gti/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_2_6vq4feh_/project_Thresholding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_6_m2t8wwiz/project_StreamingFIFO_6/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_1_70n3qvut/project_FMPadding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_7_iu3sxmag/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_1_5v75f3x2/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_8__8v1bg9w/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_1_w0mv_wzk/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_3_7ypbgh70/project_Thresholding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_4_vg83ee_x/project_Thresholding_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_2_mzgwzo4y/project_FMPadding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_12_f2zdnjow/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_2_ruue1qfd/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_13_m9zk1oq0/project_StreamingFIFO_13/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_2_bqkc6j7o/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_5_t7_9f8lu/project_Thresholding_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_6_oycw_ll6/project_Thresholding_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_3_mkrl0729/project_FMPadding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_17_4xdwllc6/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_3_2b_1or5q/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_18_97swl15m/project_StreamingFIFO_18/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_3_ijcbbx8h/project_MatrixVectorActivation_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_7_901tt180/project_Thresholding_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_4_vcfod7w4/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Pool_Batch_0_a3up63aq/project_Pool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_Thresholding_Batch_1_0
+Command: synth_design -top finn_design_Thresholding_Batch_1_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35261
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2064.012 ; gain = 402.715 ; free physical = 947 ; free virtual = 8301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_1_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_1_0/synth/finn_design_Thresholding_Batch_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R.dat' is read successfully [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_flow_control_loop_pipe_sequential_init' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_flow_control_loop_pipe_sequential_init' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_Thresholding_Batch' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_Thresholding_Batch.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Thresholding_Batch_1_regslice_both' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1_regslice_both' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Thresholding_Batch_1' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bb53/hdl/verilog/Thresholding_Batch_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_1_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_1_0/synth/finn_design_Thresholding_Batch_1_0.v:53]
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2179.949 ; gain = 518.652 ; free physical = 806 ; free virtual = 8162
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2197.762 ; gain = 536.465 ; free physical = 803 ; free virtual = 8159
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2197.762 ; gain = 536.465 ; free physical = 803 ; free virtual = 8159
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2197.762 ; gain = 0.000 ; free physical = 803 ; free virtual = 8160
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_1_0/constraints/Thresholding_Batch_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_1_0/constraints/Thresholding_Batch_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2311.504 ; gain = 0.000 ; free physical = 794 ; free virtual = 8150
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2311.539 ; gain = 0.000 ; free physical = 794 ; free virtual = 8150
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 825 ; free virtual = 8181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 825 ; free virtual = 8181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 825 ; free virtual = 8181
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter1_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter2_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter3_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter4_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter5_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter6_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter1_fsm_state0 |                               01 |                               01
+  ap_ST_iter1_fsm_state2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter2_fsm_state0 |                               01 |                               01
+  ap_ST_iter2_fsm_state3 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter2_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter6_fsm_state0 |                               01 |                               01
+  ap_ST_iter6_fsm_state7 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter6_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter3_fsm_state0 |                               01 |                               01
+  ap_ST_iter3_fsm_state4 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter3_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter4_fsm_state0 |                               01 |                               01
+  ap_ST_iter4_fsm_state5 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter4_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter5_fsm_state0 |                               01 |                               01
+  ap_ST_iter5_fsm_state6 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter5_fsm_reg' in module 'Thresholding_Batch_1_Thresholding_Batch'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 836 ; free virtual = 8194
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_1_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_4_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_5_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_6_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_13_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_14_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_15_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_31_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_32_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_67_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_68_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_138_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_0_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_139_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_3_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_11_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_12_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_29_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_30_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_64_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_65_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_66_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_136_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_2_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_137_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_8_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_24_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_25_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_26_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_60_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_61_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_131_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_7_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_132_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_10_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_27_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_28_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_62_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_63_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_133_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_134_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_9_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_135_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_16_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_17_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_16_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_51_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_16_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_52_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_16_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_122_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_16_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_123_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_16_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_124_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_18_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_19_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_18_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_53_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_18_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_54_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_18_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_55_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_18_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_125_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_18_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_126_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_20_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_21_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_20_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_56_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_20_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_57_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_20_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_127_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_20_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_128_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_22_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_23_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_22_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_58_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_22_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_59_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_22_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_129_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_22_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_130_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_33_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_34_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_33_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_35_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_33_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_105_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_33_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_106_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_33_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_247_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_33_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_248_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_36_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_37_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_36_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_107_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_36_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_108_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_36_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_249_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_36_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_250_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_38_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_39_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_38_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_109_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_38_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_110_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_38_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_251_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_38_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_252_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_38_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_253_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_40_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_41_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_40_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_111_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_40_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_112_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_40_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_254_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_42_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_43_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_42_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_113_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_42_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_114_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_42_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_115_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_44_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_45_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_44_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_46_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_44_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_116_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_44_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_117_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_47_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_48_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_47_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_118_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_47_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_119_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_49_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_50_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_49_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_120_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_49_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_121_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_69_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_70_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_69_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_211_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_69_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_212_U'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_69_U' (Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R) to 'inst/grp_Thresholding_Batch_fu_546/p_ZL7threshs_213_U'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   3 Input    7 Bit       Adders := 1     
+	  16 Input    6 Bit       Adders := 6     
+	   3 Input    6 Bit       Adders := 1     
+	  16 Input    5 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 1     
+	   8 Input    4 Bit       Adders := 2     
+	   9 Input    4 Bit       Adders := 1     
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 98    
+	   3 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 255   
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 164   
+	                1 Bit    Registers := 78    
++---Muxes : 
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 19    
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 817 ; free virtual = 8175
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------------------------------------------------------------------+------------+---------------+----------------+
+|Module Name                                                               | RTL Object | Depth x Width | Implemented As | 
++--------------------------------------------------------------------------+------------+---------------+----------------+
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_0_ROM_2P_LUTRAM_1R   | rom0       | 16x1          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_2_ROM_2P_LUTRAM_1R   | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_7_ROM_2P_LUTRAM_1R   | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_9_ROM_2P_LUTRAM_1R   | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_16_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_18_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_20_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_22_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_33_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_36_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_38_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_40_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_42_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_44_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_47_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_49_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_69_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_71_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_73_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_76_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_78_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_80_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_82_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_85_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_87_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_89_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_91_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_93_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_96_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_98_ROM_2P_LUTRAM_1R  | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_100_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_102_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_140_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_142_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_145_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_147_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_149_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_151_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_153_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_156_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_158_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_160_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_162_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_165_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_167_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_169_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_171_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_173_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_176_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_178_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_180_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_182_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_185_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_187_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_189_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_191_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_193_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_196_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_198_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_200_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_202_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_205_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_207_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
+|Thresholding_Batch_1_Thresholding_Batch_p_ZL7threshs_209_ROM_2P_LUTRAM_1R | rom0       | 16x2          | LUT            | 
++--------------------------------------------------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   160|
+|2     |LUT1   |    89|
+|3     |LUT2   |   701|
+|4     |LUT3   |   126|
+|5     |LUT4   |    41|
+|6     |LUT5   |    88|
+|7     |LUT6   |   106|
+|8     |FDRE   |   359|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 814 ; free virtual = 8171
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2311.539 ; gain = 536.465 ; free physical = 813 ; free virtual = 8171
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2311.539 ; gain = 650.242 ; free physical = 813 ; free virtual = 8171
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2311.539 ; gain = 0.000 ; free physical = 1096 ; free virtual = 8454
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'finn_design_Thresholding_Batch_1_0' is not ideal for floorplanning, since the cellview 'Thresholding_Batch_1_Thresholding_Batch' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2311.539 ; gain = 0.000 ; free physical = 1097 ; free virtual = 8455
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3f36328b
+INFO: [Common 17-83] Releasing license: Synthesis
+368 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2311.539 ; gain = 980.773 ; free physical = 1096 ; free virtual = 8454
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1890.316; main = 1561.759; forked = 377.669
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3310.062; main = 2311.508; forked = 1014.562
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2335.516 ; gain = 0.000 ; free physical = 1096 ; free virtual = 8453
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/finn_design_Thresholding_Batch_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_Thresholding_Batch_1_0, cache-ID = 517d3726b2a37b7a
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2335.516 ; gain = 0.000 ; free physical = 1085 ; free virtual = 8444
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_Thresholding_Batch_1_0_synth_1/finn_design_Thresholding_Batch_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_Thresholding_Batch_1_0_utilization_synth.rpt -pb finn_design_Thresholding_Batch_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 03:09:36 2024...

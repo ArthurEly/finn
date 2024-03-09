@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  1 02:52:18 2024
+# Process ID: 27776
+# Current directory: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1
+# Command line: vivado -log finn_design_ConvolutionInputGenerator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_ConvolutionInputGenerator_0_0.tcl
+# Log file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/finn_design_ConvolutionInputGenerator_0_0.vds
+# Journal file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/vivado.jou
+# Running On: artti-desktop, OS: Linux, CPU Frequency: 3901.123 MHz, CPU Physical cores: 6, Host memory: 16689 MB
+#-----------------------------------------------------------
+source finn_design_ConvolutionInputGenerator_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.770 ; gain = 0.023 ; free physical = 545 ; free virtual = 10292
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/artti/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_0__4zh_l2k/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_0_67kvum50/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_1__5kud3bo/project_StreamingFIFO_1/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_0_y8e9p8bj/project_FMPadding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_2__utui9ov/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_0_7jlsbrs7/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_3_7ld679uy/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_0_0vm64gti/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_2_6vq4feh_/project_Thresholding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_6_m2t8wwiz/project_StreamingFIFO_6/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_1_70n3qvut/project_FMPadding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_7_iu3sxmag/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_1_5v75f3x2/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_8__8v1bg9w/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_1_w0mv_wzk/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_3_7ypbgh70/project_Thresholding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_4_vg83ee_x/project_Thresholding_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_2_mzgwzo4y/project_FMPadding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_12_f2zdnjow/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_2_ruue1qfd/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_13_m9zk1oq0/project_StreamingFIFO_13/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_2_bqkc6j7o/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_5_t7_9f8lu/project_Thresholding_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_6_oycw_ll6/project_Thresholding_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_3_mkrl0729/project_FMPadding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_17_4xdwllc6/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_3_2b_1or5q/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_18_97swl15m/project_StreamingFIFO_18/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_3_ijcbbx8h/project_MatrixVectorActivation_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_7_901tt180/project_Thresholding_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_4_vcfod7w4/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Pool_Batch_0_a3up63aq/project_Pool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_ConvolutionInputGenerator_0_0
+Command: synth_design -top finn_design_ConvolutionInputGenerator_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27818
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2064.016 ; gain = 404.715 ; free physical = 337 ; free virtual = 9319
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_0_0/synth/finn_design_ConvolutionInputGenerator_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride_inputBuf_RAM_S2P_LUTRAM_1R1W' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride_inputBuf_RAM_S2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride_inputBuf_RAM_S2P_LUTRAM_1R1W' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride_inputBuf_RAM_S2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_0_sparsemux_11_3_8_1_1' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_sparsemux_11_3_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_0_sparsemux_11_3_8_1_1' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_sparsemux_11_3_8_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_0_flow_control_loop_pipe_sequential_init' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_0_flow_control_loop_pipe_sequential_init' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ConvolutionInputGenerator_0_regslice_both' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_0_regslice_both' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ConvolutionInputGenerator_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_0_0/synth/finn_design_ConvolutionInputGenerator_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element ap_enable_reg_pp0_iter1_reg was removed.  [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride.v:1562]
+WARNING: [Synth 8-6014] Unused sequential element ap_enable_reg_pp0_iter2_reg was removed.  [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/877a/hdl/verilog/ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride.v:1563]
+WARNING: [Synth 8-7129] Port reset in module ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride_inputBuf_RAM_S2P_LUTRAM_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2148.984 ; gain = 489.684 ; free physical = 230 ; free virtual = 9215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2163.828 ; gain = 504.527 ; free physical = 229 ; free virtual = 9214
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2163.828 ; gain = 504.527 ; free physical = 229 ; free virtual = 9214
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2163.828 ; gain = 0.000 ; free physical = 229 ; free virtual = 9214
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_0_0/constraints/ConvolutionInputGenerator_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_0_0/constraints/ConvolutionInputGenerator_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2296.570 ; gain = 0.000 ; free physical = 205 ; free virtual = 9204
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2296.605 ; gain = 0.000 ; free physical = 204 ; free virtual = 9204
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 202 ; free virtual = 9202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 202 ; free virtual = 9202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 202 ; free virtual = 9202
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter1_fsm_reg' in module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride'
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter2_fsm_reg' in module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter1_fsm_state0 |                               01 |                               01
+  ap_ST_iter1_fsm_state2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter2_fsm_state0 |                               01 |                               01
+  ap_ST_iter2_fsm_state3 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter2_fsm_reg' in module 'ConvolutionInputGenerator_0_ConvolutionInputGenerator_kernel_stride'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 201 ; free virtual = 9202
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 14    
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 21    
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 174 ; free virtual = 9178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name | RTL Object                                                             | Inference      | Size (Depth x Width) | Primitives  | 
++------------+------------------------------------------------------------------------+----------------+----------------------+-------------+
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_U/ram_reg   | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_1_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_2_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_3_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_4_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
++------------+------------------------------------------------------------------------+----------------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 272 ; free virtual = 9184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 270 ; free virtual = 9182
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name | RTL Object                                                             | Inference      | Size (Depth x Width) | Primitives  | 
++------------+------------------------------------------------------------------------+----------------+----------------------+-------------+
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_U/ram_reg   | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_1_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_2_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_3_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
+|inst        | grp_ConvolutionInputGenerator_kernel_stride_fu_28/inputBuf_4_U/ram_reg | User Attribute | 256 x 8              | RAM64M x 9  | 
++------------+------------------------------------------------------------------------+----------------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 269 ; free virtual = 9181
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9169
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9169
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   135|
+|2     |LUT1   |    70|
+|3     |LUT2   |   397|
+|4     |LUT3   |   103|
+|5     |LUT4   |   165|
+|6     |LUT5   |   105|
+|7     |LUT6   |    79|
+|8     |RAM64M |    45|
+|9     |FDRE   |   534|
+|10    |FDSE   |     5|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 256 ; free virtual = 9169
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2296.605 ; gain = 504.527 ; free physical = 254 ; free virtual = 9167
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2296.605 ; gain = 637.305 ; free physical = 254 ; free virtual = 9167
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2296.605 ; gain = 0.000 ; free physical = 539 ; free virtual = 9452
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2296.605 ; gain = 0.000 ; free physical = 539 ; free virtual = 9452
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 45 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 45 instances
+
+Synth Design complete | Checksum: d6d3352
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 2296.605 ; gain = 965.836 ; free physical = 538 ; free virtual = 9451
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1868.809; main = 1540.274; forked = 377.591
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3295.125; main = 2296.574; forked = 1014.559
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2320.582 ; gain = 0.000 ; free physical = 537 ; free virtual = 9451
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/finn_design_ConvolutionInputGenerator_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_ConvolutionInputGenerator_0_0, cache-ID = a40f33a82e62c379
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2320.582 ; gain = 0.000 ; free physical = 516 ; free virtual = 9434
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_ConvolutionInputGenerator_0_0_synth_1/finn_design_ConvolutionInputGenerator_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_ConvolutionInputGenerator_0_0_utilization_synth.rpt -pb finn_design_ConvolutionInputGenerator_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 02:52:56 2024...

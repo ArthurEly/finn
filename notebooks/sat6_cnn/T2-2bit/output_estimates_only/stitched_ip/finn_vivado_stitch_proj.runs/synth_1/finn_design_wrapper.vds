@@ -1,0 +1,575 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  1 03:34:28 2024
+# Process ID: 43192
+# Current directory: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1
+# Command line: vivado -log finn_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_wrapper.tcl
+# Log file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.vds
+# Journal file: /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/vivado.jou
+# Running On: artti-desktop, OS: Linux, CPU Frequency: 3994.696 MHz, CPU Physical cores: 6, Host memory: 16689 MB
+#-----------------------------------------------------------
+source finn_design_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.766 ; gain = 0.023 ; free physical = 933 ; free virtual = 7622
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/artti/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_0__4zh_l2k/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_0_67kvum50/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_1__5kud3bo/project_StreamingFIFO_1/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_0_y8e9p8bj/project_FMPadding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_2__utui9ov/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_0_7jlsbrs7/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_3_7ld679uy/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_0_0vm64gti/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_1_pqw_ruey/project_Thresholding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_2_6vq4feh_/project_Thresholding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_6_m2t8wwiz/project_StreamingFIFO_6/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_1_70n3qvut/project_FMPadding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_7_iu3sxmag/project_StreamingFIFO_7/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_1_5v75f3x2/project_ConvolutionInputGenerator_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_8__8v1bg9w/project_StreamingFIFO_8/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_1_w0mv_wzk/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_3_7ypbgh70/project_Thresholding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_4_vg83ee_x/project_Thresholding_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_2_mzgwzo4y/project_FMPadding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_12_f2zdnjow/project_StreamingFIFO_12/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_2_ruue1qfd/project_ConvolutionInputGenerator_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_13_m9zk1oq0/project_StreamingFIFO_13/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_2_bqkc6j7o/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_5_t7_9f8lu/project_Thresholding_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_6_oycw_ll6/project_Thresholding_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_3_mkrl0729/project_FMPadding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_17_4xdwllc6/project_StreamingFIFO_17/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_3_2b_1or5q/project_ConvolutionInputGenerator_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_18_97swl15m/project_StreamingFIFO_18/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_3_ijcbbx8h/project_MatrixVectorActivation_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Thresholding_Batch_7_901tt180/project_Thresholding_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_4_vcfod7w4/project_ConvolutionInputGenerator_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_Pool_Batch_0_a3up63aq/project_Pool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.srcs/utils_1/imports/synth_1/finn_design_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.srcs/utils_1/imports/synth_1/finn_design_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top finn_design_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 43221
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2091.012 ; gain = 404.715 ; free physical = 250 ; free virtual = 6652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_wrapper' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'finn_design' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:611]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_1_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_1_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_2_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_2_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_3_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_3_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_ConvolutionInputGenerator_4_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_ConvolutionInputGenerator_4_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_ConvolutionInputGenerator_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_FMPadding_Batch_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_FMPadding_Batch_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_FMPadding_Batch_1_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_FMPadding_Batch_1_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_FMPadding_Batch_2_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_FMPadding_Batch_2_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_FMPadding_Batch_3_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_FMPadding_Batch_3_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_FMPadding_Batch_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_0_imp_MT0NP' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:13]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_0_wstrm_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_0_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_0_wstrm_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_0_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' is unconnected for instance 'MatrixVectorActivation_0_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_0_wstrm' of module 'finn_design_MatrixVectorActivation_0_wstrm_0' has 24 connections declared, but only 16 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_0_imp_MT0NP' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_1_imp_16PJ27U' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:82]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_1_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_1_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_1_wstrm_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_1_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_1_wstrm_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_1_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' is unconnected for instance 'MatrixVectorActivation_1_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_1_wstrm' of module 'finn_design_MatrixVectorActivation_1_wstrm_0' has 24 connections declared, but only 16 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_1_imp_16PJ27U' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:82]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_2_imp_1U5U4NE' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:151]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_2_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_2_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_2_wstrm_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_2_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_2_wstrm_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_2_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' is unconnected for instance 'MatrixVectorActivation_2_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_2_wstrm' of module 'finn_design_MatrixVectorActivation_2_wstrm_0' has 24 connections declared, but only 16 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_2_imp_1U5U4NE' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:151]
+INFO: [Synth 8-6157] synthesizing module 'MatrixVectorActivation_3_imp_WP21D1' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:220]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_3_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_3_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MatrixVectorActivation_3_wstrm_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_3_wstrm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MatrixVectorActivation_3_wstrm_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_MatrixVectorActivation_3_wstrm_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'awready' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'wready' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'bvalid' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'bresp' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'arready' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'rvalid' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'rresp' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7071] port 'rdata' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' is unconnected for instance 'MatrixVectorActivation_3_wstrm' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+WARNING: [Synth 8-7023] instance 'MatrixVectorActivation_3_wstrm' of module 'finn_design_MatrixVectorActivation_3_wstrm_0' has 24 connections declared, but only 16 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:270]
+INFO: [Synth 8-6155] done synthesizing module 'MatrixVectorActivation_3_imp_WP21D1' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:220]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Pool_Batch_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Pool_Batch_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Pool_Batch_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Pool_Batch_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_0_0' is unconnected for instance 'StreamingFIFO_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:869]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_0_0' is unconnected for instance 'StreamingFIFO_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:869]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_0' of module 'finn_design_StreamingFIFO_0_0' has 10 connections declared, but only 8 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:869]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_1_imp_1SZ2JO1' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:381]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_1_imp_1SZ2JO1' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:381]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_12_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_12_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_12_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_12_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_12_0' is unconnected for instance 'StreamingFIFO_12' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:887]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_12_0' is unconnected for instance 'StreamingFIFO_12' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:887]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_12' of module 'finn_design_StreamingFIFO_12_0' has 10 connections declared, but only 8 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:887]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_13_imp_1RG1AN8' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:289]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_5' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_5' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_13_imp_1RG1AN8' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:289]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_17_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_17_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_17_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_17_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_17_0' is unconnected for instance 'StreamingFIFO_17' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:905]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_17_0' is unconnected for instance 'StreamingFIFO_17' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:905]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_17' of module 'finn_design_StreamingFIFO_17_0' has 10 connections declared, but only 8 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:905]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_18_imp_15ENRCA' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:335]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_6' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_6' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_18_imp_15ENRCA' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:335]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_2_imp_17RAI8X' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:427]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_1' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_1' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_2_imp_17RAI8X' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:427]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_3_imp_1OKGPA' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:473]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_2' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_2' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_3_imp_1OKGPA' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:473]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_6_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_6_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_StreamingFIFO_6_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'count' of module 'finn_design_StreamingFIFO_6_0' is unconnected for instance 'StreamingFIFO_6' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:941]
+WARNING: [Synth 8-7071] port 'maxcount' of module 'finn_design_StreamingFIFO_6_0' is unconnected for instance 'StreamingFIFO_6' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:941]
+WARNING: [Synth 8-7023] instance 'StreamingFIFO_6' of module 'finn_design_StreamingFIFO_6_0' has 10 connections declared, but only 8 given [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:941]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_7_imp_1ETIWH' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:519]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_3' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_3' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_7_imp_1ETIWH' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:519]
+INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_8_imp_X5RKHS' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:565]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_fifo_4' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_fifo_4' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_fifo_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_8_imp_X5RKHS' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:565]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_1_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_1_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_2_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_2_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_3_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_3_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_4_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_4_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_5_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_5_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_6_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_6_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_Thresholding_Batch_7_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_Thresholding_Batch_7_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/.Xil/Vivado-43192-artti-desktop/realtime/finn_design_Thresholding_Batch_7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/synth/finn_design.v:611]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_wrapper' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2172.949 ; gain = 486.652 ; free physical = 165 ; free virtual = 6551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2187.793 ; gain = 501.496 ; free physical = 165 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2187.793 ; gain = 501.496 ; free physical = 165 ; free virtual = 6549
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2187.793 ; gain = 0.000 ; free physical = 165 ; free virtual = 6549
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_0'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_0'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_0_0/finn_design_Thresholding_Batch_0_0/finn_design_Thresholding_Batch_0_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_0'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_0_0/finn_design_Thresholding_Batch_0_0/finn_design_Thresholding_Batch_0_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_0'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_0/finn_design_fifo_0/finn_design_fifo_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_1/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_0/finn_design_fifo_0/finn_design_fifo_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_1/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_0_0/finn_design_FMPadding_Batch_0_0/finn_design_FMPadding_Batch_0_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_0'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_0_0/finn_design_FMPadding_Batch_0_0/finn_design_FMPadding_Batch_0_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_0'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_1/finn_design_fifo_1/finn_design_fifo_1_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_2/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_1/finn_design_fifo_1/finn_design_fifo_1_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_2/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_0_0/finn_design_ConvolutionInputGenerator_0_0/finn_design_ConvolutionInputGenerator_0_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_0'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_0_0/finn_design_ConvolutionInputGenerator_0_0/finn_design_ConvolutionInputGenerator_0_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_0'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_2/finn_design_fifo_2/finn_design_fifo_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_3/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_2/finn_design_fifo_2/finn_design_fifo_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_3/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0/finn_design_MatrixVectorActivation_0_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0/finn_design_MatrixVectorActivation_0_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_1_0/finn_design_Thresholding_Batch_1_0/finn_design_Thresholding_Batch_1_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_1'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_1_0/finn_design_Thresholding_Batch_1_0/finn_design_Thresholding_Batch_1_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_1'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_2_0/finn_design_Thresholding_Batch_2_0/finn_design_Thresholding_Batch_2_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_2'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_2_0/finn_design_Thresholding_Batch_2_0/finn_design_Thresholding_Batch_2_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_2'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_6_0/finn_design_StreamingFIFO_6_0/finn_design_StreamingFIFO_6_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_6'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_6_0/finn_design_StreamingFIFO_6_0/finn_design_StreamingFIFO_6_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_6'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_1_0/finn_design_FMPadding_Batch_1_0/finn_design_FMPadding_Batch_1_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_1'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_1_0/finn_design_FMPadding_Batch_1_0/finn_design_FMPadding_Batch_1_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_1'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_3/finn_design_fifo_3/finn_design_fifo_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_7/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_3/finn_design_fifo_3/finn_design_fifo_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_7/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_1_0/finn_design_ConvolutionInputGenerator_1_0/finn_design_ConvolutionInputGenerator_1_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_1'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_1_0/finn_design_ConvolutionInputGenerator_1_0/finn_design_ConvolutionInputGenerator_1_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_1'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_4/finn_design_fifo_4/finn_design_fifo_4_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_8/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_4/finn_design_fifo_4/finn_design_fifo_4_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_8/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0/finn_design_MatrixVectorActivation_1_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0/finn_design_MatrixVectorActivation_1_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_3_0/finn_design_Thresholding_Batch_3_0/finn_design_Thresholding_Batch_3_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_3'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_3_0/finn_design_Thresholding_Batch_3_0/finn_design_Thresholding_Batch_3_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_3'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_4_0/finn_design_Thresholding_Batch_4_0/finn_design_Thresholding_Batch_4_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_4'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_4_0/finn_design_Thresholding_Batch_4_0/finn_design_Thresholding_Batch_4_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_4'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_2_0/finn_design_FMPadding_Batch_2_0/finn_design_FMPadding_Batch_2_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_2'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_2_0/finn_design_FMPadding_Batch_2_0/finn_design_FMPadding_Batch_2_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_2'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_12_0/finn_design_StreamingFIFO_12_0/finn_design_StreamingFIFO_12_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_12'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_12_0/finn_design_StreamingFIFO_12_0/finn_design_StreamingFIFO_12_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_12'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_2_0/finn_design_ConvolutionInputGenerator_2_0/finn_design_ConvolutionInputGenerator_2_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_2'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_2_0/finn_design_ConvolutionInputGenerator_2_0/finn_design_ConvolutionInputGenerator_2_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_2'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_5/finn_design_fifo_5/finn_design_fifo_5_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_13/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_5/finn_design_fifo_5/finn_design_fifo_5_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_13/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0/finn_design_MatrixVectorActivation_2_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0/finn_design_MatrixVectorActivation_2_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_5_0/finn_design_Thresholding_Batch_5_0/finn_design_Thresholding_Batch_5_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_5'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_5_0/finn_design_Thresholding_Batch_5_0/finn_design_Thresholding_Batch_5_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_5'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_6_0/finn_design_Thresholding_Batch_6_0/finn_design_Thresholding_Batch_6_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_6'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_6_0/finn_design_Thresholding_Batch_6_0/finn_design_Thresholding_Batch_6_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_6'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_3_0/finn_design_FMPadding_Batch_3_0/finn_design_FMPadding_Batch_3_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_3'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_FMPadding_Batch_3_0/finn_design_FMPadding_Batch_3_0/finn_design_FMPadding_Batch_3_0_in_context.xdc] for cell 'finn_design_i/FMPadding_Batch_3'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_17_0/finn_design_StreamingFIFO_17_0/finn_design_StreamingFIFO_17_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_17'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_17_0/finn_design_StreamingFIFO_17_0/finn_design_StreamingFIFO_17_0_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_17'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_3_0/finn_design_ConvolutionInputGenerator_3_0/finn_design_ConvolutionInputGenerator_3_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_3'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_3_0/finn_design_ConvolutionInputGenerator_3_0/finn_design_ConvolutionInputGenerator_3_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_3'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_6/finn_design_fifo_6/finn_design_fifo_5_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_18/fifo'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_fifo_6/finn_design_fifo_6/finn_design_fifo_5_in_context.xdc] for cell 'finn_design_i/StreamingFIFO_18/fifo'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0/finn_design_MatrixVectorActivation_3_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0/finn_design_MatrixVectorActivation_3_wstrm_0_in_context.xdc] for cell 'finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_7_0/finn_design_Thresholding_Batch_7_0/finn_design_Thresholding_Batch_7_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_7'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Thresholding_Batch_7_0/finn_design_Thresholding_Batch_7_0/finn_design_Thresholding_Batch_7_0_in_context.xdc] for cell 'finn_design_i/Thresholding_Batch_7'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_4_0/finn_design_ConvolutionInputGenerator_4_0/finn_design_ConvolutionInputGenerator_4_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_4'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_ConvolutionInputGenerator_4_0/finn_design_ConvolutionInputGenerator_4_0/finn_design_ConvolutionInputGenerator_4_0_in_context.xdc] for cell 'finn_design_i/ConvolutionInputGenerator_4'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Pool_Batch_0_0/finn_design_Pool_Batch_0_0/finn_design_Pool_Batch_0_0_in_context.xdc] for cell 'finn_design_i/Pool_Batch_0'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_Pool_Batch_0_0/finn_design_Pool_Batch_0_0/finn_design_Pool_Batch_0_0_in_context.xdc] for cell 'finn_design_i/Pool_Batch_0'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.srcs/constrs_1/new/essential_bits.xdc]
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.srcs/constrs_1/new/essential_bits.xdc]
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2244.723 ; gain = 0.000 ; free physical = 256 ; free virtual = 6539
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2244.758 ; gain = 0.000 ; free physical = 255 ; free virtual = 6538
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 253 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 253 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_1/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/FMPadding_Batch_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_2/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/ConvolutionInputGenerator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_3/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_0/MatrixVectorActivation_0_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/FMPadding_Batch_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_7/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/ConvolutionInputGenerator_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_8/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_1/MatrixVectorActivation_1_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/FMPadding_Batch_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_12. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/ConvolutionInputGenerator_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_13/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_2/MatrixVectorActivation_2_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/FMPadding_Batch_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_17. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/ConvolutionInputGenerator_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/StreamingFIFO_18/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/MatrixVectorActivation_3/MatrixVectorActivation_3_wstrm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Thresholding_Batch_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/ConvolutionInputGenerator_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for finn_design_i/Pool_Batch_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 253 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 251 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 250 ; free virtual = 6538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 249 ; free virtual = 6538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 249 ; free virtual = 6538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 249 ; free virtual = 6538
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------------+----------+
+|      |BlackBox name                                |Instances |
++------+---------------------------------------------+----------+
+|1     |finn_design_ConvolutionInputGenerator_0_0    |         1|
+|2     |finn_design_ConvolutionInputGenerator_1_0    |         1|
+|3     |finn_design_ConvolutionInputGenerator_2_0    |         1|
+|4     |finn_design_ConvolutionInputGenerator_3_0    |         1|
+|5     |finn_design_ConvolutionInputGenerator_4_0    |         1|
+|6     |finn_design_FMPadding_Batch_0_0              |         1|
+|7     |finn_design_FMPadding_Batch_1_0              |         1|
+|8     |finn_design_FMPadding_Batch_2_0              |         1|
+|9     |finn_design_FMPadding_Batch_3_0              |         1|
+|10    |finn_design_Pool_Batch_0_0                   |         1|
+|11    |finn_design_StreamingFIFO_0_0                |         1|
+|12    |finn_design_StreamingFIFO_12_0               |         1|
+|13    |finn_design_StreamingFIFO_17_0               |         1|
+|14    |finn_design_StreamingFIFO_6_0                |         1|
+|15    |finn_design_Thresholding_Batch_0_0           |         1|
+|16    |finn_design_Thresholding_Batch_1_0           |         1|
+|17    |finn_design_Thresholding_Batch_2_0           |         1|
+|18    |finn_design_Thresholding_Batch_3_0           |         1|
+|19    |finn_design_Thresholding_Batch_4_0           |         1|
+|20    |finn_design_Thresholding_Batch_5_0           |         1|
+|21    |finn_design_Thresholding_Batch_6_0           |         1|
+|22    |finn_design_Thresholding_Batch_7_0           |         1|
+|23    |finn_design_MatrixVectorActivation_0_0       |         1|
+|24    |finn_design_MatrixVectorActivation_0_wstrm_0 |         1|
+|25    |finn_design_MatrixVectorActivation_1_0       |         1|
+|26    |finn_design_MatrixVectorActivation_1_wstrm_0 |         1|
+|27    |finn_design_MatrixVectorActivation_2_0       |         1|
+|28    |finn_design_MatrixVectorActivation_2_wstrm_0 |         1|
+|29    |finn_design_MatrixVectorActivation_3_0       |         1|
+|30    |finn_design_MatrixVectorActivation_3_wstrm_0 |         1|
+|31    |finn_design_fifo_0                           |         1|
+|32    |finn_design_fifo_5                           |         1|
+|33    |finn_design_fifo_6                           |         1|
+|34    |finn_design_fifo_1                           |         1|
+|35    |finn_design_fifo_2                           |         1|
+|36    |finn_design_fifo_3                           |         1|
+|37    |finn_design_fifo_4                           |         1|
++------+---------------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------------+------+
+|      |Cell                                       |Count |
++------+-------------------------------------------+------+
+|1     |finn_design_ConvolutionInputGenerator_0    |     1|
+|2     |finn_design_ConvolutionInputGenerator_1    |     1|
+|3     |finn_design_ConvolutionInputGenerator_2    |     1|
+|4     |finn_design_ConvolutionInputGenerator_3    |     1|
+|5     |finn_design_ConvolutionInputGenerator_4    |     1|
+|6     |finn_design_FMPadding_Batch_0              |     1|
+|7     |finn_design_FMPadding_Batch_1              |     1|
+|8     |finn_design_FMPadding_Batch_2              |     1|
+|9     |finn_design_FMPadding_Batch_3              |     1|
+|10    |finn_design_MatrixVectorActivation_0       |     1|
+|11    |finn_design_MatrixVectorActivation_0_wstrm |     1|
+|12    |finn_design_MatrixVectorActivation_1       |     1|
+|13    |finn_design_MatrixVectorActivation_1_wstrm |     1|
+|14    |finn_design_MatrixVectorActivation_2       |     1|
+|15    |finn_design_MatrixVectorActivation_2_wstrm |     1|
+|16    |finn_design_MatrixVectorActivation_3       |     1|
+|17    |finn_design_MatrixVectorActivation_3_wstrm |     1|
+|18    |finn_design_Pool_Batch_0                   |     1|
+|19    |finn_design_StreamingFIFO_0                |     1|
+|20    |finn_design_StreamingFIFO_12               |     1|
+|21    |finn_design_StreamingFIFO_17               |     1|
+|22    |finn_design_StreamingFIFO_6                |     1|
+|23    |finn_design_Thresholding_Batch_0           |     1|
+|24    |finn_design_Thresholding_Batch_1           |     1|
+|25    |finn_design_Thresholding_Batch_2           |     1|
+|26    |finn_design_Thresholding_Batch_3           |     1|
+|27    |finn_design_Thresholding_Batch_4           |     1|
+|28    |finn_design_Thresholding_Batch_5           |     1|
+|29    |finn_design_Thresholding_Batch_6           |     1|
+|30    |finn_design_Thresholding_Batch_7           |     1|
+|31    |finn_design_fifo                           |     7|
+|38    |IBUF                                       |    12|
+|39    |OBUF                                       |    10|
++------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2244.758 ; gain = 501.496 ; free physical = 248 ; free virtual = 6536
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2244.758 ; gain = 558.461 ; free physical = 248 ; free virtual = 6536
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2244.758 ; gain = 0.000 ; free physical = 383 ; free virtual = 6671
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2244.758 ; gain = 0.000 ; free physical = 530 ; free virtual = 6819
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 84e67041
+INFO: [Common 17-83] Releasing license: Synthesis
+154 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2244.758 ; gain = 913.992 ; free physical = 529 ; free virtual = 6813
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1843.863; main = 1518.298; forked = 377.858
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3243.273; main = 2228.719; forked = 1014.555
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2244.758 ; gain = 0.000 ; free physical = 529 ; free virtual = 6813
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/raw/output_estimates_only/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_wrapper_utilization_synth.rpt -pb finn_design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 03:35:00 2024...

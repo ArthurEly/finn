@@ -1,0 +1,371 @@
+{
+  "Defaults": {},
+  "StreamingFIFO_0": {
+    "ram_style": "auto",
+    "depth": 32,
+    "impl_style": "rtl",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_0": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      32
+    ],
+    "outFIFODepths": [
+      855
+    ]
+  },
+  "StreamingFIFO_1": {
+    "ram_style": "auto",
+    "depth": 855,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "FMPadding_Batch_0": {
+    "SIMD": 1,
+    "inFIFODepths": [
+      855
+    ],
+    "outFIFODepths": [
+      4624
+    ]
+  },
+  "StreamingFIFO_2": {
+    "ram_style": "auto",
+    "depth": 4624,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "ConvolutionInputGenerator_0": {
+    "SIMD": 1,
+    "ram_style": "distributed",
+    "inFIFODepths": [
+      4624
+    ],
+    "outFIFODepths": [
+      576
+    ]
+  },
+  "StreamingFIFO_3": {
+    "ram_style": "auto",
+    "depth": 576,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      576
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_1": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_2": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      32
+    ]
+  },
+  "StreamingFIFO_6": {
+    "ram_style": "auto",
+    "depth": 32,
+    "impl_style": "rtl",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "FMPadding_Batch_1": {
+    "SIMD": 1,
+    "inFIFODepths": [
+      32
+    ],
+    "outFIFODepths": [
+      576
+    ]
+  },
+  "StreamingFIFO_7": {
+    "ram_style": "auto",
+    "depth": 576,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "ConvolutionInputGenerator_1": {
+    "SIMD": 1,
+    "ram_style": "distributed",
+    "inFIFODepths": [
+      576
+    ],
+    "outFIFODepths": [
+      1152
+    ]
+  },
+  "StreamingFIFO_8": {
+    "ram_style": "auto",
+    "depth": 1152,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "MatrixVectorActivation_1": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      1152
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_3": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_4": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "FMPadding_Batch_2": {
+    "SIMD": 1,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      128
+    ]
+  },
+  "StreamingFIFO_12": {
+    "ram_style": "auto",
+    "depth": 128,
+    "impl_style": "rtl",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "ConvolutionInputGenerator_2": {
+    "SIMD": 1,
+    "ram_style": "distributed",
+    "inFIFODepths": [
+      128
+    ],
+    "outFIFODepths": [
+      288
+    ]
+  },
+  "StreamingFIFO_13": {
+    "ram_style": "auto",
+    "depth": 288,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "MatrixVectorActivation_2": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      288
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_5": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_6": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "FMPadding_Batch_3": {
+    "SIMD": 1,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      110
+    ]
+  },
+  "StreamingFIFO_17": {
+    "ram_style": "auto",
+    "depth": 110,
+    "impl_style": "rtl",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "ConvolutionInputGenerator_3": {
+    "SIMD": 1,
+    "ram_style": "distributed",
+    "inFIFODepths": [
+      110
+    ],
+    "outFIFODepths": [
+      286
+    ]
+  },
+  "StreamingFIFO_18": {
+    "ram_style": "auto",
+    "depth": 286,
+    "impl_style": "vivado",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "MatrixVectorActivation_3": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      286
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Thresholding_Batch_7": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "ConvolutionInputGenerator_4": {
+    "SIMD": 1,
+    "ram_style": "distributed",
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  },
+  "Pool_Batch_0": {
+    "PE": 1,
+    "inFIFODepths": [
+      0
+    ],
+    "outFIFODepths": [
+      0
+    ]
+  }
+}
