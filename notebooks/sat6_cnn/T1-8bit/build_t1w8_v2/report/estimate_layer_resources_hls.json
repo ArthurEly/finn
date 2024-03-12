@@ -1,0 +1,50 @@
+{
+  "FMPadding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "53",
+    "LUT": "368",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": "0",
+    "FF": "547",
+    "LUT": "2230",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": "6",
+    "FF": "5780",
+    "LUT": "14256",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_1": {
+    "BRAM_18K": "0",
+    "FF": "4104",
+    "LUT": "11227",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_2": {
+    "BRAM_18K": "3",
+    "FF": "16649",
+    "LUT": "3470",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "LabelSelect_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "48",
+    "LUT": "218",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  }
+}

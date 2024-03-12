@@ -1,0 +1,8 @@
+{
+  "FMPadding_Batch_0": 4624,
+  "ConvolutionInputGenerator_0": 9624,
+  "MatrixVectorActivation_0": 5120,
+  "MatrixVectorActivation_1": 8192,
+  "MatrixVectorActivation_2": 6144,
+  "LabelSelect_Batch_0": 6
+}

@@ -1,0 +1,286 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 11 23:11:38 2024
+# Process ID: 68781
+# Current directory: /home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1
+# Command line: vivado -log finn_design_LabelSelect_Batch_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_LabelSelect_Batch_0_0.tcl
+# Log file: /home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/finn_design_LabelSelect_Batch_0_0.vds
+# Journal file: /home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/vivado.jou
+# Running On: artti-desktop, OS: Linux, CPU Frequency: 3899.991 MHz, CPU Physical cores: 6, Host memory: 16689 MB
+#-----------------------------------------------------------
+source finn_design_LabelSelect_Batch_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.770 ; gain = 0.023 ; free physical = 2297 ; free virtual = 10003
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/artti/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_0_9nvp42i5/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_0_nuwr93hn/project_FMPadding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_1_6ysewmt3/project_StreamingFIFO_1/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_0_jc0rqxna/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_2_2tnr3oc6/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_0_lfhb2kd0/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_1_n9ow2iyt/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_ibd66b5q'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_5__qz0e1nj/project_StreamingFIFO_5/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_2_s8_5vh7i/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_LabelSelect_Batch_0_pokpb4us/project_LabelSelect_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_LabelSelect_Batch_0_0
+Command: synth_design -top finn_design_LabelSelect_Batch_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 68807
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2058.047 ; gain = 403.715 ; free physical = 1255 ; free virtual = 8961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'finn_design_LabelSelect_Batch_0_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_LabelSelect_Batch_0_0/synth/finn_design_LabelSelect_Batch_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LabelSelect_Batch_0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3' [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LabelSelect_Batch_0_flow_control_loop_pipe_sequential_init' [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LabelSelect_Batch_0_flow_control_loop_pipe_sequential_init' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LabelSelect_Batch_0_regslice_both' [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LabelSelect_Batch_0_regslice_both' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'LabelSelect_Batch_0_regslice_both__parameterized0' [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LabelSelect_Batch_0_regslice_both__parameterized0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LabelSelect_Batch_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_LabelSelect_Batch_0_0' (0#1) [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_LabelSelect_Batch_0_0/synth/finn_design_LabelSelect_Batch_0_0.v:53]
+WARNING: [Synth 8-7129] Port in0_V_TDATA[23] in module LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_V_TDATA[22] in module LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_V_TDATA[21] in module LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2139.984 ; gain = 485.652 ; free physical = 1144 ; free virtual = 8851
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2154.828 ; gain = 500.496 ; free physical = 1142 ; free virtual = 8849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2154.828 ; gain = 500.496 ; free physical = 1142 ; free virtual = 8849
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2154.828 ; gain = 0.000 ; free physical = 1142 ; free virtual = 8849
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_LabelSelect_Batch_0_0/constraints/LabelSelect_Batch_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_LabelSelect_Batch_0_0/constraints/LabelSelect_Batch_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.570 ; gain = 0.000 ; free physical = 1128 ; free virtual = 8835
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2276.605 ; gain = 0.000 ; free physical = 1128 ; free virtual = 8835
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1127 ; free virtual = 8834
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1127 ; free virtual = 8834
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1127 ; free virtual = 8834
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_iter1_fsm_reg' in module 'LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+  ap_ST_iter1_fsm_state0 |                               01 |                               01
+  ap_ST_iter1_fsm_state2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'ap_CS_iter1_fsm_reg' in module 'LabelSelect_Batch_0_LabelSelect_Batch_0_Pipeline_VITIS_LOOP_488_3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1126 ; free virtual = 8834
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_in0_V_U/B_V_data_1_payload_A_reg' and it is trimmed from '24' to '21' bits. [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_regslice_both.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_in0_V_U/B_V_data_1_payload_B_reg' and it is trimmed from '24' to '21' bits. [/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/62be/hdl/verilog/LabelSelect_Batch_0_regslice_both.v:93]
+WARNING: [Synth 8-7129] Port in0_V_TDATA[23] in module LabelSelect_Batch_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_V_TDATA[22] in module LabelSelect_Batch_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in0_V_TDATA[21] in module LabelSelect_Batch_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1117 ; free virtual = 8824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1111 ; free virtual = 8819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1111 ; free virtual = 8819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1103 ; free virtual = 8811
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     3|
+|2     |LUT1   |     1|
+|3     |LUT2   |     6|
+|4     |LUT3   |    32|
+|5     |LUT4   |     4|
+|6     |LUT5   |    12|
+|7     |LUT6   |    60|
+|8     |FDRE   |    97|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1101 ; free virtual = 8810
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2276.605 ; gain = 500.496 ; free physical = 1100 ; free virtual = 8810
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2276.605 ; gain = 622.273 ; free physical = 1100 ; free virtual = 8809
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.605 ; gain = 0.000 ; free physical = 1100 ; free virtual = 8809
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2276.605 ; gain = 0.000 ; free physical = 1395 ; free virtual = 9104
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 131aba86
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 2276.605 ; gain = 945.836 ; free physical = 1394 ; free virtual = 9103
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1832.432; main = 1531.040; forked = 377.834
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3275.129; main = 2276.574; forked = 1014.562
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2300.582 ; gain = 0.000 ; free physical = 1394 ; free virtual = 9103
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/finn_design_LabelSelect_Batch_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_LabelSelect_Batch_0_0, cache-ID = 0238cd6bd8c1c922
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2300.582 ; gain = 0.000 ; free physical = 1366 ; free virtual = 9075
+INFO: [Common 17-1381] The checkpoint '/home/artti/Desktop/finn/notebooks/sat6_cnn/T1-8bit/build_t1w8/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_LabelSelect_Batch_0_0_synth_1/finn_design_LabelSelect_Batch_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file finn_design_LabelSelect_Batch_0_0_utilization_synth.rpt -pb finn_design_LabelSelect_Batch_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 11 23:12:09 2024...
