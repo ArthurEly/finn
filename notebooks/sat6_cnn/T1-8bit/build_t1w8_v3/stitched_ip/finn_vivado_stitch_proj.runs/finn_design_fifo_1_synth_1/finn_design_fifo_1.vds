@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar 12 05:10:51 2024
+# Process ID: 52147
+# Current directory: /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1
+# Command line: vivado -log finn_design_fifo_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_fifo_1.tcl
+# Log file: /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/finn_design_fifo_1.vds
+# Journal file: /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/vivado.jou
+# Running On: finn_dev_artti, OS: Linux, CPU Frequency: 3900.005 MHz, CPU Physical cores: 6, Host memory: 16689 MB
+#-----------------------------------------------------------
+source finn_design_fifo_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1315.977 ; gain = 0.023 ; free physical = 3437 ; free virtual = 5357
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/artti/Desktop/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_0_3u5ua66k/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_FMPadding_Batch_0_m37mhnkm/project_FMPadding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_1_f_6r6bm9/project_StreamingFIFO_1/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_ConvolutionInputGenerator_0__zgafjeu/project_ConvolutionInputGenerator_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_2_7c56qrd2/project_StreamingFIFO_2/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_b9u2bkug'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_3_xzhbw8oz/project_StreamingFIFO_3/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_0_pyc6n7rh/project_MatrixVectorActivation_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_4_k51m1iab/project_StreamingFIFO_4/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_1_eko4hn2z/project_MatrixVectorActivation_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_n4dipuyq'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_StreamingFIFO_6_x5lc240_/project_StreamingFIFO_6/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_MatrixVectorActivation_2_1ru3gfzt/project_MatrixVectorActivation_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_artti/code_gen_ipgen_LabelSelect_Batch_0_x4f4por1/project_LabelSelect_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_fifo_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 7c0fcf6b557118f1 to dir: /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.cache/ip/2023.2/7/c/7c0fcf6b557118f1/finn_design_fifo_0_stub.vhdl to /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/finn_design_fifo_1_stub.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.cache/ip/2023.2/7/c/7c0fcf6b557118f1/finn_design_fifo_0.dcp to /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/finn_design_fifo_1.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.cache/ip/2023.2/7/c/7c0fcf6b557118f1/finn_design_fifo_0_stub.v to /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/finn_design_fifo_1_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.cache/ip/2023.2/7/c/7c0fcf6b557118f1/finn_design_fifo_0_sim_netlist.v to /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/finn_design_fifo_1_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.cache/ip/2023.2/7/c/7c0fcf6b557118f1/finn_design_fifo_0_sim_netlist.vhdl to /tmp/finn_dev_artti/vivado_stitch_proj_fwwmjlpx/finn_vivado_stitch_proj.runs/finn_design_fifo_1_synth_1/finn_design_fifo_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP finn_design_fifo_1, cache-ID = 7c0fcf6b557118f1.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 12 05:11:03 2024...

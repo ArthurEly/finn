@@ -1,0 +1,48 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue Mar 12 02:56:25 2024
+| Host         : artti-desktop running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_drc -file finn_design_wrapper_drc_routed.rpt -pb finn_design_wrapper_drc_routed.pb -rpx finn_design_wrapper_drc_routed.rpx
+| Design       : finn_design_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+--------------------+------------+
+| Rule      | Severity | Description        | Violations |
++-----------+----------+--------------------+------------+
+| RTSTAT-10 | Warning  | No routable loads  | 1          |
+| ZPS7-1    | Warning  | PS7 block required | 1          |
++-----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTSTAT-10#1 Warning
+No routable loads  
+4 net(s) have no routable loads. The problem bus(es) and/or net(s) are finn_design_i/LabelSelect_Batch_0/inst/regslice_both_out_V_U/out_V_TDATA[2:0]
+finn_design_i/StreamingFIFO_0/inst/StreamingFIFO_0_StreamingFIFO_0/in0_V_TREADY.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

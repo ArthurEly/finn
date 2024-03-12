@@ -1,0 +1,37 @@
+{
+  "Defaults": {},
+  "FMPadding_Batch_0": {
+    "SIMD": 1
+  },
+  "ConvolutionInputGenerator_0": {
+    "SIMD": 1,
+    "ram_style": "distributed"
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 1,
+    "SIMD": 2,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_1": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_2": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "LabelSelect_Batch_0": {
+    "PE": 1
+  }
+}
