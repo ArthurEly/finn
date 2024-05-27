@@ -107,3 +107,6 @@ MANIFEST
 *.pkl
 *.xlsx
 *.zip
+
+# builds
+**/*build*/
