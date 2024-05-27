@@ -106,3 +106,4 @@ MANIFEST
 # datasets
 *.pkl
 *.xlsx
+*.zip
