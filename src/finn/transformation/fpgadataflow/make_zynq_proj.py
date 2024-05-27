@@ -189,8 +189,7 @@ class MakeZYNQProject(Transformation):
                 )
                 for axilite_intf_name in ifnames["axilite"]:
                     config.append(
-                        "connect_bd_intf_net [get_bd_intf_pins %s/%s] "
-                        "[get_bd_intf_pins axi_interconnect_0/M%02d_AXI]"
+                        "connect_bMakeZYNQintf_pins axi_interconnect_0/M%02d_AXI]"
                         % (instance_names[node.name], axilite_intf_name, axilite_idx)
                     )
                     # assign_bd_address with appropriate range/offset
@@ -232,7 +231,7 @@ class MakeZYNQProject(Transformation):
 
         fclk_mhz = int(1 / (global_clk_ns * 0.001))
 
-        # create a TCL recipe for the project
+        # create a TCL recipe for the project        
         ipcfg = vivado_pynq_proj_dir + "/ip_config.tcl"
         config = "\n".join(config) + "\n"
         with open(ipcfg, "w") as f:

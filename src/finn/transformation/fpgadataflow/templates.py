@@ -96,9 +96,17 @@ if {$NUM_AXILITE > 9} {
     error "Maximum 10 AXI-Lite interfaces supported"
 }
 set NUM_AXIMM %d
-set BOARD %s
+set BOARD %s 
 set FPGA_PART %s
 create_project finn_zynq_link ./ -part $FPGA_PART
+
+update_compile_order -fileset sources_1
+file mkdir ./finn_zynq_link.srcs/constrs_1
+file mkdir ./finn_zynq_link.srcs/constrs_1/new
+set fp [ open ./finn_zynq_link.srcs/constrs_1/new/essentialbits.xdc w ]
+puts $fp "set_property bitstream.seu.essentialbits yes \[current_design\]"
+close $fp
+add_files -fileset constrs_1 ./finn_zynq_link.srcs/constrs_1/new/essentialbits.xdc
 
 # set board part repo paths to find PYNQ-Z1/Z2
 set paths_prop [get_property BOARD_PART_REPO_PATHS [current_project]]
@@ -243,6 +251,8 @@ set_property STEPS.POST_ROUTE_PHYS_OPT_DESIGN.IS_ENABLED true [get_runs impl_1]
 
 # out-of-context synth can't be used for bitstream generation
 # set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+reset_run impl_1 -prev_step
 launch_runs -to_step write_bitstream impl_1
 wait_on_run [get_runs impl_1]
 
