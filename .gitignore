@@ -98,6 +98,11 @@ MANIFEST
 /deps/
 *.mat
 *.trashinfo
+.Trash-1000
 .Trash-1000/files/end2end_cnv_w1a1_export.onnx
 .Trash-1000/files/resnet18_4w4a-a172f334.pth
 .Trash-1000/files/fabio/sat6-cnn-8bits-gt-fabio.ipynb
+
+# datasets
+*.pkl
+*.xlsx
