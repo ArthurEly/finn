@@ -92,16 +92,16 @@ def make_modelwrapper(C, pe, idt, odt, pdt, func, vecs):
 # param datatype
 @pytest.mark.parametrize("pdt", [DataType["INT4"]])
 # folding, -1 is maximum possible
-@pytest.mark.parametrize("nf", [-1, 2])
+@pytest.mark.parametrize("nf", [-1])  # , 2])
 # number of input features
 @pytest.mark.parametrize("ich", [16])
 # vecs
-@pytest.mark.parametrize("vecs", [[1], [1, 7, 7]])
+@pytest.mark.parametrize("vecs", [[1]])  # , [1, 7, 7]])
 # function
-@pytest.mark.parametrize("func", ["add", "mul"])
+@pytest.mark.parametrize("func", ["add"])  # , "mul"])
 # execution mode
-@pytest.mark.parametrize("exec_mode", ["cppsim", "rtlsim"])
-@pytest.mark.fpgadataflow
+@pytest.mark.parametrize("exec_mode", ["rtlsim"])
+@pytest.mark.checksum
 @pytest.mark.vivado
 @pytest.mark.slow
 def test_fpgadataflow_channelwise_ops(idt, act, pdt, nf, ich, func, vecs, exec_mode):

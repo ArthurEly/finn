@@ -140,7 +140,7 @@ def create_two_fc_model():
 
 
 @pytest.mark.vivado
-@pytest.mark.fpgadataflow
+@pytest.mark.checksum
 def test_fpgadataflow_checksum():
     # use a graph consisting of two fc layers to test
     # checksum node insertion
@@ -187,6 +187,7 @@ def test_fpgadataflow_checksum():
     model = model.transform(CreateStitchedIP(test_fpga_part, target_clk_ns))
     model.set_metadata_prop("exec_mode", "rtlsim")
     model.set_metadata_prop("rtlsim_backend", "pyxsi")
+    model.set_metadata_prop("rtlsim_trace", "trace.wdb")
 
     # define function to read out the checksums from axilite
     checksums = []
