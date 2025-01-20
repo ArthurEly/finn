@@ -1,0 +1,10 @@
+{
+  "MVAU_hls_3": {
+    "PE": 1,
+    "SIMD": 4,
+    "ram_style": "auto",
+    "resType": "auto",
+    "mem_mode": "internal_decoupled",
+    "runtime_writeable_weights": 0
+  }
+}

@@ -96,3 +96,6 @@ MANIFEST
 
 # downloaded dep repos
 /deps/
+/notebooks/soybean_seeds/builds
+!/deps/brevitas/
+
