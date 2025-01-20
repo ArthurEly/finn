@@ -1,0 +1,6 @@
+{
+    "Defaults": {},
+    "MatrixVectorActivation_2": {
+      "SIMD": 2
+    }
+}

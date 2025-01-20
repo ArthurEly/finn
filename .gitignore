@@ -99,3 +99,8 @@ MANIFEST
 /notebooks/soybean_seeds/builds
 !/deps/brevitas/
 
+/notebooks/CIFAR10/builds
+/notebooks/CIFAR10/results
+/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim
+/notebooks/end2end_example/cybersecurity/output_proj
+/notebooks/MNIST_2/builds
