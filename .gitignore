@@ -96,3 +96,11 @@ MANIFEST
 
 # downloaded dep repos
 /deps/
+/notebooks/soybean_seeds/builds
+
+/notebooks/CIFAR10/builds
+/notebooks/CIFAR10/results
+/notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim
+/notebooks/end2end_example/cybersecurity/output_proj
+/notebooks/MNIST_2/builds
+/notebooks/soybean_seeds/builds_sources/soybean_cnv_w8a8_1000fps_sources
