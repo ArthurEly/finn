@@ -104,3 +104,8 @@ MANIFEST
 /notebooks/end2end_example/cybersecurity/output_ipstitch_ooc_rtlsim
 /notebooks/end2end_example/cybersecurity/output_proj
 /notebooks/MNIST_2/builds
+notebooks/get_isvlsi_results.py
+notebooks/get_isvlsi_results.py
+/notebooks/soybean_seeds/builds_sources
+/notebooks/soybean_seeds/cnns
+/notebooks/*/builds

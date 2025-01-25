@@ -6,9 +6,9 @@ import pandas as pd
 import json
 
 # Configurações para os resultados de desempenho
-headers = ['Repository', 'N_IN_TXNS', 'N_OUT_TXNS', 'cycles', 'N', 'latency_cycles', 'runtime[ms]', 
-           'throughput[images/s]', 'fclk[mhz]', 'stable_throughput[images/s]']
-builds_dir = "/home/artti/Desktop/finn/notebooks/CIFAR10/builds"
+headers = ['Repository', 'batch_size', 'runtime[ms]', 
+           'throughput[images/s]', 'fclk[mhz]']
+builds_dir = "/media/artti/SSD 960GB/linux_finn/builds_cifar"
 
 # Resultados iniciais
 results_performance = []
@@ -16,7 +16,7 @@ results_performance = []
 # Itera sobre os repositórios dentro do diretório builds
 for repo_name in os.listdir(builds_dir):
     repo_path = os.path.join(builds_dir, repo_name)
-    if not os.path.isdir(repo_path):
+    if not os.path.isdir(repo_path) and not repo_path.startswith('old'):
         continue  # Ignora arquivos que não são diretórios
     
     # Define o caminho do arquivo JSON de desempenho
@@ -36,15 +36,10 @@ for repo_name in os.listdir(builds_dir):
         # Adiciona os dados encontrados à tabela
         row = [
             repo_name,
-            data.get("N_IN_TXNS", ""),
-            data.get("N_OUT_TXNS", ""),
-            data.get("cycles", ""),
             data.get("N", ""),
-            data.get("latency_cycles", ""),
             data.get("runtime[ms]", ""),
             data.get("throughput[images/s]", ""),
             data.get("fclk[mhz]", ""),
-            data.get("stable_throughput[images/s]", "")
         ]
         results_performance.append(row)
 

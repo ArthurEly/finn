@@ -5,8 +5,8 @@ import os
 import pandas as pd
 
 # Configurações de hardware e limites do PYNQ-Z1
-headers = ['Repository', 'Total LUTs', 'Logic LUTs', 'LUTRAMs', 'SRLs', 'FFs', 'BRAM (36k)']
-builds_dir = "/home/artti/Desktop/finn/notebooks/MNIST_2/builds/"
+headers = ['Repository', 'Total LUTs', 'Logic LUTs', 'LUTRAMs', 'SRLs', 'FFs', 'BRAM (36k)', 'DSP']
+builds_dir = "./builds"
 
 # Resultados iniciais
 results_vivado = []
@@ -43,12 +43,12 @@ for repo_name in os.listdir(builds_dir):
                 total_luts, logic_luts = line_content[5], line_content[7]
                 lutrams, srls = line_content[9], line_content[11]
                 ffs, ramb36, ramb18 = line_content[13], line_content[15], line_content[17]
-                
+                dsp = line_content[19]
                 # Calcula BRAM (36k)
                 bram_36k = int(ramb36) + int(ramb18) / 2
                 
                 # Adiciona os dados à linha
-                data.extend([total_luts, logic_luts, lutrams, srls, ffs, f"{bram_36k:.1f}"])
+                data.extend([total_luts, logic_luts, lutrams, srls, ffs, f"{bram_36k:.1f}", dsp])
                 break
         
         # Adiciona os dados encontrados à tabela

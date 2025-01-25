@@ -8,7 +8,7 @@ import json
 # Configurações para os resultados de desempenho
 headers = ['Repository', 'N_IN_TXNS', 'N_OUT_TXNS', 'cycles', 'N', 'latency_cycles', 'runtime[ms]', 
            'throughput[images/s]', 'fclk[mhz]', 'stable_throughput[images/s]']
-builds_dir = "/home/artti/Desktop/finn/notebooks/MNIST_2/builds/"
+builds_dir = "./builds"
 
 # Resultados iniciais
 results_performance = []

@@ -5,8 +5,8 @@ import os
 import pandas as pd
 
 # Configurações de hardware e limites do PYNQ-Z1
-headers = ['Repository', 'Total LUTs', 'Logic LUTs', 'LUTRAMs', 'SRLs', 'FFs', 'BRAM (36k)']
-builds_dir = "/home/artti/Desktop/finn/notebooks/CIFAR10/builds"
+headers = ['Repository', 'Total LUTs', 'Logic LUTs', 'LUTRAMs', 'SRLs', 'FFs', 'BRAM (36k)', 'DSP Blocks']
+builds_dir = "/media/artti/SSD 960GB/linux_finn/builds_cifar"
 
 # Resultados iniciais
 results_vivado = []
@@ -14,14 +14,14 @@ results_vivado = []
 # Itera sobre os repositórios dentro do diretório builds
 for repo_name in os.listdir(builds_dir):
     repo_path = os.path.join(builds_dir, repo_name)
-    if not os.path.isdir(repo_path):
+    if not os.path.isdir(repo_path) and not repo_path.startswith('old'):
         continue  # Ignora arquivos que não são diretórios
     
     # Procura por arquivos .rpt dentro do repositório
     rpt_file = None
     for root, _, files in os.walk(repo_path):
         for file in files:
-            if file.endswith('.rpt'):
+            if file.endswith('finn_design_partition_util.rpt'):
                 rpt_file = os.path.join(root, file)
                 break
         if rpt_file:
@@ -43,12 +43,13 @@ for repo_name in os.listdir(builds_dir):
                 total_luts, logic_luts = line_content[5], line_content[7]
                 lutrams, srls = line_content[9], line_content[11]
                 ffs, ramb36, ramb18 = line_content[13], line_content[15], line_content[17]
+                dsp = line_content[19]
                 
                 # Calcula BRAM (36k)
                 bram_36k = int(ramb36) + int(ramb18) / 2
                 
                 # Adiciona os dados à linha
-                data.extend([total_luts, logic_luts, lutrams, srls, ffs, f"{bram_36k:.1f}"])
+                data.extend([total_luts, logic_luts, lutrams, srls, ffs, f"{bram_36k:.1f}", dsp])
                 break
         
         # Adiciona os dados encontrados à tabela

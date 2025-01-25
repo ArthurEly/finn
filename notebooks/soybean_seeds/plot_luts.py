@@ -16,7 +16,7 @@ def load_true_fps(csv_file):
     return true_fps_data
 
 def parse_repository_name(repo_name, true_fps_data):
-    regex = r'(t\d+)(w\d+a\d+)(_\d+fps)'  # Modified to capture FPS without '_u'
+    regex = r'(soybean_cnv)_(w\d+a\d+)_(\d+)fps'  # Adaptado para os nomes do CSV
     match = re.match(regex, repo_name)
     if match:
         topology = match.group(1)  # 't4'
@@ -30,7 +30,7 @@ def parse_repository_name(repo_name, true_fps_data):
 def read_csv(file_name):
     lut_data = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
     
-    true_fps_csv = '/home/artti/Desktop/finn/notebooks/CIFAR10/results/vivado_performance_results.csv'  # Replace with the path to your CSV file
+    true_fps_csv = './results/vivado_performance_results_lab.csv'  # Replace with the path to your CSV file
     true_fps_data = load_true_fps(true_fps_csv)
     # Reading data from CSV
     with open(file_name, mode='r') as file:
@@ -38,14 +38,10 @@ def read_csv(file_name):
         for row in reader:
             repo_name = row['Repository']
             topology, quantization, fps = parse_repository_name(repo_name, true_fps_data)
+            print(topology, quantization, fps)
             if topology and quantization and fps:
                 fps_clean = fps.lstrip('_')  # Remove the '_' character from FPS
                 lut_data[topology][quantization][fps_clean] = [int(row['Logic LUTs']), int(row['LUTRAMs']), int(row['SRLs'])]  # Store LUTs value
-        # Sort the FPS keys as integers
-    for topology in lut_data.keys():
-        for quantization in lut_data[topology].keys():
-            sorted_lut = dict(sorted(lut_data[topology][quantization].items(), key=lambda x: int(x[0].split()[0].replace(',', ''))))
-            lut_data[topology][quantization] = sorted_lut
 
     return lut_data # Return the three separate dictionaries
 
@@ -96,15 +92,12 @@ def label_group_bar(ax, data, resource):
     array_2 = [x[1] for x in y]  # Segundo valor de cada linha
     array_3 = [x[2] for x in y]  # Terceiro valor de cada linha
 
-    # Ordenando os FPS em ordem crescente
-    fps_order = sorted(x, key=lambda f: int(f.split(' ')[0].replace(',', '')))
-
     # Adicionando cada camada ao gráfico
-    ax.bar(xticks, array_1, label='Logic LUTs')
-    ax.bar(xticks, array_2, bottom=array_1, label='LUTRAMs')
-    ax.bar(xticks, array_3, bottom=[a + b for a, b in zip(array_1, array_2)], label='SRLs')
+    ax.bar(xticks, array_1, label='Logic LUTs', width=0.5, color='#0072B2')
+    ax.bar(xticks, array_2, bottom=array_1, label='LUTRAMs', width=0.5, color='#B0BEC5')
+    ax.bar(xticks, array_3, bottom=[a + b for a, b in zip(array_1, array_2)], label='SRLs', width=0.5, color='#66B2FF')
     ax.set_xticks(xticks)
-    ax.set_xticklabels(fps_order)
+    ax.set_xticklabels(x)
     ax.set_xlim(.5, ly + .5)
     ax.yaxis.grid(True)
 
@@ -141,7 +134,7 @@ def label_group_bar(ax, data, resource):
 
     # Displaying values for the specific resource (LUTs, FFs, or BRAM)
     ypos -= .1
-    for pos, label in enumerate(fps_order):
+    for pos, label in enumerate(x):
         value = data[label][resource]
         ax.text(pos + 1, ypos, str(value), ha='center', va='center', transform=ax.transAxes, fontsize=base_font_size)
 
@@ -172,7 +165,7 @@ def plot_data(data, resource='LUTs', title=None, output_file=None):
         plt.show()
 
 # Example usage
-lut_data = read_csv('/home/artti/Desktop/finn/notebooks/CIFAR10/results/vivado_area_results_filtered.csv')
+lut_data = read_csv('./results/vivado_area_results_filtered_lab.csv')
 
 # Generating the graph with LUT data
 plot_data(lut_data, resource='LUTs', title='Lookup table usage', output_file="luts_usage.pdf")
