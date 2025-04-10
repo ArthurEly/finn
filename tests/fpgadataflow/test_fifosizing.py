@@ -70,13 +70,11 @@ def test_fifosizing_linear(method, topology):
         synth_clk_period_ns=10.0,
         board="Pynq-Z1",
         rtlsim_batch_size=100 if topology == "tfc" else 2,
-        shell_flow_type=build_cfg.ShellFlowType.VIVADO_ZYNQ,
         generate_outputs=[
             build_cfg.DataflowOutputType.ESTIMATE_REPORTS,
             build_cfg.DataflowOutputType.STITCHED_IP,
             build_cfg.DataflowOutputType.RTLSIM_PERFORMANCE,
         ],
-        default_mem_mode=build_cfg.ComputeEngineMemMode.DECOUPLED,
     )
     build.build_dataflow_cfg(tmp_output_dir + "/model.onnx", cfg)
     with open(tmp_output_dir + "/report/estimate_network_performance.json") as f:
