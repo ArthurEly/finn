@@ -1,12 +1,7 @@
-from finn.util.visualization import showSrc, showInNetron
-from finn.util.basic import make_build_dir
 import os
 import torch
-from utils import utils
 
 import torch
-import onnx
-from finn.util.test import get_test_model_trained
 from brevitas.export import export_qonnx
 from qonnx.util.cleanup import cleanup as qonnx_cleanup
 
@@ -17,34 +12,6 @@ from qonnx.transformation.general import GiveReadableTensorNames, GiveUniqueNode
 from qonnx.transformation.infer_shapes import InferShapes
 from qonnx.transformation.infer_datatypes import InferDataTypes
 from qonnx.transformation.fold_constants import FoldConstants
-from finn.util.pytorch import ToTensor
-from qonnx.transformation.merge_onnx_models import MergeONNXModels
-from qonnx.core.datatype import DataType
-from qonnx.transformation.insert_topk import InsertTopK
-from finn.transformation.streamline import Streamline
-from finn.transformation.streamline.reorder import MoveScalarLinearPastInvariants
-import finn.transformation.streamline.absorb as absorb
-from qonnx.transformation.bipolar_to_xnor import ConvertBipolarMatMulToXnorPopcount
-from finn.transformation.streamline.round_thresholds import RoundAndClipThresholds
-from qonnx.transformation.infer_data_layouts import InferDataLayouts
-from qonnx.transformation.general import RemoveUnusedTensors
-import finn.transformation.fpgadataflow.convert_to_hw_layers as to_hls
-from finn.transformation.fpgadataflow.create_dataflow_partition import CreateDataflowPartition
-from qonnx.custom_op.registry import getCustomOp
-from finn.transformation.streamline import Streamline
-from qonnx.transformation.lower_convs_to_matmul import LowerConvsToMatMul
-from qonnx.transformation.bipolar_to_xnor import ConvertBipolarMatMulToXnorPopcount
-import finn.transformation.streamline.absorb as absorb
-from finn.transformation.streamline.reorder import MakeMaxPoolNHWC, MoveScalarLinearPastInvariants
-from qonnx.transformation.infer_data_layouts import InferDataLayouts
-from qonnx.transformation.general import RemoveUnusedTensors
-from finn.transformation.fpgadataflow.create_dataflow_partition import (
-    CreateDataflowPartition,
-)
-from finn.transformation.move_reshape import RemoveCNVtoFCFlatten
-# from finn.transformation.fpgadataflow.specialize_layers import SpecializeLayers
-from qonnx.custom_op.registry import getCustomOp
-from qonnx.transformation.infer_data_layouts import InferDataLayouts
 from finn.transformation.qonnx.convert_qonnx_to_finn import ConvertQONNXtoFINN
 
 from brevitas_examples.bnn_pynq.extractor import ModelExtractor
