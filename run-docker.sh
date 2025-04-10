@@ -79,7 +79,7 @@ SCRIPTPATH=$(dirname "$SCRIPT")
 : ${PYNQ_PASSWORD="xilinx"}
 : ${PYNQ_BOARD="Pynq-Z1"}
 : ${PYNQ_TARGET_DIR="/home/xilinx/$DOCKER_INST_NAME"}
-: ${NUM_DEFAULT_WORKERS=4}
+: ${NUM_DEFAULT_WORKERS=6}
 : ${FINN_SSH_KEY_DIR="$SCRIPTPATH/ssh_keys"}
 : ${ALVEO_USERNAME="alveo_user"}
 : ${ALVEO_PASSWORD=""}
@@ -207,7 +207,7 @@ fi
 # Launch container with current directory mounted
 # important to pass the --init flag here for correct Vivado operation, see:
 # https://stackoverflow.com/questions/55733058/vivado-synthesis-hangs-in-docker-container-spawned-by-jenkins
-DOCKER_BASE="docker run -t --rm $DOCKER_INTERACTIVE --tty --init --hostname $DOCKER_INST_NAME "
+DOCKER_BASE="docker run -t --shm-size=8G --rm $DOCKER_INTERACTIVE --tty --init --hostname $DOCKER_INST_NAME "
 DOCKER_EXEC="-e SHELL=/bin/bash "
 DOCKER_EXEC+="-w $SCRIPTPATH "
 DOCKER_EXEC+="-v $SCRIPTPATH:$SCRIPTPATH "

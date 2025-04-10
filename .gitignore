@@ -96,3 +96,14 @@ MANIFEST
 
 # downloaded dep repos
 /deps/
+/notebooks/CIFAR10/builds
+/notebooks/MNIST_2/builds
+/notebooks/sat6_cnn/builds_pynq
+/notebooks/sat6_cnn/builds_ultra96
+/notebooks/soybean_seeds/builds
+/notebooks/soybean_seeds/builds_sources
+/notebooks/soybean_seeds/t2
+/notebooks/yolov5
+/notebooks/sat6_cnn/dataset
+*.zip
+*.pkl

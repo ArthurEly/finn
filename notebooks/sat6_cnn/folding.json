@@ -1,0 +1,6 @@
+{
+    "Defaults": {},
+    "MVAU_hls_2": {
+      "SIMD": 2
+    }
+}

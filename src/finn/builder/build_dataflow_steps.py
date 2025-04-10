@@ -461,7 +461,7 @@ def step_apply_folding_config(model: ModelWrapper, cfg: DataflowBuildConfig):
 
 def step_generate_estimate_reports(model: ModelWrapper, cfg: DataflowBuildConfig):
     "Generate per-layer resource and cycle estimates using analytical models."
-
+    
     if DataflowOutputType.ESTIMATE_REPORTS in cfg.generate_outputs:
         report_dir = cfg.output_dir + "/report"
         os.makedirs(report_dir, exist_ok=True)

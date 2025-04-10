@@ -113,7 +113,7 @@ class QuantActBaseHandler(ABC):
     def replace_quant_node(self):
         """Replace the given QONNX style activation with a FINN style one."""
 
-        # Check that we actually support what the user is trying to do
+        # Check that we actually support what the user is trying fto do
         self._check_compatibility()
 
         # Shorten instance variables
