@@ -112,7 +112,12 @@ class InsertFIFO(Transformation):
                     if _suitable_node(consumer) is True:
                         n0 = getCustomOp(first_node)
                         # determine fifo node attributes
-                        fld_shape = n0.get_folded_output_shape()
+                        try:
+                            fld_shape = n0.get_folded_output_shape()
+                        except AttributeError:
+                            raise AttributeError(   
+                                node_ind,output_name)
+                        
                         dtype = n0.get_output_datatype()
 
                         # check if folded_shape of output of first node and
