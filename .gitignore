@@ -119,3 +119,6 @@ MANIFEST
 /notebooks/sat6_cnn/builds_HARA_proof_not_two_pass
 /notebooks/sat6_cnn/builds_HARA_proof_not_two_pass_2
 /notebooks/sat6_cnn/builds_HARA_proof_target_lower
+/datasets
+/notebooks/sat6_cnn/builds_jics
+/notebooks/sat6_cnn/builds_jics_sources
