@@ -1,6 +1,6 @@
 {
     "Defaults": {},
-    "MatrixVectorActivation_2": {
+    "MVAU_hls_2": {
       "SIMD": 2
     }
 }
